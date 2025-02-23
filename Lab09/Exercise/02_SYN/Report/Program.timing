@@ -1,0 +1,142 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : Program
+Version: T-2022.03
+Date   : Sat Nov 23 19:52:13 2024
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: formula_res_ff_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: formula_ans_ff_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Program            enG10K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  formula_res_ff_reg[12]/CK (QDFFP)        0.00       0.00 r
+  formula_res_ff_reg[12]/Q (QDFFP)         0.44       0.44 f
+  U1328/O (ND2T)                           0.14       0.58 r
+  U1959/O (NR2F)                           0.07       0.65 f
+  U1991/O (NR2F)                           0.17       0.82 r
+  U1990/OB (MXL2HP)                        0.21       1.03 r
+  U1960/OB (MXL2HP)                        0.20       1.23 r
+  U1381/O (OAI12HT)                        0.15       1.38 f
+  U1372/OB (MXL2H)                         0.19       1.57 f
+  U1369/O (INV3)                           0.11       1.68 r
+  U1955/OB (MXL2HP)                        0.12       1.81 f
+  U1954/O (NR2P)                           0.24       2.05 r
+  U1337/OB (MXL2HT)                        0.15       2.20 f
+  U1334/OB (MXL2HP)                        0.18       2.38 f
+  U1333/O (NR2F)                           0.13       2.51 r
+  U1332/O (NR2F)                           0.11       2.62 f
+  U1983/OB (MXL2HS)                        0.22       2.84 f
+  U1377/OB (MXL2HP)                        0.24       3.08 r
+  U1968/O (OAI12HT)                        0.16       3.24 f
+  U1378/OB (MXL2HT)                        0.20       3.44 f
+  U1347/OB (MXL2HT)                        0.18       3.62 f
+  U1348/O (INV2)                           0.08       3.70 r
+  U1211/O (ND3)                            0.11       3.81 f
+  U2113/O (ND3)                            0.19       4.00 r
+  formula_ans_ff_reg[1]/D (QDFFS)          0.00       4.00 r
+  data arrival time                                   4.00
+
+  clock clk (rise edge)                    4.20       4.20
+  clock network delay (ideal)              0.00       4.20
+  clock uncertainty                       -0.10       4.10
+  formula_ans_ff_reg[1]/CK (QDFFS)         0.00       4.10 r
+  library setup time                      -0.09       4.01
+  data required time                                  4.01
+  -----------------------------------------------------------
+  data required time                                  4.01
+  data arrival time                                  -4.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: State_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: inf.W_DATA[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Program            enG10K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  State_reg[3]/CK (QDFFRBN)                0.00       0.00 r
+  State_reg[3]/Q (QDFFRBN)                 0.50       0.50 f
+  U1209/O (OR2)                            0.41       0.92 f
+  U1343/O (OR2T)                           0.29       1.21 f
+  U1342/O (INV12)                          0.18       1.38 r
+  U1706/O (AN2S)                           0.61       2.00 r
+  inf.W_DATA[1] (out)                      0.00       2.00 r
+  data arrival time                                   2.00
+
+  clock clk (rise edge)                    4.20       4.20
+  clock network delay (ideal)              0.00       4.20
+  clock uncertainty                       -0.10       4.10
+  output external delay                   -2.10       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -2.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: State_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: inf.W_DATA[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Program            enG10K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  State_reg[3]/CK (QDFFRBN)                0.00       0.00 r
+  State_reg[3]/Q (QDFFRBN)                 0.50       0.50 f
+  U1209/O (OR2)                            0.41       0.92 f
+  U1343/O (OR2T)                           0.29       1.21 f
+  U1342/O (INV12)                          0.18       1.38 r
+  U1705/O (AN2S)                           0.61       2.00 r
+  inf.W_DATA[0] (out)                      0.00       2.00 r
+  data arrival time                                   2.00
+
+  clock clk (rise edge)                    4.20       4.20
+  clock network delay (ideal)              0.00       4.20
+  clock uncertainty                       -0.10       4.10
+  output external delay                   -2.10       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -2.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

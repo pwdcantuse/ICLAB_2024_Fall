@@ -1,0 +1,3 @@
+Command Line: /usr/cad/synopsys/verdi/2019.06/platform/LINUXAMD64/bin/Novas -nWave -ssf CHIP_POST.fsdb
+uname(Linux ee30 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 15:41:52 UTC 2023 x86_64)
+au time 89.418265 1.800974 1.231554 delta 333606912 333606912 total 768659456 768659456

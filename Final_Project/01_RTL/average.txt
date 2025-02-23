@@ -1,0 +1,15 @@
+[ Average of Min and Max ]
+
+
+*********RED**********
+[ MIN ] : 255        [ MAX ] : 255       
+
+********GREEN*********
+[ MIN ] : 255        [ MAX ] : 255       
+
+*********BLUE*********
+[ MIN ] : 255        [ MAX ] : 255       
+
+
+[ Average of MIN and MAX  ] : 255
+[ Your average ] : 191

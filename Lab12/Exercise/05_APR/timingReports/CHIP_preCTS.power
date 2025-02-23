@@ -1,0 +1,101 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+*	
+*
+* 	Date & Time:	2024-Dec-04 17:53:54 (2024-Dec-04 09:53:54 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: CHIP
+*
+*	Liberty Libraries used: 
+*	        av_func_mode_max: /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP_floorplan.inn.dat/libs/lib/typ/fsa0m_a_generic_core_ss1p62v125c.lib
+*	        av_func_mode_max: /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP_floorplan.inn.dat/libs/lib/typ/fsa0m_a_t33_generic_io_ss1p62v125c.lib
+*
+*	Power Domain used: 
+*              Rail:        VCC      Voltage:       1.62 
+*
+*       Power View : av_func_mode_max
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile ./timingReports/CHIP_preCTS.power -leakage
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Leakage Power:         0.00821009 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Leakage       Percentage 
+                                Power         (%)        
+-----------------------------------------------------------------------------------------
+Sequential                     0.0009869       12.02 
+Macro                                  0           0 
+IO                              0.006182        75.3 
+Physical-Only                  5.772e-05       0.703 
+Combinational                  0.0009833       11.98 
+Clock (Combinational)                  0           0 
+Clock (Sequential)                     0           0 
+-----------------------------------------------------------------------------------------
+Total                            0.00821         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Leakage       Percentage 
+                                Power         (%)        
+-----------------------------------------------------------------------------------------
+Default                  1.62   0.006182        75.3 
+VCC                      1.62    0.00197          24 
+
+
+Clock                           Leakage       Percentage 
+                                Power         (%)        
+-----------------------------------------------------------------------------------------
+clk                            4.577e-05      0.5575 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)   4.577e-05      0.5575 
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.003500 usec 
+Clock Toggle Rate:   571.4285 Mhz 
+Clock Static Probability:  0.5000
+
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:            O_TETRIS_VALID (YA2GSD):        7.398e-05 
+*                Highest Leakage Power:            O_TETRIS_VALID (YA2GSD):        7.398e-05 
+*          Total Cap:      4.86052e-11 F
+*          Total instances in design:  1655
+*          Total instances in design with no power:    32
+*          Total instances in design with no activity:    32
+*          Total Fillers and Decap:    33
+-----------------------------------------------------------------------------------------
+
+Total leakage power = 0.00826781 mW
+Cell usage statistics:  
+Library fsa0m_a_generic_core_ss1p62v125c , 1535 cells ( 94.577942%) , 0.0019702 mW ( 23.829801%  ) 
+Library fsa0m_a_t33_generic_io_ss1p62v125c , 88 cells ( 5.422058%) , 0.00623989 mW ( 75.472069%  ) 

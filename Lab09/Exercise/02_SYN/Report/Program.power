@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Program
+Version: T-2022.03
+Date   : Sat Nov 23 19:52:13 2024
+****************************************
+
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Program                enG10K            fsa0m_a_generic_core_ss1p62v125c
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   5.9943 mW   (82%)
+  Net Switching Power  =   1.3596 mW   (18%)
+                         ---------
+Total Dynamic Power    =   7.3539 mW  (100%)
+
+Cell Leakage Power     =   4.3121 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      4.4173            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.6678            0.2435        1.6811e+06            5.3303  (  72.44%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.9092            1.1161        2.6310e+06            2.0279  (  27.56%)
+--------------------------------------------------------------------------------------------------
+Total              5.9943 mW         1.3596 mW     4.3121e+06 pW         7.3582 mW
+1

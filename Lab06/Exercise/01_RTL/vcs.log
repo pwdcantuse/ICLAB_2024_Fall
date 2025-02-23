@@ -1,0 +1,134 @@
+Command: vcs -timescale=1ns/1fs -j8 -sverilog +v2k -full64 -Mupdate -R -debug_access+all \
+-y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v -f filelist.f -o simv -l \
+vcs.log -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a \
++define+RTL +notimingchecks
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Thu Oct 24 17:01:08 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TESTBED.v'
+Parsing included file 'PATTERN.v'.
+Back to file 'TESTBED.v'.
+Parsing included file 'MDC.v'.
+Parsing included file 'HAMMING_IP.v'.
+Back to file 'MDC.v'.
+Back to file 'TESTBED.v'.
+Top Level Modules:
+       TESTBED
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+2 modules and 0 UDP read.
+recompiling module TESTBED
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory `/RAID2/COURSE/iclab/iclab018/Lab06/Exercise/01_RTL/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _114617_archive_1.so _114636_archive_1.so \
+_prev_archive_1.so _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o \
+rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs \
+/usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a    -lvcsnew -lsimprofile \
+-luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o \
+/usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/pli.a -ldl -lm  -lc -lpthread \
+-ldl 
+../simv up to date
+make[1]: Leaving directory `/RAID2/COURSE/iclab/iclab018/Lab06/Exercise/01_RTL/csrc' \
+
+Command: /RAID2/COURSE/iclab/iclab018/Lab06/Exercise/01_RTL/./simv +v2k +libext+.v -a vcs.log +define+RTL +notimingchecks
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Oct 24 17:01 2024
+1ns : $display1 : a = 0, b = 1
+   end
+1ns : $display2 : a = 0, b = 1
+1ns : $monitor : a = 1, b = 0
+1ns : $strobe : a = 1, b = 0
+[1;34mPASS PATTERN NO.   0 [1;32mCycles:   0[1;0m
+[1;33m                `oo+oy+`                            [1;35m Congratulation!!! [1;0m                                   
+[1;33m               /h/----+y        `+++++:             [1;35m PASS This Lab........Maybe [1;0m                          
+[1;33m             .y------:m/+ydoo+:y:---:+o             [1;35m Total Latency : 0         [1;0m                                
+[1;33m              o+------/y--::::::+oso+:/y                                                                                     
+[1;33m              s/-----:/:----------:+ooy+-                                                                                    
+[1;33m             /o----------------/yhyo/::/o+/:-.`                                                                              
+[1;33m            `ys----------------:::--------:::+yyo+                                                                           
+[1;33m            .d/:-------------------:--------/--/hos/                                                                         
+[1;33m            y/-------------------::ds------:s:/-:sy-                                                                         
+[1;33m           +y--------------------::os:-----:ssm/o+`                                                                          
+[1;33m          `d:-----------------------:-----/+o++yNNmms                                                                        
+[1;33m           /y-----------------------------------hMMMMN.                                                                      
+[1;33m           o+---------------------://:----------:odmdy/+.                                                                    
+[1;33m           o+---------------------::y:------------::+o-/h                                                                    
+[1;33m           :y-----------------------+s:------------/h:-:d                                                                    
+[1;33m           `m/-----------------------+y/---------:oy:--/y                                                                    
+[1;33m            /h------------------------:os++/:::/+o/:--:h-                                                                    
+[1;33m         `:+ym--------------------------://++++o/:---:h/                                                                     
+[1;31m        `hhhhhoooo++oo+/:[1;33m--------------------:oo----[1;31m+dd+                                                 
+[1;31m         shyyyhhhhhhhhhhhso/:[1;33m---------------:+/---[1;31m/ydyyhs:`                                              
+[1;31m         .mhyyyyyyhhhdddhhhhhs+:[1;33m----------------[1;31m:sdmhyyyyyyo:                                            
+[1;31m        `hhdhhyyyyhhhhhddddhyyyyyo++/:[1;33m--------[1;31m:odmyhmhhyyyyhy                                            
+[1;31m        -dyyhhyyyyyyhdhyhhddhhyyyyyhhhs+/::[1;33m-[1;31m:ohdmhdhhhdmdhdmy:                                           
+[1;31m         hhdhyyyyyyyyyddyyyyhdddhhyyyyyhhhyyhdhdyyhyys+ossyhssy:-`                                                           
+[1;31m         `Ndyyyyyyyyyyymdyyyyyyyhddddhhhyhhhhhhhhy+/:[1;33m-------::/+o++++-`                                            
+[1;31m          dyyyyyyyyyyyyhNyydyyyyyyyyyyhhhhyyhhy+/[1;33m------------------:/ooo:`                                         
+[1;31m         :myyyyyyyyyyyyyNyhmhhhyyyyyhdhyyyhho/[1;33m-------------------------:+o/`                                       
+[1;31m        /dyyyyyyyyyyyyyyddmmhyyyyyyhhyyyhh+:[1;33m-----------------------------:+s-                                      
+[1;31m      +dyyyyyyyyyyyyyyydmyyyyyyyyyyyyyds:[1;33m---------------------------------:s+                                      
+[1;31m      -ddhhyyyyyyyyyyyyyddyyyyyyyyyyyhd+[1;33m------------------------------------:oo              `-++o+:.`             
+[1;31m       `/dhshdhyyyyyyyyyhdyyyyyyyyyydh:[1;33m---------------------------------------s/            -o/://:/+s             
+[1;31m         os-:/oyhhhhyyyydhyyyyyyyyyds:[1;33m----------------------------------------:h:--.`      `y:------+os            
+[1;33m         h+-----[1;31m:/+oosshdyyyyyyyyhds[1;33m-------------------------------------------+h//o+s+-.` :o-------s/y  
+[1;33m         m:------------[1;31mdyyyyyyyyymo[1;33m--------------------------------------------oh----:://++oo------:s/d  
+[1;33m        `N/-----------+[1;31mmyyyyyyyydo[1;33m---------------------------------------------sy---------:/s------+o/d  
+[1;33m        .m-----------:d[1;31mhhyyyyyyd+[1;33m----------------------------------------------y+-----------+:-----oo/h  
+[1;33m        +s-----------+N[1;31mhmyyyyhd/[1;33m----------------------------------------------:h:-----------::-----+o/m  
+[1;33m        h/----------:d/[1;31mmmhyyhh:[1;33m-----------------------------------------------oo-------------------+o/h  
+[1;33m       `y-----------so /[1;31mNhydh:[1;33m-----------------------------------------------/h:-------------------:soo  
+[1;33m    `.:+o:---------+h   [1;31mmddhhh/:[1;33m---------------:/osssssoo+/::---------------+d+//++///::+++//::::::/y+`  
+[1;33m   -s+/::/--------+d.   [1;31mohso+/+y/:[1;33m-----------:yo+/:-----:/oooo/:----------:+s//::-.....--:://////+/:`    
+[1;33m   s/------------/y`           `/oo:--------:y/-------------:/oo+:------:/s:                                                 
+[1;33m   o+:--------::++`              `:so/:-----s+-----------------:oy+:--:+s/``````                                             
+[1;33m    :+o++///+oo/.                   .+o+::--os-------------------:oy+oo:`/o+++++o-                                           
+[1;33m       .---.`                          -+oo/:yo:-------------------:oy-:h/:---:+oyo                                          
+[1;33m                                          `:+omy/---------------------+h:----:y+//so                                         
+[1;33m                                              `-ys:-------------------+s-----+s///om                                         
+[1;33m                                                 -os+::---------------/y-----ho///om                                         
+[1;33m                                                    -+oo//:-----------:h-----h+///+d                                         
+[1;33m                                                       `-oyy+:---------s:----s/////y                                         
+[1;33m                                                           `-/o+::-----:+----oo///+s                                         
+[1;33m                                                               ./+o+::-------:y///s:                                         
+[1;33m                                                                   ./+oo/-----oo/+h                                          
+[1;33m                                                                       `://++++syo`                                          
+[1;0m
+$finish called from file "PATTERN.v", line 600.
+$finish at simulation time               350000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 350000 ps
+CPU Time:      0.350 seconds;       Data structure size:   0.0Mb
+Thu Oct 24 17:01:13 2024
+CPU time: 1.099 seconds to compile + .540 seconds to elab + .514 seconds to link + .400 seconds in simulation

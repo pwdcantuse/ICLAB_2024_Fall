@@ -1,0 +1,303 @@
+Command: vcs -timescale=1ns/1fs -j8 -sverilog +v2k -full64 -Mupdate -R -debug_access+all \
+-y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v -f filelist.f -o simv -l \
+vcs.log -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a \
++define+RTL +notimingchecks
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Mon Nov 11 19:23:45 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TESTBED.v'
+Parsing included file 'PATTERN.v'.
+Back to file 'TESTBED.v'.
+Parsing included file 'SA_wocg.v'.
+Back to file 'TESTBED.v'.
+Top Level Modules:
+       TESTBED
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+5 modules and 0 UDP read.
+recompiling module TESTBED
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory `/RAID2/COURSE/iclab/iclab018/Lab08/EXERCISE_wocg/01_RTL/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _144622_archive_1.so _144673_archive_1.so \
+_prev_archive_1.so _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o \
+rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs \
+/usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a    -lvcsnew -lsimprofile \
+-luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o \
+/usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/pli.a -ldl -lm  -lc -lpthread \
+-ldl 
+../simv up to date
+make[1]: Leaving directory `/RAID2/COURSE/iclab/iclab018/Lab08/EXERCISE_wocg/01_RTL/csrc' \
+
+Command: /RAID2/COURSE/iclab/iclab018/Lab08/EXERCISE_wocg/01_RTL/./simv +v2k +libext+.v -a vcs.log +define+RTL +notimingchecks
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Nov 11 19:23 2024
+[0;34mPASS PATTERN NO.    1, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.    2, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.    3, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.    4, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.    5, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.    6, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.    7, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.    8, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.    9, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   10, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   11, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   12, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   13, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   14, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   15, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   16, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   17, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   18, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   19, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   20, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   21, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   22, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   23, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   24, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   25, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   26, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   27, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   28, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   29, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   30, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   31, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   32, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   33, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   34, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   35, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   36, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   37, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   38, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   39, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   40, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   41, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   42, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   43, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   44, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   45, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   46, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   47, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   48, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   49, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   50, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   51, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   52, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   53, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   54, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   55, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   56, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   57, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   58, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   59, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   60, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   61, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   62, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   63, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   64, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   65, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   66, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   67, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   68, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   69, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   70, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   71, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   72, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   73, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   74, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   75, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   76, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   77, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   78, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   79, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   80, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   81, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   82, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   83, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   84, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   85, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   86, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   87, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   88, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   89, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   90, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   91, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   92, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   93, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   94, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   95, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   96, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   97, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   98, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.   99, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  100, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  101, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  102, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  103, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  104, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  105, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  106, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  107, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  108, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  109, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  110, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  111, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  112, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  113, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  114, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  115, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  116, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  117, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  118, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  119, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  120, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  121, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  122, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  123, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  124, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  125, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  126, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  127, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  128, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  129, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  130, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  131, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  132, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  133, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  134, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  135, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  136, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  137, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  138, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  139, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  140, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  141, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  142, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  143, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  144, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  145, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  146, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  147, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  148, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  149, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  150, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  151, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  152, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  153, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  154, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  155, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  156, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  157, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  158, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  159, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  160, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  161, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  162, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  163, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  164, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  165, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  166, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  167, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  168, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  169, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  170, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  171, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  172, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  173, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  174, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  175, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  176, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  177, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  178, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  179, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  180, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  181, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  182, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  183, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  184, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  185, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  186, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  187, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  188, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  189, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  190, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  191, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  192, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  193, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  194, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  195, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  196, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  197, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  198, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  199, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  200, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  201, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  202, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  203, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  204, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  205, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  206, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  207, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  208, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  209, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  210, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  211, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  212, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  213, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  214, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  215, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  216, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  217, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  218, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  219, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  220, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  221, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  222, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  223, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  224, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  225, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  226, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  227, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  228, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  229, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  230, [m [0;32mExecution Cycle:   1[m
+[0;34mPASS PATTERN NO.  231, [m [0;32mExecution Cycle:   1[m
+Interrupt at time 268767500
+
+exit
+            V C S   S i m u l a t i o n   R e p o r t 
+Time: 2687675000 ps
+CPU Time:      0.900 seconds;       Data structure size:   0.1Mb
+Mon Nov 11 19:23:53 2024
+CPU time: 1.636 seconds to compile + .393 seconds to elab + .335 seconds to link + .944 seconds in simulation

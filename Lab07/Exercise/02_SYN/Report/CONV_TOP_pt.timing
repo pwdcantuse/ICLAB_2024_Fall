@@ -1,0 +1,64 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : CONV_TOP
+Version: P-2019.03-SP5-1
+Date   : Mon Nov  4 01:53:47 2024
+****************************************
+
+
+  Startpoint: u_Conv_t_reg_0_
+               (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_Conv_out_data_reg_7_
+               (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_Conv_t_reg_0_/CK (QDFFRBS)                            0.00       0.00 r
+  u_Conv_t_reg_0_/Q (QDFFRBS)                             0.84 *     0.84 r
+  U1203/O (ND2)                                           0.76 *     1.60 f
+  U1398/O (NR2)                                           1.44 *     3.04 r
+  U1399/O (INV2)                                          0.11 *     3.15 f
+  U1402/O (MOAI1S)                                        0.42 *     3.56 r
+  U1403/O (AN4B1S)                                        0.20 *     3.76 f
+  U1267/O (ND2S)                                          0.18 *     3.94 r
+  U1404/O (NR3)                                           0.15 *     4.10 f
+  U1341/O (ND3S)                                          0.34 *     4.43 r
+  U1294/O (AN2S)                                          0.30 *     4.73 r
+  intadd_1_U5/S (FA1S)                                    0.55 *     5.28 f
+  intadd_2_U4/CO (FA1S)                                   0.52 *     5.80 f
+  intadd_2_U3/S (FA1S)                                    0.93 *     6.73 r
+  U1236/O (ND2S)                                          0.13 *     6.86 f
+  U1304/O (MOAI1S)                                        0.41 *     7.27 f
+  U1633/CO (FA1S)                                         0.71 *     7.99 f
+  U1163/O (INV1S)                                         0.18 *     8.17 r
+  U1616/O (MAO222)                                        0.37 *     8.54 r
+  U1617/O (MAO222P)                                       0.34 *     8.88 r
+  U1312/O (ND2S)                                          0.10 *     8.98 f
+  U1311/O (MOAI1S)                                        0.35 *     9.33 f
+  U1310/O (MOAI1S)                                        0.42 *     9.75 r
+  u_Conv_out_data_reg_7_/D (QDFFRBS)                      0.00 *     9.75 r
+  data arrival time                                                  9.75
+
+  clock clk2 (rise edge)                                 10.10      10.10
+  clock network delay (ideal)                             0.00      10.10
+  clock reconvergence pessimism                           0.00      10.10
+  clock uncertainty                                      -0.10      10.00
+  u_Conv_out_data_reg_7_/CK (QDFFRBS)                               10.00 r
+  library setup time                                     -0.21 *     9.79
+  data required time                                                 9.79
+  ------------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -9.75
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+1

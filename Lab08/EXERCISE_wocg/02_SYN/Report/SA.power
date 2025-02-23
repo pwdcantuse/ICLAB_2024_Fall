@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : SA
+Version: T-2022.03
+Date   : Mon Nov 11 19:31:49 2024
+****************************************
+
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+SA                     enG500K           fsa0m_a_generic_core_ss1p62v125c
+MA_41                  enG50K            fsa0m_a_generic_core_ss1p62v125c
+MA_19_6                enG30K            fsa0m_a_generic_core_ss1p62v125c
+DIV_RELU               enG5K             fsa0m_a_generic_core_ss1p62v125c
+MA_19_0                enG30K            fsa0m_a_generic_core_ss1p62v125c
+MA_19_1                enG30K            fsa0m_a_generic_core_ss1p62v125c
+MA_19_2                enG30K            fsa0m_a_generic_core_ss1p62v125c
+MA_19_3                enG30K            fsa0m_a_generic_core_ss1p62v125c
+MA_19_4                enG30K            fsa0m_a_generic_core_ss1p62v125c
+MA_19_5                enG30K            fsa0m_a_generic_core_ss1p62v125c
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   3.8593 mW   (95%)
+  Net Switching Power  = 191.1263 uW    (5%)
+                         ---------
+Total Dynamic Power    =   4.0504 mW  (100%)
+
+Cell Leakage Power     =  91.7605 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      3.8058            0.0000            0.0000            0.0000  (   0.00%)  i
+register       1.2193e-02        1.5899e-02        1.5601e+07            3.8495  (  92.93%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  4.1376e-02            0.1752        7.6160e+07            0.2928  (   7.07%)
+--------------------------------------------------------------------------------------------------
+Total              3.8593 mW         0.1911 mW     9.1761e+07 pW         4.1422 mW
+1

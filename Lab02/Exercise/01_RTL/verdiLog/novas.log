@@ -1,0 +1,39 @@
+Verdi (R)
+
+Release Verdi_P-2019.06 for (RH Linux x86_64/64bit) -- Sun May 26 03:05:40 PDT 2019
+
+Copyright (c) 1999 - 2019 Synopsys, Inc.
+This software and the associated documentation are proprietary to Synopsys, Inc. 
+This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. 
+All other use, reproduction, or distribution of this software is strictly prohibited.
+
+
+Total number of converted HDL2CELL cells=0 (normal modules=0)
+Inferring module BB, file BB.v, line 1~365 (Verilog)
+
+
+Verdi design analysis: total error(s) 0, total warning(s) 0.
+Inferring module TESTBED, file TESTBED.v, line 11~82 (Verilog)
+
+
+Verdi design analysis: total error(s) 0, total warning(s) 0.
+Inferring module PATTERN, file PATTERN.v, line 4~247 (Verilog)
+
+Warning!(BA-38) "PATTERN.v", Line: 34~34
+'always' statement is inferred as a black box because of no sensitivity list.
+
+Module PATTERN, File PATTERN.v, Line 4~247, Total error(s) 0, warning(s) 6
+
+
+Verdi design analysis: total error(s) 0, total warning(s) 6.
+---- Any errors/warnings, please refer to file /RAID2/COURSE/iclab/iclab018/Lab02/Exercise/01_RTL/verdiLog/novas.log -----------------------
+[Symbol Library from default setting]
+  library Path = /usr/cad/synopsys/verdi/2019.06/share/symlib/64
+  library Name = default_u
+[Symbol Library from manual setting]
+  There are 0 library path(s) and 0 library name(s):
+
+
+The signal 'TESTBED.u_BB.out_num' is not expandable at time 0.
+Value changes do not exist on fan-ins or the tracing already reached the minimum FSDB start time.
+    "tsNodeInfo_t::getExpandableReason","vtn name=out_num time=0"

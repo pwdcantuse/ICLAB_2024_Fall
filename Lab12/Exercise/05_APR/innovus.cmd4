@@ -1,0 +1,481 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Dec  4 17:12:43 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+#@(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+#@(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+#@(#)CDS: CPE v20.15-s071
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+is_common_ui_mode
+restoreDesign /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP_floorplan.inn.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core_5040 -r 0.990696095076 0.005127 1000 1000 1000 1000
+uiSetTool select
+getIoFlowFlag
+fit
+zoomBox 298.54100 1053.74900 5057.68700 3446.20000
+zoomBox -679.71300 659.15000 5907.34000 3970.50100
+zoomBox -2033.69900 112.99100 7083.33000 4696.17600
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core_5040 -r 0.986717267552 0.7 10000.06 10000.6 10000.06 10000.16
+uiSetTool select
+getIoFlowFlag
+fit
+zoomBox 654.80100 4632.89800 20562.04300 14640.38700
+zoomBox 5426.87300 7104.76200 15818.58000 12328.73500
+zoomBox 7917.92400 8395.09100 13342.46100 11122.03800
+zoomBox 8672.84000 8786.12700 12592.06900 10756.34700
+zoomBox 5426.86700 7104.75900 15818.58000 12328.73500
+fit
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {GND VCC} -type core_rings -follow core -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 150 -use_interleaving_wire_group 1
+zoomBox -7887.57700 743.26800 30248.44000 19914.47100
+zoomBox -4282.65800 2215.50600 28132.95800 18511.02900
+zoomBox 2807.64800 5054.80700 22714.88900 15062.29600
+zoomBox 1185.26700 4256.29200 24605.55300 16029.80900
+fit
+undo
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {GND VCC} -type core_rings -follow core -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 450 -use_interleaving_wire_group 1
+zoomBox -8980.22200 540.92600 29155.79500 19712.12900
+zoomBox -6476.04100 2116.35900 25939.57300 18411.88100
+zoomBox -4441.05000 3452.55300 23112.22200 17303.74700
+zoomBox -33.68800 6677.49100 16887.46600 15183.85600
+zoomBox 1900.46700 8216.34400 14126.00100 14362.19300
+zoomBox 2655.83200 8817.32800 13047.53700 14041.30000
+zoomBox 3796.82700 9680.87700 11304.83300 13455.19600
+zoomBox 4253.26600 10017.45000 10635.07200 13225.62200
+zoomBox 4989.17800 10542.88300 9600.03400 12860.78800
+fit
+setSrouteMode -viaConnectToShape { ring blockring }
+sroute -connect { blockPin padPin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal6(6) }
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal2 -direction vertical -width 4 -spacing 0.28 -set_to_set_distance 100 -start_from left -start_offset 60 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+zoomBox -3369.95500 286.52200 24183.31900 14137.71700
+zoomBox -1267.42400 599.66500 22152.86000 12373.18100
+zoomBox 4154.06800 5340.47000 16379.60400 11486.32000
+zoomBox 6986.32500 7810.79000 13368.13200 11018.96200
+zoomBox 9309.97300 9663.38400 11048.95800 10537.58200
+fit
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal2 -direction vertical -width 4 -spacing 0.28 -set_to_set_distance 100 -start_from left -start_offset 60 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+zoomBox -1562.51700 4324.26900 21857.76700 16097.78500
+zoomBox 2975.15300 6612.12400 17358.13500 13842.53500
+zoomBox 6427.10800 8352.57100 13935.11700 12126.89200
+zoomBox 7473.22900 8880.01700 12897.76600 11606.96400
+zoomBox 5760.37300 8017.94900 14593.32600 12458.32700
+zoomBox 4054.89900 7161.13100 16280.43900 13306.98300
+zoomBox 6992.57600 8636.99800 13374.38700 11845.17200
+zoomBox 6131.84100 8480.56200 13639.85400 12254.88500
+zoomBox 8351.23400 8882.41800 12962.09200 11200.32400
+zoomBox 9816.97300 9106.02400 12648.61700 10529.50800
+zoomBox 10946.73900 9339.17100 12203.15700 9970.78000
+zoomBox 11290.74300 9409.93100 12062.34200 9797.81800
+zoomBox 10664.81700 9230.18000 12403.80800 10104.38100
+zoomBox 10130.47700 8985.84000 12962.13400 10409.33100
+zoomBox 9275.33400 8575.00200 13886.21800 10892.92100
+zoomBox 7348.25800 7589.92400 16181.26700 12030.33000
+zoomBox 3671.33400 5673.64200 20592.60500 14180.06600
+zoomBox 7056.24000 8362.32300 14564.29900 12136.66900
+zoomBox 8515.06900 9275.17000 12434.32300 11245.40200
+zoomBox 9482.61500 9814.00700 11221.61000 10688.21000
+zoomBox 9851.49400 10019.44000 10759.26100 10475.78000
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal2 -direction vertical -width 4 -spacing 0.28 -set_to_set_distance 10 -start_from left -start_offset 60 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+zoomBox 9638.06400 9769.81200 11377.06100 10644.01600
+zoomBox 9078.24800 9116.91200 12997.51100 11087.14900
+zoomBox 8686.35100 8672.00100 14110.93700 11398.97300
+uiSetTool ruler
+zoomBox 4312.94700 7508.36900 14704.75400 12732.39200
+zoomBox -3964.52300 5343.07700 15942.92000 15350.66700
+zoomBox -14916.04500 2676.62600 17499.90100 18972.31500
+zoomBox -25816.70900 33.81400 19049.65200 22588.40100
+fit
+zoomBox 5809.52900 1696.97400 25716.76900 11704.46200
+zoomBox 14517.71200 3104.33700 22025.72000 6878.65700
+zoomBox 16771.08000 3641.85500 20690.30900 5612.07500
+zoomBox 17847.65900 3962.28000 19893.52100 4990.74700
+zoomBox 18538.72900 4193.76700 19310.32700 4581.65400
+zoomBox 18729.45800 4263.62700 19132.23900 4466.10700
+zoomBox 18807.59000 4297.92600 19054.94800 4422.27400
+zoomBox 18536.52300 4202.76400 19094.01000 4483.01600
+zoomBox 17728.79000 3928.16800 19206.94800 4671.24700
+zoomBox 16913.94400 3651.15300 19320.88200 4861.13500
+fit
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal6 -direction horizontal -width 4 -spacing 0.28 -set_to_set_distance 10 -start_from bottom -start_offset 60 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+zoomBox -5230.28500 3670.65600 22322.98900 17521.85100
+zoomBox 246.97700 6266.67900 17168.13300 14773.04500
+zoomBox 3186.32800 7297.28800 15411.86300 13443.13700
+zoomBox -1612.50900 5632.05500 18294.73300 15639.54400
+zoomBox -6384.95900 3981.46800 21168.31800 17832.66400
+zoomBox -22132.94200 -1465.09000 30650.48500 25069.45300
+zoomBox -7879.25200 7344.81000 19674.02900 21196.00800
+zoomBox -625.94500 8594.97100 16295.21500 17101.33900
+zoomBox 4773.51800 9196.09100 13606.47100 13636.46900
+zoomBox 7017.78300 9456.38500 12442.32200 12183.33300
+zoomBox 9418.54200 9950.12400 10896.68000 10693.19300
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal6 -direction horizontal -width 4 -spacing 0.28 -set_to_set_distance 1 -start_from bottom -start_offset 5 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+zoomBox 8935.08400 9750.71800 11766.73700 11174.20700
+zoomBox 8008.93500 9367.16100 13433.49400 12094.11900
+zoomBox 2835.88900 7224.78800 22743.22800 17232.32600
+zoomBox -1631.94900 5374.47100 30783.83000 21670.07600
+zoomBox -3675.20600 4528.27400 34461.00500 23699.57400
+fit
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+setSrouteMode -viaConnectToShape { ring stripe blockring }
+sroute -connect { corePin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -targetViaLayerRange { metal1(1) metal6(6) }
+zoomBox -8834.53600 767.54900 29301.48100 19938.75200
+zoomBox -5955.41700 2174.43100 26460.19900 18469.95400
+zoomBox 5159.78500 7423.92400 15551.49200 12647.89700
+zoomBox 5948.06800 7788.54000 14781.01900 12228.91700
+zoomBox 7190.59000 8270.51500 13572.39700 11478.68700
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+fit
+verifyConnectivity -net {GND VCC} -type special -error 1000 -warning 50
+setDrawView place
+setDrawView fplan
+setDrawView place
+zoomBox -3401.18700 3534.59200 24152.08700 17385.78700
+zoomBox 4285.72300 7341.17900 16511.26000 13487.02900
+zoomBox 5931.26300 8119.53600 14764.21400 12559.91300
+zoomBox 7581.15600 8900.41700 13005.69300 11627.36400
+zoomBox 8594.39700 9379.97500 11925.74200 11054.66200
+zoomBox 9216.65300 9674.48400 11262.51700 10702.95200
+zoomBox 9690.02400 9898.52600 10757.98000 10435.39400
+zoomBox 9355.51600 9725.82400 11094.50500 10600.02400
+zoomBox 9022.56200 9553.92400 11429.46800 10763.89000
+zoomBox 8561.72500 9316.00100 11893.08400 10990.69500
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal6 -direction horizontal -width 4 -spacing 0.28 -number_of_sets 50 -start_from bottom -start_offset 5 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+zoomBox 4763.84200 8942.16800 13596.83700 13382.56700
+zoomBox -819.62900 8392.57500 16101.61700 16898.98600
+zoomBox -11515.80300 7339.72800 20899.98800 23635.33900
+fit
+zoomBox -1646.33200 4721.71100 21773.95000 16495.22600
+zoomBox 3934.21200 7353.78800 16159.74800 13499.63800
+zoomBox 2840.56800 6862.10200 17223.55300 14092.51400
+zoomBox -3835.65700 3884.33100 23717.62600 17735.53000
+zoomBox -1740.58000 4818.79000 21679.71000 16592.30900
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal6 -direction horizontal -width 4 -spacing 0.28 -set_to_set_distance 1 -start_from bottom -start_offset 10060 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+zoomBox 3759.18600 7378.93300 15984.72500 13524.78400
+zoomBox 7282.96900 8937.11600 12707.50600 11664.06300
+zoomBox 8384.31900 9426.74500 11715.66200 11101.43100
+zoomBox 9012.71700 9649.10200 11419.61200 10859.06200
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal3 -direction horizontal -width 4 -spacing 0.28 -set_to_set_distance 1 -start_from bottom -start_offset 100 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {GND VCC} -layer metal3 -direction horizontal -width 15 -spacing 0.32 -set_to_set_distance 1 -start_from bottom -start_offset 100 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+zoomBox 8136.05400 9569.07300 12055.28200 11539.29200
+zoomBox 6702.63400 9429.87700 13084.44200 12638.05000
+zoomBox 5275.87100 9291.32800 14108.82200 13731.70500
+fit
+setPlaceMode -prerouteAsObs {2 3}
+setPlaceMode -fp false
+place_design -noPrePlaceOpt
+zoomBox -6084.30800 2305.75000 26331.30700 18601.27300
+zoomBox 1714.16400 5958.08200 18635.32000 14464.44800
+zoomBox 6451.87000 8239.19900 13959.87800 12013.51900
+zoomBox 8253.16900 9192.52600 12172.39700 11162.74500
+zoomBox 9010.69700 9599.02700 11417.59500 10808.98900
+zoomBox 9345.25600 9778.55600 11084.24000 10652.75400
+zoomBox 9475.91400 9848.67000 10954.05100 10591.73800
+zoomBox 9586.97400 9908.26600 10843.39100 10539.87400
+zoomBox 9681.37500 9958.92300 10749.33000 10495.79000
+zoomBox 9829.82100 10038.58100 10601.41900 10426.46800
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -preCTS

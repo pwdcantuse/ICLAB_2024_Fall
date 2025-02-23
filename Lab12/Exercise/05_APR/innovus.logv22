@@ -1,0 +1,973 @@
+[12/06 22:40:54      0s] 
+[12/06 22:40:54      0s] Cadence Innovus(TM) Implementation System.
+[12/06 22:40:54      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/06 22:40:54      0s] 
+[12/06 22:40:54      0s] Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+[12/06 22:40:54      0s] Options:	
+[12/06 22:40:54      0s] Date:		Fri Dec  6 22:40:54 2024
+[12/06 22:40:54      0s] Host:		ee30 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7773X 64-Core Processor 512KB)
+[12/06 22:40:54      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[12/06 22:40:54      0s] 
+[12/06 22:40:54      0s] License:
+[12/06 22:40:54      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[12/06 22:40:54      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/06 22:41:07     12s] @(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+[12/06 22:41:07     12s] @(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+[12/06 22:41:07     12s] @(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[12/06 22:41:07     12s] @(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+[12/06 22:41:07     12s] @(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+[12/06 22:41:07     12s] @(#)CDS: CPE v20.15-s071
+[12/06 22:41:07     12s] @(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[12/06 22:41:07     12s] @(#)CDS: OA 22.60-p058 Tue Jun 15 18:38:04 2021
+[12/06 22:41:07     12s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[12/06 22:41:07     12s] @(#)CDS: RCDB 11.15.0
+[12/06 22:41:07     12s] @(#)CDS: STYLUS 20.10-p029_1 (06/24/2021 01:33 PDT)
+[12/06 22:41:07     12s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_133918_ee30_iclab018_2mjOY0.
+
+[12/06 22:41:07     12s] Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+[12/06 22:41:09     13s] 
+[12/06 22:41:09     13s] **INFO:  MMMC transition support version v31-84 
+[12/06 22:41:09     13s] 
+[12/06 22:41:09     13s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/06 22:41:09     13s] <CMD> suppressMessage ENCEXT-2799
+[12/06 22:41:09     13s] <CMD> getVersion
+[12/06 22:41:10     13s] [INFO] Loading Pegasus 21.21 fill procedures
+[12/06 22:41:10     13s] <CMD> win
+[12/06 22:45:54     25s] <CMD> encMessage warning 0
+[12/06 22:45:54     25s] Suppress "**WARN ..." messages.
+[12/06 22:45:54     25s] <CMD> encMessage debug 0
+[12/06 22:45:54     25s] <CMD> encMessage info 0
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[12/06 22:45:54     25s] To increase the message display limit, refer to the product command reference manual.
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[12/06 22:45:54     25s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 22:45:54     25s] **WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 22:45:54     25s] **WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 22:45:54     25s] **WARN: (IMPLF-200):	Pin 'I' in macro 'XMD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 22:45:54     25s] **WARN: (IMPLF-200):	Pin 'I' in macro 'XMC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 22:45:54     25s] **WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 22:45:54     25s] **WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 22:45:54     25s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 22:45:54     25s] Loading view definition file from /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/viewDefinition.tcl
+[12/06 22:45:55     26s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/LIB/fsa0m_a_generic_core_ss1p62v125c.lib)
+[12/06 22:45:55     26s] *** End library_loading (cpu=0.01min, real=0.02min, mem=16.5M, fe_cpu=0.44min, fe_real=5.02min, fe_mem=934.2M) ***
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[12/06 22:45:55     26s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[12/06 22:45:55     26s] To increase the message display limit, refer to the product command reference manual.
+[12/06 22:45:55     26s] *** Netlist is unique.
+[12/06 22:45:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:55     26s] Loading preference file /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/gui.pref.tcl ...
+[12/06 22:45:55     26s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[12/06 22:45:55     26s] 
+[12/06 22:45:55     26s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[12/06 22:45:55     26s] 
+[12/06 22:45:55     26s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[12/06 22:45:55     26s] 
+[12/06 22:45:55     26s] TimeStamp Deleting Cell Server Begin ...
+[12/06 22:45:55     26s] 
+[12/06 22:45:55     26s] TimeStamp Deleting Cell Server End ...
+[12/06 22:45:55     26s] 
+[12/06 22:45:55     26s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[12/06 22:45:55     26s] 
+[12/06 22:45:55     26s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[12/06 22:45:56     26s] **WARN: (IMPSYC-2):	Timing information is not defined for cell VCCKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/06 22:45:56     26s] **WARN: (IMPSYC-2):	Timing information is not defined for cell VCC3IOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/06 22:45:56     26s] **WARN: (IMPSYC-2):	Timing information is not defined for cell GNDKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/06 22:45:56     26s] **WARN: (IMPSYC-2):	Timing information is not defined for cell GNDIOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/06 22:45:56     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:56     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:56     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:56     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:56     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:56     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:56     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:56     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 22:45:56     26s] Loading place ...
+[12/06 22:45:58     27s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[12/06 22:45:58     27s] {RT RC_Corner 0 6 6 {5 0} 1}
+[12/06 22:45:58     28s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[12/06 22:45:58     28s] 
+[12/06 22:45:58     28s] TimeStamp Deleting Cell Server Begin ...
+[12/06 22:45:58     28s] 
+[12/06 22:45:58     28s] TimeStamp Deleting Cell Server End ...
+[12/06 22:45:58     28s] 
+[12/06 22:45:58     28s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[12/06 22:45:58     28s] 
+[12/06 22:45:58     28s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[12/06 22:45:58     28s] 
+[12/06 22:45:58     28s] TimeStamp Deleting Cell Server Begin ...
+[12/06 22:45:58     28s] 
+[12/06 22:45:58     28s] TimeStamp Deleting Cell Server End ...
+[12/06 22:45:58     28s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.15-s105_1. They will be removed in the next release. 
+[12/06 22:45:58     28s] timing_enable_default_delay_arc
+[12/06 22:46:17     29s] <CMD> zoomBox 157.51300 346.09800 3624.27200 3449.58700
+[12/06 22:46:17     29s] <CMD> zoomBox 1000.06400 1151.31100 3504.79700 3393.58200
+[12/06 22:46:17     29s] <CMD> zoomBox 1846.54400 1942.77700 3384.76400 3319.81200
+[12/06 22:46:18     29s] <CMD> zoomBox 2489.53900 2542.96900 3292.50000 3261.79000
+[12/06 22:46:18     29s] <CMD> zoomBox 2744.52500 2779.58100 3237.64400 3221.02800
+[12/06 22:46:19     29s] <CMD> zoomBox 2898.37500 2897.00000 3201.21200 3168.10400
+[12/06 22:46:20     29s] <CMD> zoomBox 2939.04000 2924.20800 3196.45200 3154.64700
+[12/06 22:46:20     29s] <CMD> zoomBox 2898.37400 2896.99900 3201.21200 3168.10400
+[12/06 22:46:25     29s] <CMD> zoomBox 2926.28800 2925.32400 3183.70000 3155.76300
+[12/06 22:46:26     29s] <CMD> zoomBox 2892.32100 2899.64300 3195.15900 3170.74800
+[12/06 22:46:26     29s] <CMD> zoomBox 2926.28700 2925.32300 3183.70000 3155.76300
+[12/06 22:46:26     29s] <CMD> zoomBox 2955.15900 2947.15200 3173.96000 3143.02600
+[12/06 22:46:27     29s] <CMD> zoomBox 2892.31900 2899.64200 3195.15900 3170.74800
+[12/06 22:46:28     29s] <CMD> zoomBox 2852.35800 2869.42900 3208.64100 3188.37800
+[12/06 22:46:34     30s] <CMD> zoomBox 2940.09800 2917.27500 3197.51300 3147.71600
+[12/06 22:46:47     30s] <CMD> uiSetTool ruler
+[12/06 22:46:52     31s] <CMD> zoomBox 3031.46000 2962.50600 3371.55900 3133.47600
+[12/06 22:46:55     31s] <CMD> zoomBox 3005.72700 2949.91100 3405.84400 3151.05200
+[12/06 22:46:55     31s] <CMD> zoomBox 2975.45400 2935.09200 3446.18000 3171.72900
+[12/06 22:46:55     31s] <CMD> zoomBox 2939.83900 2917.65900 3493.63400 3196.05500
+[12/06 22:47:48     34s] <CMD> zoomOut
+[12/06 22:47:49     34s] <CMD> fit
+[12/06 22:48:02     35s] <CMD> getMultiCpuUsage -localCpu
+[12/06 22:48:02     35s] <CMD> get_verify_drc_mode -disable_rules -quiet
+[12/06 22:48:02     35s] <CMD> get_verify_drc_mode -quiet -area
+[12/06 22:48:02     35s] <CMD> get_verify_drc_mode -quiet -layer_range
+[12/06 22:48:02     35s] <CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+[12/06 22:48:02     35s] <CMD> get_verify_drc_mode -check_only -quiet
+[12/06 22:48:02     35s] <CMD> get_verify_drc_mode -check_same_via_cell -quiet
+[12/06 22:48:02     35s] <CMD> get_verify_drc_mode -exclude_pg_net -quiet
+[12/06 22:48:02     35s] <CMD> get_verify_drc_mode -ignore_trial_route -quiet
+[12/06 22:48:02     35s] <CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+[12/06 22:48:02     35s] <CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+[12/06 22:48:02     35s] <CMD> get_verify_drc_mode -limit -quiet
+[12/06 22:48:03     35s] <CMD> set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+[12/06 22:48:03     35s] <CMD> verify_drc
+[12/06 22:48:03     35s] #-check_ndr_spacing auto                 # enums={true false auto}, default=auto,  user setting
+[12/06 22:48:03     35s] #-report CHIP.drc.rpt                    # string, default="", user setting
+[12/06 22:48:03     35s]  *** Starting Verify DRC (MEM: 2297.1) ***
+[12/06 22:48:03     35s] 
+[12/06 22:48:03     35s] #create default rule from bind_ndr_rule rule=0x7fe2d3cceed0 0x7fe2bb322018
+[12/06 22:48:03     35s] ### import design signature (2): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[12/06 22:48:03     35s]   VERIFY DRC ...... Starting Verification
+[12/06 22:48:03     35s]   VERIFY DRC ...... Initializing
+[12/06 22:48:03     35s]   VERIFY DRC ...... Deleting Existing Violations
+[12/06 22:48:03     35s]   VERIFY DRC ...... Creating Sub-Areas
+[12/06 22:48:03     35s]   VERIFY DRC ...... Using new threading
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 257.280 257.280} 1 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {257.280 0.000 514.560 257.280} 2 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 2 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {514.560 0.000 771.840 257.280} 3 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 3 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {771.840 0.000 1029.120 257.280} 4 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 4 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {1029.120 0.000 1286.400 257.280} 5 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 5 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {1286.400 0.000 1543.680 257.280} 6 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 6 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {1543.680 0.000 1800.960 257.280} 7 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 7 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {1800.960 0.000 2058.240 257.280} 8 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 8 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {2058.240 0.000 2315.520 257.280} 9 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 9 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {2315.520 0.000 2572.800 257.280} 10 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 10 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {2572.800 0.000 2830.080 257.280} 11 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 11 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {2830.080 0.000 3087.360 257.280} 12 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 12 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {3087.360 0.000 3321.960 257.280} 13 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 13 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {0.000 257.280 257.280 514.560} 14 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 14 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {257.280 257.280 514.560 514.560} 15 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 15 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {514.560 257.280 771.840 514.560} 16 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 16 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {771.840 257.280 1029.120 514.560} 17 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 17 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {1029.120 257.280 1286.400 514.560} 18 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 18 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {1286.400 257.280 1543.680 514.560} 19 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 19 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {1543.680 257.280 1800.960 514.560} 20 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 20 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {1800.960 257.280 2058.240 514.560} 21 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 21 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {2058.240 257.280 2315.520 514.560} 22 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 22 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {2315.520 257.280 2572.800 514.560} 23 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 23 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {2572.800 257.280 2830.080 514.560} 24 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 24 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {2830.080 257.280 3087.360 514.560} 25 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 25 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {3087.360 257.280 3321.960 514.560} 26 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 26 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {0.000 514.560 257.280 771.840} 27 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 27 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {257.280 514.560 514.560 771.840} 28 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 28 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {514.560 514.560 771.840 771.840} 29 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 29 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {771.840 514.560 1029.120 771.840} 30 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 30 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {1029.120 514.560 1286.400 771.840} 31 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 31 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {1286.400 514.560 1543.680 771.840} 32 of 169
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area : 32 complete 0 Viols.
+[12/06 22:48:03     35s]   VERIFY DRC ...... Sub-Area: {1543.680 514.560 1800.960 771.840} 33 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 33 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1800.960 514.560 2058.240 771.840} 34 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 34 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2058.240 514.560 2315.520 771.840} 35 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 35 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2315.520 514.560 2572.800 771.840} 36 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 36 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2572.800 514.560 2830.080 771.840} 37 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 37 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2830.080 514.560 3087.360 771.840} 38 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 38 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {3087.360 514.560 3321.960 771.840} 39 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 39 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {0.000 771.840 257.280 1029.120} 40 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 40 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {257.280 771.840 514.560 1029.120} 41 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 41 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {514.560 771.840 771.840 1029.120} 42 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 42 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {771.840 771.840 1029.120 1029.120} 43 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 43 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1029.120 771.840 1286.400 1029.120} 44 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 44 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1286.400 771.840 1543.680 1029.120} 45 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 45 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1543.680 771.840 1800.960 1029.120} 46 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 46 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1800.960 771.840 2058.240 1029.120} 47 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 47 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2058.240 771.840 2315.520 1029.120} 48 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 48 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2315.520 771.840 2572.800 1029.120} 49 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 49 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2572.800 771.840 2830.080 1029.120} 50 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 50 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2830.080 771.840 3087.360 1029.120} 51 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 51 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {3087.360 771.840 3321.960 1029.120} 52 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 52 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {0.000 1029.120 257.280 1286.400} 53 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 53 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {257.280 1029.120 514.560 1286.400} 54 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 54 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {514.560 1029.120 771.840 1286.400} 55 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 55 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {771.840 1029.120 1029.120 1286.400} 56 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 56 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1029.120 1029.120 1286.400 1286.400} 57 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 57 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1286.400 1029.120 1543.680 1286.400} 58 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 58 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1543.680 1029.120 1800.960 1286.400} 59 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 59 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1800.960 1029.120 2058.240 1286.400} 60 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 60 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2058.240 1029.120 2315.520 1286.400} 61 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 61 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2315.520 1029.120 2572.800 1286.400} 62 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 62 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2572.800 1029.120 2830.080 1286.400} 63 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 63 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2830.080 1029.120 3087.360 1286.400} 64 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 64 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {3087.360 1029.120 3321.960 1286.400} 65 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 65 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {0.000 1286.400 257.280 1543.680} 66 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 66 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {257.280 1286.400 514.560 1543.680} 67 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 67 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {514.560 1286.400 771.840 1543.680} 68 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 68 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {771.840 1286.400 1029.120 1543.680} 69 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 69 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1029.120 1286.400 1286.400 1543.680} 70 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 70 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1286.400 1286.400 1543.680 1543.680} 71 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 71 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1543.680 1286.400 1800.960 1543.680} 72 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 72 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1800.960 1286.400 2058.240 1543.680} 73 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 73 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2058.240 1286.400 2315.520 1543.680} 74 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 74 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2315.520 1286.400 2572.800 1543.680} 75 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 75 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2572.800 1286.400 2830.080 1543.680} 76 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 76 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2830.080 1286.400 3087.360 1543.680} 77 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 77 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {3087.360 1286.400 3321.960 1543.680} 78 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 78 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {0.000 1543.680 257.280 1800.960} 79 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 79 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {257.280 1543.680 514.560 1800.960} 80 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 80 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {514.560 1543.680 771.840 1800.960} 81 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 81 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {771.840 1543.680 1029.120 1800.960} 82 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 82 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1029.120 1543.680 1286.400 1800.960} 83 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 83 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1286.400 1543.680 1543.680 1800.960} 84 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 84 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1543.680 1543.680 1800.960 1800.960} 85 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 85 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1800.960 1543.680 2058.240 1800.960} 86 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 86 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2058.240 1543.680 2315.520 1800.960} 87 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 87 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2315.520 1543.680 2572.800 1800.960} 88 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 88 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2572.800 1543.680 2830.080 1800.960} 89 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 89 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {2830.080 1543.680 3087.360 1800.960} 90 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 90 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {3087.360 1543.680 3321.960 1800.960} 91 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 91 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {0.000 1800.960 257.280 2058.240} 92 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 92 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {257.280 1800.960 514.560 2058.240} 93 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 93 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {514.560 1800.960 771.840 2058.240} 94 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 94 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {771.840 1800.960 1029.120 2058.240} 95 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 95 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1029.120 1800.960 1286.400 2058.240} 96 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 96 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1286.400 1800.960 1543.680 2058.240} 97 of 169
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area : 97 complete 0 Viols.
+[12/06 22:48:04     35s]   VERIFY DRC ...... Sub-Area: {1543.680 1800.960 1800.960 2058.240} 98 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 98 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1800.960 1800.960 2058.240 2058.240} 99 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 99 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2058.240 1800.960 2315.520 2058.240} 100 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 100 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2315.520 1800.960 2572.800 2058.240} 101 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 101 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2572.800 1800.960 2830.080 2058.240} 102 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 102 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2830.080 1800.960 3087.360 2058.240} 103 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 103 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {3087.360 1800.960 3321.960 2058.240} 104 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 104 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {0.000 2058.240 257.280 2315.520} 105 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 105 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {257.280 2058.240 514.560 2315.520} 106 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 106 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {514.560 2058.240 771.840 2315.520} 107 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 107 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {771.840 2058.240 1029.120 2315.520} 108 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 108 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1029.120 2058.240 1286.400 2315.520} 109 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 109 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1286.400 2058.240 1543.680 2315.520} 110 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 110 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1543.680 2058.240 1800.960 2315.520} 111 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 111 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1800.960 2058.240 2058.240 2315.520} 112 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 112 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2058.240 2058.240 2315.520 2315.520} 113 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 113 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2315.520 2058.240 2572.800 2315.520} 114 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 114 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2572.800 2058.240 2830.080 2315.520} 115 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 115 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2830.080 2058.240 3087.360 2315.520} 116 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 116 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {3087.360 2058.240 3321.960 2315.520} 117 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 117 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {0.000 2315.520 257.280 2572.800} 118 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 118 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {257.280 2315.520 514.560 2572.800} 119 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 119 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {514.560 2315.520 771.840 2572.800} 120 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 120 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {771.840 2315.520 1029.120 2572.800} 121 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 121 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1029.120 2315.520 1286.400 2572.800} 122 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 122 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1286.400 2315.520 1543.680 2572.800} 123 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 123 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1543.680 2315.520 1800.960 2572.800} 124 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 124 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1800.960 2315.520 2058.240 2572.800} 125 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 125 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2058.240 2315.520 2315.520 2572.800} 126 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 126 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2315.520 2315.520 2572.800 2572.800} 127 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 127 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2572.800 2315.520 2830.080 2572.800} 128 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 128 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2830.080 2315.520 3087.360 2572.800} 129 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 129 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {3087.360 2315.520 3321.960 2572.800} 130 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 130 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {0.000 2572.800 257.280 2830.080} 131 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 131 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {257.280 2572.800 514.560 2830.080} 132 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 132 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {514.560 2572.800 771.840 2830.080} 133 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 133 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {771.840 2572.800 1029.120 2830.080} 134 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 134 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1029.120 2572.800 1286.400 2830.080} 135 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 135 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1286.400 2572.800 1543.680 2830.080} 136 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 136 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1543.680 2572.800 1800.960 2830.080} 137 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 137 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1800.960 2572.800 2058.240 2830.080} 138 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 138 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2058.240 2572.800 2315.520 2830.080} 139 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 139 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2315.520 2572.800 2572.800 2830.080} 140 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 140 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2572.800 2572.800 2830.080 2830.080} 141 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 141 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2830.080 2572.800 3087.360 2830.080} 142 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 142 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {3087.360 2572.800 3321.960 2830.080} 143 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 143 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {0.000 2830.080 257.280 3087.360} 144 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 144 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {257.280 2830.080 514.560 3087.360} 145 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 145 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {514.560 2830.080 771.840 3087.360} 146 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 146 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {771.840 2830.080 1029.120 3087.360} 147 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 147 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1029.120 2830.080 1286.400 3087.360} 148 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 148 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1286.400 2830.080 1543.680 3087.360} 149 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 149 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1543.680 2830.080 1800.960 3087.360} 150 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 150 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1800.960 2830.080 2058.240 3087.360} 151 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 151 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2058.240 2830.080 2315.520 3087.360} 152 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 152 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2315.520 2830.080 2572.800 3087.360} 153 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 153 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2572.800 2830.080 2830.080 3087.360} 154 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 154 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2830.080 2830.080 3087.360 3087.360} 155 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 155 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {3087.360 2830.080 3321.960 3087.360} 156 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 156 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {0.000 3087.360 257.280 3319.240} 157 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 157 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {257.280 3087.360 514.560 3319.240} 158 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 158 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {514.560 3087.360 771.840 3319.240} 159 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 159 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {771.840 3087.360 1029.120 3319.240} 160 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 160 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1029.120 3087.360 1286.400 3319.240} 161 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 161 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1286.400 3087.360 1543.680 3319.240} 162 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 162 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1543.680 3087.360 1800.960 3319.240} 163 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 163 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {1800.960 3087.360 2058.240 3319.240} 164 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 164 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2058.240 3087.360 2315.520 3319.240} 165 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 165 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2315.520 3087.360 2572.800 3319.240} 166 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 166 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2572.800 3087.360 2830.080 3319.240} 167 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 167 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {2830.080 3087.360 3087.360 3319.240} 168 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 168 complete 0 Viols.
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area: {3087.360 3087.360 3321.960 3319.240} 169 of 169
+[12/06 22:48:04     36s]   VERIFY DRC ...... Sub-Area : 169 complete 0 Viols.
+[12/06 22:48:04     36s] 
+[12/06 22:48:04     36s]   Verification Complete : 0 Viols.
+[12/06 22:48:04     36s] 
+[12/06 22:48:04     36s]  *** End Verify DRC (CPU: 0:00:01.0  ELAPSED TIME: 1.00  MEM: 17.0M) ***
+[12/06 22:48:04     36s] 
+[12/06 22:48:04     36s] <CMD> set_verify_drc_mode -area {0 0 0 0}
+[12/06 22:49:20     40s] <CMD> set_power_analysis_mode -reset
+[12/06 22:49:20     40s] <CMD> set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+[12/06 22:50:46     44s] <CMD> set_power_output_dir -reset
+[12/06 22:50:46     44s] <CMD> set_power_output_dir power_log
+[12/06 22:50:46     44s] <CMD> set_default_switching_activity -reset
+[12/06 22:50:46     44s] <CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+[12/06 22:50:46     44s] <CMD> read_activity_file -reset
+[12/06 22:50:46     44s] <CMD> read_activity_file -format FSDB -fsdb_scope TESTBED/u_CHIP -start 0 -end 100 -fsdb_block {} ../06_POST/CHIP_POST.fsdb
+[12/06 22:50:46     44s] #################################################################################
+[12/06 22:50:46     44s] # Design Stage: PostRoute
+[12/06 22:50:46     44s] # Design Name: CHIP
+[12/06 22:50:46     44s] # Design Mode: 90nm
+[12/06 22:50:46     44s] # Analysis Mode: MMMC OCV 
+[12/06 22:50:46     44s] # Parasitics Mode: No SPEF/RCDB 
+[12/06 22:50:46     44s] # Signoff Settings: SI On 
+[12/06 22:50:46     44s] #################################################################################
+[12/06 22:50:46     44s] *** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 2345.3M) ***
+[12/06 22:50:46     44s] #################################################################################
+[12/06 22:50:46     44s] # Design Stage: PostRoute
+[12/06 22:50:46     44s] # Design Name: CHIP
+[12/06 22:50:46     44s] # Design Mode: 90nm
+[12/06 22:50:46     44s] # Analysis Mode: MMMC OCV 
+[12/06 22:50:46     44s] # Parasitics Mode: No SPEF/RCDB 
+[12/06 22:50:46     44s] # Signoff Settings: SI On 
+[12/06 22:50:46     44s] #################################################################################
+[12/06 22:50:46     44s] *** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 2345.3M) ***
+[12/06 22:50:46     44s] clk(25MHz) <CMD> set_power -reset
+[12/06 22:50:57     46s] <CMD> set_powerup_analysis -reset
+[12/06 22:50:57     46s] <CMD> set_dynamic_power_simulation -reset
+[12/06 22:50:57     46s] <CMD> report_power -rail_analysis_format VS -outfile power_log/CHIP.rpt
+[12/06 22:50:57     46s] 
+[12/06 22:50:57     46s] Power Net Detected:
+[12/06 22:50:57     46s]         Voltage	    Name
+[12/06 22:50:57     46s]              0V	    GND
+[12/06 22:50:57     46s]           1.62V	    VCC
+[12/06 22:50:57     46s] AAE_INFO: resetNetProps viewIdx 0 
+[12/06 22:50:57     46s] Starting SI iteration 1 using Infinite Timing Windows
+[12/06 22:50:58     46s] #################################################################################
+[12/06 22:50:58     46s] # Design Stage: PostRoute
+[12/06 22:50:58     46s] # Design Name: CHIP
+[12/06 22:50:58     46s] # Design Mode: 90nm
+[12/06 22:50:58     46s] # Analysis Mode: MMMC OCV 
+[12/06 22:50:58     46s] # Parasitics Mode: No SPEF/RCDB 
+[12/06 22:50:58     46s] # Signoff Settings: SI On 
+[12/06 22:50:58     46s] #################################################################################
+[12/06 22:50:58     46s] Extraction called for design 'CHIP' of instances=45750 and nets=1338 using extraction engine 'postRoute' at effort level 'high' .
+[12/06 22:50:58     46s] **WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+[12/06 22:50:58     46s] Type 'man IMPEXT-3530' for more detail.
+[12/06 22:50:58     46s] Integrated QRC (IQuantus) Extraction in Multi-Corner mode called for design 'CHIP'. Number of corners is 1.
+[12/06 22:50:58     46s] No IQuantus parasitic data in Innovus. Going for full-chip extraction.
+[12/06 22:50:58     46s]  Min pitch recieved = 2240 
+[12/06 22:50:58     47s] IQuantus Extraction invoked in single CPU mode. Commands setDistributeHost/setMultiCpuUsage can be used to activate multiCPU extraction.
+[12/06 22:50:58     47s] 
+[12/06 22:50:58     47s] IQuantus Extraction engine initialization using 1 tech files:
+[12/06 22:50:58     47s] 	/RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/mmmc/RC_Corner/icecaps.tch at temperature 25C . 
+[12/06 22:50:58     47s] 
+[12/06 22:50:58     47s] +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[12/06 22:50:59     47s] Reading layer map file '/RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/misc/lefdef.layermap.cmd'.
+[12/06 22:50:59     47s] lef metal layer metal1 (1) mapped to tech layer ME1_C (6) 
+[12/06 22:50:59     47s] lef metal layer metal2 (2) mapped to tech layer ME2_C (8) 
+[12/06 22:50:59     47s] lef metal layer metal3 (3) mapped to tech layer ME3_C (10) 
+[12/06 22:50:59     47s] lef metal layer metal4 (4) mapped to tech layer ME4_C (12) 
+[12/06 22:50:59     47s] lef metal layer metal5 (5) mapped to tech layer ME5_C (14) 
+[12/06 22:50:59     47s] lef metal layer metal6 (6) mapped to tech layer ME6_C (18) 
+[12/06 22:50:59     47s] lef via layer via (2) mapped to tech layer VIA1 (7) 
+[12/06 22:50:59     47s] lef via layer via2 (3) mapped to tech layer VIA2 (9) 
+[12/06 22:50:59     47s] lef via layer via3 (4) mapped to tech layer VIA3 (11) 
+[12/06 22:50:59     47s] lef via layer via4 (5) mapped to tech layer VIA4 (13) 
+[12/06 22:50:59     47s] lef via layer via5 (6) mapped to tech layer VIA5 (16) 
+[12/06 22:50:59     47s] **WARN: (IMPEXT-1241):	No poly layer found in the layermap file, '/RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/misc/lefdef.layermap.cmd'.
+[12/06 22:50:59     47s] Type 'man IMPEXT-1241' for more detail.
+[12/06 22:50:59     47s] **WARN: (IMPEXT-1242):	No cut layer found between poly layer and first metal layer in layermap file '/RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/misc/lefdef.layermap.cmd'.
+[12/06 22:50:59     47s] +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[12/06 22:50:59     47s] IQuantus Extraction engine initialized successfully.
+[12/06 22:50:59     47s] 
+[12/06 22:50:59     47s] Dumping IQuantus extraction options in file 'extLogDir/IQuantus_06-Dec-2024_22:50:58_133918_KTp5L7/extr.CHIP.extraction_options.log'.
+[12/06 22:50:59     47s] Initialization for IQuantus Fullchip Extraction DONE (CPU Time: 0:00:00.9  Real Time: 0:00:01.0  MEM: 2562.906M)
+[12/06 22:50:59     47s] QX tile count(x,y) : (34,34)
+[12/06 22:50:59     47s] FE-QX grid count(x,y) :  (110,110)
+[12/06 22:50:59     47s] Halo size : 11.094000 micron 
+[12/06 22:50:59     47s] 
+[12/06 22:50:59     47s] Geometry processing of Gray and Metal fill STARTED.................... DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 2562.934M)
+[12/06 22:50:59     47s] Geometry processing of nets STARTED.................... DONE (NETS: 1248  Geometries: 39071  CPU Time: 0:00:00.2  Real Time: 0:00:01.0  MEM: 2559.828M)
+[12/06 22:51:00     47s] 
+[12/06 22:51:00     47s] Extraction of Geometries STARTED.
+[12/06 22:51:00     47s] +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[12/06 22:51:03     51s] +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[12/06 22:51:03     51s] Extraction of Geometries DONE (NETS: 1248  CPU Time: 0:00:03.5  Real Time: 0:00:03.0  MEM: 2582.410M)
+[12/06 22:51:03     51s] 
+[12/06 22:51:03     51s] Parasitic Network Creation STARTED
+[12/06 22:51:03     51s] Creating parasitic data file '/tmp/innovus_temp_133918_ee30_iclab018_2mjOY0/CHIP_133918_iIpWvT.rcdb.d' for storing RC.
+[12/06 22:51:03     51s] ...................
+[12/06 22:51:04     51s] Number of Extracted Resistors     : 31488
+[12/06 22:51:04     51s] Number of Extracted Ground Caps   : 32783
+[12/06 22:51:04     51s] Number of Extracted Coupling Caps : 9760
+[12/06 22:51:04     51s] Parasitic Network Creation DONE (Nets: 1248  CPU Time: 0:00:00.1  Real Time: 0:00:01.0  MEM: 2570.398M)
+[12/06 22:51:04     51s] 
+[12/06 22:51:04     51s] IQuantus Extraction engine is being closed... 
+[12/06 22:51:04     51s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=2570.395M)
+[12/06 22:51:04     51s] Opening parasitic data file '/tmp/innovus_temp_133918_ee30_iclab018_2mjOY0/CHIP_133918_iIpWvT.rcdb.d' for reading (mem: 2570.395M)
+[12/06 22:51:04     51s] processing rcdb (/tmp/innovus_temp_133918_ee30_iclab018_2mjOY0/CHIP_133918_iIpWvT.rcdb.d) for hinst (top) of cell (CHIP);
+[12/06 22:51:04     52s] Closing parasitic data file '/tmp/innovus_temp_133918_ee30_iclab018_2mjOY0/CHIP_133918_iIpWvT.rcdb.d': 0 access done (mem: 2570.395M)
+[12/06 22:51:04     52s] Lumped Parasitic Loading Completed (total cpu=0:00:00.4, real=0:00:00.0, current mem=2570.395M)
+[12/06 22:51:04     52s] IQuantus Fullchip Extraction DONE (CPU Time: 0:00:05.7  Real Time: 0:00:06.0  MEM: 2570.395M)
+[12/06 22:51:04     52s] AAE_INFO: 1 threads acquired from CTE.
+[12/06 22:51:04     52s] Setting infinite Tws ...
+[12/06 22:51:04     52s] First Iteration Infinite Tw... 
+[12/06 22:51:04     52s] Calculate early delays in OCV mode...
+[12/06 22:51:04     52s] Calculate late delays in OCV mode...
+[12/06 22:51:04     52s] Topological Sorting (REAL = 0:00:00.0, MEM = 2570.4M, InitMEM = 2570.4M)
+[12/06 22:51:04     52s] Start delay calculation (fullDC) (1 T). (MEM=2570.39)
+[12/06 22:51:04     52s] AAE_INFO: Number of noise libraries( CDBs ) loaded = 1
+[12/06 22:51:04     52s] AAE_INFO: Cdb files are: 
+[12/06 22:51:04     52s]  	/RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/mmmc/u18_ss.cdb
+[12/06 22:51:04     52s]  
+[12/06 22:51:04     52s] Start AAE Lib Loading. (MEM=2582)
+[12/06 22:51:05     52s] End AAE Lib Loading. (MEM=2620.16 CPU=0:00:00.3 Real=0:00:01.0)
+[12/06 22:51:05     52s] End AAE Lib Interpolated Model. (MEM=2620.16 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[12/06 22:51:05     52s] Opening parasitic data file '/tmp/innovus_temp_133918_ee30_iclab018_2mjOY0/CHIP_133918_iIpWvT.rcdb.d' for reading (mem: 2610.621M)
+[12/06 22:51:05     52s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 2610.6M)
+[12/06 22:51:05     52s] **WARN: (IMPESI-3086):	The cell 'XMD' does not have characterized noise model(s) for 'fsa0m_a_t33_generic_io_ss1p62v125c' lib(s). Missing noise information could compromise the accuracy of analysis.
+[12/06 22:51:05     52s] Type 'man IMPESI-3086' for more detail.
+[12/06 22:51:05     52s] **WARN: (IMPESI-3086):	The cell 'YA2GSD' does not have characterized noise model(s) for 'fsa0m_a_t33_generic_io_ss1p62v125c' lib(s). Missing noise information could compromise the accuracy of analysis.
+[12/06 22:51:05     52s] Type 'man IMPESI-3086' for more detail.
+[12/06 22:51:05     53s] Total number of fetched objects 1359
+[12/06 22:51:05     53s] AAE_INFO-618: Total number of nets in the design is 1338,  100.0 percent of the nets selected for SI analysis
+[12/06 22:51:05     53s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[12/06 22:51:05     53s] End delay calculation. (MEM=2596.14 CPU=0:00:00.5 REAL=0:00:00.0)
+[12/06 22:51:05     53s] End delay calculation (fullDC). (MEM=2559.53 CPU=0:00:00.9 REAL=0:00:01.0)
+[12/06 22:51:05     53s] *** CDM Built up (cpu=0:00:06.7  real=0:00:07.0  mem= 2559.5M) ***
+[12/06 22:51:05     53s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2559.5M)
+[12/06 22:51:05     53s] Add other clocks and setupCteToAAEClockMapping during iter 1
+[12/06 22:51:05     53s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2559.5M)
+[12/06 22:51:05     53s] Starting SI iteration 2
+[12/06 22:51:05     53s] Calculate early delays in OCV mode...
+[12/06 22:51:05     53s] Calculate late delays in OCV mode...
+[12/06 22:51:05     53s] Start delay calculation (fullDC) (1 T). (MEM=2511.64)
+[12/06 22:51:05     53s] End AAE Lib Interpolated Model. (MEM=2511.64 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[12/06 22:51:05     53s] Glitch Analysis: View av_func_mode_max -- Total Number of Nets Skipped = 0. 
+[12/06 22:51:05     53s] Glitch Analysis: View av_func_mode_max -- Total Number of Nets Analyzed = 1359. 
+[12/06 22:51:05     53s] Total number of fetched objects 1359
+[12/06 22:51:05     53s] AAE_INFO-618: Total number of nets in the design is 1338,  0.2 percent of the nets selected for SI analysis
+[12/06 22:51:05     53s] End delay calculation. (MEM=2549.8 CPU=0:00:00.0 REAL=0:00:00.0)
+[12/06 22:51:05     53s] End delay calculation (fullDC). (MEM=2549.8 CPU=0:00:00.0 REAL=0:00:00.0)
+[12/06 22:51:05     53s] *** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 2549.8M) ***
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Begin Power Analysis
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s]              0V	    GND
+[12/06 22:51:06     53s]           1.62V	    VCC
+[12/06 22:51:06     53s] Begin Processing Timing Library for Power Calculation
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Begin Processing Timing Library for Power Calculation
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Begin Processing Power Net/Grid for Power Calculation
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1599.13MB/3714.02MB/1651.70MB)
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Begin Processing Timing Window Data for Power Calculation
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1599.16MB/3714.02MB/1651.70MB)
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Begin Processing User Attributes
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1599.18MB/3714.02MB/1651.70MB)
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Begin Processing Signal Activity
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1599.41MB/3714.02MB/1651.70MB)
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Begin Power Computation
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s]       ----------------------------------------------------------
+[12/06 22:51:06     53s]       # of cell(s) missing both power/leakage table: 0
+[12/06 22:51:06     53s]       # of cell(s) missing power table: 0
+[12/06 22:51:06     53s]       # of cell(s) missing leakage table: 0
+[12/06 22:51:06     53s]       # of MSMV cell(s) missing power_level: 0
+[12/06 22:51:06     53s]       ----------------------------------------------------------
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1599.98MB/3714.02MB/1651.70MB)
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Begin Processing User Attributes
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1599.98MB/3714.02MB/1651.70MB)
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1600.06MB/3714.02MB/1651.70MB)
+[12/06 22:51:06     53s] 
+[12/06 22:51:06     53s] *
+
+
+
+[12/06 22:51:06     53s] Total Power
+[12/06 22:51:06     53s] -----------------------------------------------------------------------------------------
+[12/06 22:51:06     53s] Total Internal Power:        7.53889059 	   41.2342%
+[12/06 22:51:06     53s] Total Switching Power:      10.73405869 	   58.7103%
+[12/06 22:51:06     53s] Total Leakage Power:         0.01014704 	    0.0555%
+[12/06 22:51:06     53s] Total Power:                18.28309632
+[12/06 22:51:06     53s] -----------------------------------------------------------------------------------------
+[12/06 22:52:11     57s] <CMD> set_power_output_dir -reset
+[12/06 22:52:11     57s] <CMD> set_power_output_dir power_log
+[12/06 22:52:11     57s] <CMD> set_default_switching_activity -reset
+[12/06 22:52:11     57s] <CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+[12/06 22:52:11     57s] <CMD> read_activity_file -reset
+[12/06 22:52:11     57s] <CMD> read_activity_file -format FSDB -fsdb_scope TESTBED/u_CHIP -start 0 -end 100 -fsdb_block {} ../06_POST/CHIP_POST.fsdb
+[12/06 22:52:11     57s]              0V	    GND
+[12/06 22:52:11     57s]           1.62V	    VCC
+[12/06 22:52:22     58s] <CMD> set_power -reset
+[12/06 22:52:22     58s] <CMD> set_powerup_analysis -reset
+[12/06 22:52:22     58s] <CMD> set_dynamic_power_simulation -reset
+[12/06 22:52:22     58s] <CMD> report_power -rail_analysis_format VS -outfile power_log/CHIP.rpt
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Begin Power Analysis
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s]              0V	    GND
+[12/06 22:52:22     59s]           1.62V	    VCC
+[12/06 22:52:22     59s] Begin Processing Timing Library for Power Calculation
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Begin Processing Timing Library for Power Calculation
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Begin Processing Power Net/Grid for Power Calculation
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1774.66MB/3916.85MB/2129.20MB)
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Begin Processing Timing Window Data for Power Calculation
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1774.66MB/3916.85MB/2129.20MB)
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Begin Processing User Attributes
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1774.66MB/3916.85MB/2129.20MB)
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Begin Processing Signal Activity
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1774.66MB/3916.85MB/2129.20MB)
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Begin Power Computation
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s]       ----------------------------------------------------------
+[12/06 22:52:22     59s]       # of cell(s) missing both power/leakage table: 0
+[12/06 22:52:22     59s]       # of cell(s) missing power table: 0
+[12/06 22:52:22     59s]       # of cell(s) missing leakage table: 0
+[12/06 22:52:22     59s]       # of MSMV cell(s) missing power_level: 0
+[12/06 22:52:22     59s]       ----------------------------------------------------------
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1774.66MB/3916.85MB/2129.20MB)
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Begin Processing User Attributes
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1774.66MB/3916.85MB/2129.20MB)
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1774.66MB/3916.85MB/2129.20MB)
+[12/06 22:52:22     59s] 
+[12/06 22:52:22     59s] *
+
+
+
+[12/06 22:52:22     59s] Total Power
+[12/06 22:52:22     59s] -----------------------------------------------------------------------------------------
+[12/06 22:52:22     59s] Total Internal Power:        7.53889059 	   41.2342%
+[12/06 22:52:22     59s] Total Switching Power:      10.73405869 	   58.7103%
+[12/06 22:52:22     59s] Total Leakage Power:         0.01014704 	    0.0555%
+[12/06 22:52:22     59s] Total Power:                18.28309632
+[12/06 22:52:22     59s] -----------------------------------------------------------------------------------------
+[12/06 22:52:55     61s] <CMD> set_power_analysis_mode -reset
+[12/06 22:52:55     61s] <CMD> set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+[12/06 22:53:20     62s] <CMD> set_power_output_dir -reset
+[12/06 22:53:20     62s] <CMD> set_power_output_dir power_log
+[12/06 22:53:20     62s] <CMD> set_default_switching_activity -reset
+[12/06 22:53:20     62s] <CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+[12/06 22:53:20     62s] <CMD> read_activity_file -reset
+[12/06 22:53:20     62s] <CMD> read_activity_file -format FSDB -fsdb_scope TESTBED/u_CHIP -start 0 -end 1000 -fsdb_block {} ../06_POST/CHIP_POST.fsdb
+[12/06 22:53:31     64s] <CMD> set_power -reset
+[12/06 22:53:31     64s] <CMD> set_powerup_analysis -reset
+[12/06 22:53:31     64s] <CMD> set_dynamic_power_simulation -reset
+[12/06 22:53:31     64s] <CMD> report_power -rail_analysis_format VS -outfile power_log/CHIP.rpt
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Begin Power Analysis
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s]              0V	    GND
+[12/06 22:53:31     64s]           1.62V	    VCC
+[12/06 22:53:31     64s] Begin Processing Timing Library for Power Calculation
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Begin Processing Timing Library for Power Calculation
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Begin Processing Power Net/Grid for Power Calculation
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1777.78MB/3968.32MB/2292.90MB)
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Begin Processing Timing Window Data for Power Calculation
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1777.78MB/3968.32MB/2292.90MB)
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Begin Processing User Attributes
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1777.78MB/3968.32MB/2292.90MB)
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Begin Processing Signal Activity
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1777.78MB/3968.32MB/2292.90MB)
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Begin Power Computation
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s]       ----------------------------------------------------------
+[12/06 22:53:31     64s]       # of cell(s) missing both power/leakage table: 0
+[12/06 22:53:31     64s]       # of cell(s) missing power table: 0
+[12/06 22:53:31     64s]       # of cell(s) missing leakage table: 0
+[12/06 22:53:31     64s]       # of MSMV cell(s) missing power_level: 0
+[12/06 22:53:31     64s]       ----------------------------------------------------------
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1777.78MB/3968.32MB/2292.90MB)
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Begin Processing User Attributes
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1777.78MB/3968.32MB/2292.90MB)
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1777.78MB/3968.32MB/2292.90MB)
+[12/06 22:53:31     64s] 
+[12/06 22:53:31     64s] *
+
+
+
+[12/06 22:53:31     64s] Total Power
+[12/06 22:53:31     64s] -----------------------------------------------------------------------------------------
+[12/06 22:53:31     64s] Total Internal Power:        1.12287303 	   46.1691%
+[12/06 22:53:31     64s] Total Switching Power:       1.29904663 	   53.4128%
+[12/06 22:53:31     64s] Total Leakage Power:         0.01016893 	    0.4181%
+[12/06 22:53:31     64s] Total Power:                 2.43208859
+[12/06 22:53:31     64s] -----------------------------------------------------------------------------------------
+[12/06 23:03:13     91s] <CMD> zoomBox -819.77800 912.03500 2971.56500 2817.96600
+[12/06 23:03:13     91s] <CMD> zoomBox -152.68100 1553.77000 1529.56100 2399.44300
+[12/06 23:03:14     91s] <CMD> zoomBox 85.35200 1847.51500 831.77400 2222.74600
+[12/06 23:03:14     92s] <CMD> zoomBox 176.10300 1959.50700 565.74000 2155.38000
+[12/06 23:03:15     92s] <CMD> zoomBox 231.23500 2027.54300 404.12100 2114.45400
+[12/06 23:03:16     92s] <CMD> zoomBox 252.25400 2053.48200 342.50200 2098.85000
+[12/06 23:03:17     92s] <CMD> zoomBox 231.23300 2027.54200 404.12100 2114.45400
+[12/06 23:03:17     92s] <CMD> zoomBox 158.60600 1937.91800 617.01700 2168.36400
+[12/06 23:03:17     92s] <CMD> zoomBox 51.83400 1806.15800 930.00700 2247.62100
+[12/06 23:03:18     92s] <CMD> zoomBox -228.22100 1460.56100 1750.96300 2455.50900
+[12/06 23:03:21     92s] <CMD> zoomBox -3157.84900 666.19200 4105.46900 4317.50500
+[12/06 23:03:22     92s] <CMD> zoomBox -109.79900 1248.46900 3112.97800 2868.57800
+[12/06 23:03:22     92s] <CMD> zoomBox 1425.55600 1530.91500 2641.02600 2141.93900
+[12/06 23:03:23     92s] <CMD> zoomBox 1945.11200 1657.89400 2403.52700 1888.34200
+[12/06 23:03:29     93s] <CMD> fit
+[12/06 23:03:30     93s] <CMD> zoomBox 777.07000 1086.01100 3999.71200 2706.05200
+[12/06 23:03:31     93s] <CMD> zoomBox 2020.02100 1606.69100 3449.92500 2325.51200
+[12/06 23:03:31     93s] <CMD> zoomBox 2637.50700 1865.41700 3176.79600 2136.52100
+[12/06 23:03:32     93s] <CMD> zoomBox 2845.50500 1952.73000 3084.79200 2073.02100
+[12/06 23:03:32     93s] <CMD> zoomBox 2948.83800 1996.10600 3039.08600 2041.47400
+[12/06 23:03:33     93s] <CMD> zoomBox 2987.80900 2012.46500 3021.84700 2029.57600
+[12/06 23:03:35     93s] <CMD> fit
+[12/06 23:03:42     93s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Fri Dec  6 23:03:42 2024
+  Total CPU time:     0:01:38
+  Total real time:    0:22:49
+  Peak memory (main): 2294.66MB
+
+[12/06 23:03:42     93s] 
+[12/06 23:03:42     93s] *** Memory Usage v#1 (Current mem = 3574.520M, initial mem = 284.375M) ***
+[12/06 23:03:42     93s] 
+[12/06 23:03:42     93s] *** Summary of all messages that are not suppressed in this session:
+[12/06 23:03:42     93s] Severity  ID               Count  Summary                                  
+[12/06 23:03:42     93s] WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+[12/06 23:03:42     93s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[12/06 23:03:42     93s] WARNING   IMPLF-200            7  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/06 23:03:42     93s] WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+[12/06 23:03:42     93s] WARNING   IMPFP-3961          16  The techSite '%s' has no related standar...
+[12/06 23:03:42     93s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[12/06 23:03:42     93s] WARNING   IMPEXT-1241          1  No poly layer found in the layermap file...
+[12/06 23:03:42     93s] WARNING   IMPEXT-1242          1  No cut layer found between poly layer an...
+[12/06 23:03:42     93s] WARNING   IMPEXT-3530          1  The process node is not set. Use the com...
+[12/06 23:03:42     93s] WARNING   IMPSYC-2             4  Timing information is not defined for ce...
+[12/06 23:03:42     93s] WARNING   IMPVL-159          764  Pin '%s' of cell '%s' is defined in LEF ...
+[12/06 23:03:42     93s] WARNING   IMPESI-3086          2  The cell '%s' does not have characterize...
+[12/06 23:03:42     93s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[12/06 23:03:42     93s] WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+[12/06 23:03:42     93s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[12/06 23:03:42     93s] WARNING   TECHLIB-302          1  No function defined for cell '%s'. The c...
+[12/06 23:03:42     93s] *** Message Summary: 1206 warning(s), 0 error(s)
+[12/06 23:03:42     93s] 
+[12/06 23:03:42     93s] --- Ending "Innovus" (totcpu=0:01:34, real=0:22:48, mem=3574.5M) ---

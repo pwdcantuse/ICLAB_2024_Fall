@@ -1,0 +1,58 @@
+===========  PATTERN NO.   0  ==============
+Index_Check
+Formula_Type: 0
+Mode: 0
+Date: 11/5
+Data_No: 169
+Index_A: 2706
+Index_B: 1835
+Index_C: 314
+Index_D: 3541
+=============dram_data===========================
+Date: 10/3
+Index_A: 2741
+Index_B: 3360
+Index_C: 3995
+Index_D: 3729
+===============================================
+G: 35 1525 3681 188
+G_sorted: 35 188 1525 3681
+Risk: 3456
+Warn_Msg: 2
+Complete: 0
+
+
+===========  PATTERN NO.   1  ==============
+Check_Valid_Date
+Date: 7/21
+Data_No: 114
+=============dram_data===========================
+Date: 3/3
+Index_A: 1100
+Index_B: 3897
+Index_C: 2512
+Index_D: 948
+===============================================
+Warn_Msg: 0
+Complete: 1
+
+
+===========  PATTERN NO.   2  ==============
+Update
+Date: 2/2
+Data_No: 19
+Index_A variation: -620
+Index_B variation: 2027
+Index_C variation: 583
+Index_D variation: -550
+=============dram_data===========================
+Date: 4/10
+Index_A: 3501
+Index_B: 1436
+Index_C: 3433
+Index_D: 3087
+===============================================
+Warn_Msg: 3
+Complete: 0
+
+

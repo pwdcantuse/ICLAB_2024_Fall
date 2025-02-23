@@ -1,0 +1,375 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : SA
+Version: T-2022.03
+Date   : Mon Nov 11 19:31:48 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: t_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_ff_reg[62]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SA                 enG500K               fsa0m_a_generic_core_ss1p62v125c
+  MA_41              enG50K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  t_reg[2]/CK (QDFFRBN)                    0.00 #     0.00 r
+  t_reg[2]/Q (QDFFRBN)                     0.68       0.68 f
+  U22175/O (INV1S)                         0.99       1.67 r
+  U22171/O (NR2P)                          0.73       2.41 f
+  U22167/O (INV3)                          0.61       3.01 r
+  U22661/O (OR2P)                          0.48       3.49 r
+  U24495/O (INV3)                          0.62       4.11 f
+  U26233/O (ND2T)                          1.09       5.20 r
+  U26086/O (INV6)                          0.14       5.34 f
+  U22628/O (BUF8CK)                        0.49       5.83 f
+  U22616/O (NR2T)                          0.79       6.61 r
+  U23975/O (INV1S)                         1.17       7.79 f
+  U22150/O (ND2)                           1.36       9.15 r
+  U33888/O (OAI22H)                        0.98      10.13 f
+  U23980/O (INV2)                          1.14      11.26 r
+  U22264/O (INV1S)                         1.68      12.94 f
+  U22266/O (BUF3)                          1.25      14.19 f
+  U36070/O (AOI22S)                        0.75      14.94 r
+  U24164/O (AN3S)                          0.72      15.66 r
+  U36073/O (ND3)                           1.41      17.07 f
+  MA0/M1_8[0] (MA_41)                      0.00      17.07 f
+  MA0/U514/O (INV1)                        1.84      18.91 r
+  MA0/U10691/O (NR2)                       0.25      19.16 f
+  MA0/U10718/CO (FA1S)                     0.65      19.82 f
+  MA0/U10708/S (FA1S)                      0.54      20.35 f
+  MA0/U10721/CO (FA1S)                     0.55      20.90 f
+  MA0/U10722/CO (FA1S)                     0.59      21.49 f
+  MA0/U10723/CO (FA1S)                     0.58      22.07 f
+  MA0/U10715/S (FA1S)                      0.53      22.59 f
+  MA0/U46/CO (FA1S)                        0.57      23.16 f
+  MA0/U615/CO (FA1S)                       0.55      23.71 f
+  MA0/U268/CO (FA1)                        0.41      24.12 f
+  MA0/U269/CO (FA1)                        0.38      24.50 f
+  MA0/U271/CO (FA1)                        0.38      24.87 f
+  MA0/U10729/CO (FA1)                      0.38      25.25 f
+  MA0/U10730/CO (FA1)                      0.38      25.63 f
+  MA0/U10731/CO (FA1)                      0.38      26.00 f
+  MA0/U10732/CO (FA1)                      0.37      26.37 f
+  MA0/U44/CO (FA1S)                        0.52      26.89 f
+  MA0/U10733/CO (FA1)                      0.41      27.30 f
+  MA0/U10734/CO (FA1)                      0.38      27.67 f
+  MA0/U273/CO (FA1)                        0.38      28.05 f
+  MA0/U270/CO (FA1)                        0.38      28.43 f
+  MA0/U272/CO (FA1)                        0.38      28.80 f
+  MA0/U10735/CO (FA1)                      0.38      29.18 f
+  MA0/U10736/CO (FA1)                      0.38      29.55 f
+  MA0/U10737/CO (FA1)                      0.38      29.93 f
+  MA0/U10738/CO (FA1)                      0.37      30.30 f
+  MA0/U43/CO (FA1S)                        0.52      30.81 f
+  MA0/U10739/CO (FA1)                      0.41      31.22 f
+  MA0/U144/CO (FA1)                        0.38      31.60 f
+  MA0/U267/CO (FA1)                        0.38      31.98 f
+  MA0/U266/CO (FA1)                        0.38      32.35 f
+  MA0/U617/CO (FA1)                        0.38      32.73 f
+  MA0/U10740/CO (FA1)                      0.38      33.10 f
+  MA0/U142/CO (FA1)                        0.38      33.48 f
+  MA0/U10741/CO (FA1)                      0.38      33.85 f
+  MA0/U143/CO (FA1)                        0.38      34.23 f
+  MA0/U10742/CO (FA1)                      0.38      34.61 f
+  MA0/U10743/CO (FA1)                      0.38      34.98 f
+  MA0/U10744/CO (FA1)                      0.38      35.36 f
+  MA0/U539/CO (FA1)                        0.38      35.73 f
+  MA0/U140/CO (FA1)                        0.38      36.11 f
+  MA0/U10725/CO (FA1)                      0.38      36.48 f
+  MA0/U141/CO (FA1)                        0.38      36.86 f
+  MA0/U538/CO (FA1)                        0.37      37.23 f
+  MA0/U537/CO (FA1S)                       0.51      37.73 f
+  MA0/U536/CO (FA1S)                       0.54      38.27 f
+  MA0/U535/CO (FA1S)                       0.54      38.81 f
+  MA0/U534/CO (FA1S)                       0.54      39.36 f
+  MA0/U533/CO (FA1S)                       0.55      39.91 f
+  MA0/U138/CO (FA1)                        0.40      40.31 f
+  MA0/U532/CO (FA1S)                       0.51      40.82 f
+  MA0/U531/CO (FA1S)                       0.54      41.36 f
+  MA0/U616/CO (FA1S)                       0.54      41.90 f
+  MA0/U530/CO (FA1S)                       0.54      42.44 f
+  MA0/U529/CO (FA1S)                       0.54      42.98 f
+  MA0/U528/CO (FA1S)                       0.54      43.52 f
+  MA0/U527/CO (FA1S)                       0.54      44.06 f
+  MA0/U526/CO (FA1S)                       0.55      44.61 f
+  MA0/U139/CO (FA1)                        0.40      45.01 f
+  MA0/U525/CO (FA1S)                       0.51      45.52 f
+  MA0/U524/CO (FA1S)                       0.54      46.06 f
+  MA0/U523/CO (FA1S)                       0.54      46.60 f
+  MA0/U522/CO (FA1S)                       0.54      47.14 f
+  MA0/U521/CO (FA1S)                       0.54      47.68 f
+  MA0/U520/CO (FA1S)                       0.56      48.24 f
+  MA0/U541/O (MOAI1S)                      0.59      48.83 r
+  MA0/U145/O (MOAI1)                       0.47      49.30 r
+  MA0/result[62] (MA_41)                   0.00      49.30 r
+  U22684/O (MUX2)                          0.47      49.78 r
+  out_ff_reg[62]/D (QDFFRBS)               0.00      49.78 r
+  data arrival time                                  49.78
+
+  clock clk (rise edge)                   50.00      50.00
+  clock network delay (ideal)              0.00      50.00
+  out_ff_reg[62]/CK (QDFFRBS)              0.00      50.00 r
+  library setup time                      -0.19      49.81
+  data required time                                 49.81
+  -----------------------------------------------------------
+  data required time                                 49.81
+  data arrival time                                 -49.78
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: t_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_ff_reg[61]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SA                 enG500K               fsa0m_a_generic_core_ss1p62v125c
+  MA_41              enG50K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  t_reg[2]/CK (QDFFRBN)                    0.00 #     0.00 r
+  t_reg[2]/Q (QDFFRBN)                     0.68       0.68 f
+  U22175/O (INV1S)                         0.99       1.67 r
+  U22171/O (NR2P)                          0.73       2.41 f
+  U22167/O (INV3)                          0.61       3.01 r
+  U22661/O (OR2P)                          0.48       3.49 r
+  U24495/O (INV3)                          0.62       4.11 f
+  U26233/O (ND2T)                          1.09       5.20 r
+  U26086/O (INV6)                          0.14       5.34 f
+  U22628/O (BUF8CK)                        0.49       5.83 f
+  U22616/O (NR2T)                          0.79       6.61 r
+  U23975/O (INV1S)                         1.17       7.79 f
+  U22150/O (ND2)                           1.36       9.15 r
+  U33888/O (OAI22H)                        0.98      10.13 f
+  U23980/O (INV2)                          1.14      11.26 r
+  U22264/O (INV1S)                         1.68      12.94 f
+  U22266/O (BUF3)                          1.25      14.19 f
+  U36070/O (AOI22S)                        0.75      14.94 r
+  U24164/O (AN3S)                          0.72      15.66 r
+  U36073/O (ND3)                           1.41      17.07 f
+  MA0/M1_8[0] (MA_41)                      0.00      17.07 f
+  MA0/U514/O (INV1)                        1.84      18.91 r
+  MA0/U10691/O (NR2)                       0.25      19.16 f
+  MA0/U10718/CO (FA1S)                     0.65      19.82 f
+  MA0/U10708/S (FA1S)                      0.54      20.35 f
+  MA0/U10721/CO (FA1S)                     0.55      20.90 f
+  MA0/U10722/CO (FA1S)                     0.59      21.49 f
+  MA0/U10723/CO (FA1S)                     0.58      22.07 f
+  MA0/U10715/S (FA1S)                      0.53      22.59 f
+  MA0/U46/CO (FA1S)                        0.57      23.16 f
+  MA0/U615/CO (FA1S)                       0.55      23.71 f
+  MA0/U268/CO (FA1)                        0.41      24.12 f
+  MA0/U269/CO (FA1)                        0.38      24.50 f
+  MA0/U271/CO (FA1)                        0.38      24.87 f
+  MA0/U10729/CO (FA1)                      0.38      25.25 f
+  MA0/U10730/CO (FA1)                      0.38      25.63 f
+  MA0/U10731/CO (FA1)                      0.38      26.00 f
+  MA0/U10732/CO (FA1)                      0.37      26.37 f
+  MA0/U44/CO (FA1S)                        0.52      26.89 f
+  MA0/U10733/CO (FA1)                      0.41      27.30 f
+  MA0/U10734/CO (FA1)                      0.38      27.67 f
+  MA0/U273/CO (FA1)                        0.38      28.05 f
+  MA0/U270/CO (FA1)                        0.38      28.43 f
+  MA0/U272/CO (FA1)                        0.38      28.80 f
+  MA0/U10735/CO (FA1)                      0.38      29.18 f
+  MA0/U10736/CO (FA1)                      0.38      29.55 f
+  MA0/U10737/CO (FA1)                      0.38      29.93 f
+  MA0/U10738/CO (FA1)                      0.37      30.30 f
+  MA0/U43/CO (FA1S)                        0.52      30.81 f
+  MA0/U10739/CO (FA1)                      0.41      31.22 f
+  MA0/U144/CO (FA1)                        0.38      31.60 f
+  MA0/U267/CO (FA1)                        0.38      31.98 f
+  MA0/U266/CO (FA1)                        0.38      32.35 f
+  MA0/U617/CO (FA1)                        0.38      32.73 f
+  MA0/U10740/CO (FA1)                      0.38      33.10 f
+  MA0/U142/CO (FA1)                        0.38      33.48 f
+  MA0/U10741/CO (FA1)                      0.38      33.85 f
+  MA0/U143/CO (FA1)                        0.38      34.23 f
+  MA0/U10742/CO (FA1)                      0.38      34.61 f
+  MA0/U10743/CO (FA1)                      0.38      34.98 f
+  MA0/U10744/CO (FA1)                      0.38      35.36 f
+  MA0/U539/CO (FA1)                        0.38      35.73 f
+  MA0/U140/CO (FA1)                        0.38      36.11 f
+  MA0/U10725/CO (FA1)                      0.38      36.48 f
+  MA0/U141/CO (FA1)                        0.38      36.86 f
+  MA0/U538/CO (FA1)                        0.37      37.23 f
+  MA0/U537/CO (FA1S)                       0.51      37.73 f
+  MA0/U536/CO (FA1S)                       0.54      38.27 f
+  MA0/U535/CO (FA1S)                       0.54      38.81 f
+  MA0/U534/CO (FA1S)                       0.54      39.36 f
+  MA0/U533/CO (FA1S)                       0.55      39.91 f
+  MA0/U138/CO (FA1)                        0.40      40.31 f
+  MA0/U532/CO (FA1S)                       0.51      40.82 f
+  MA0/U531/CO (FA1S)                       0.54      41.36 f
+  MA0/U616/CO (FA1S)                       0.54      41.90 f
+  MA0/U530/CO (FA1S)                       0.54      42.44 f
+  MA0/U529/CO (FA1S)                       0.54      42.98 f
+  MA0/U528/CO (FA1S)                       0.54      43.52 f
+  MA0/U527/CO (FA1S)                       0.54      44.06 f
+  MA0/U526/CO (FA1S)                       0.55      44.61 f
+  MA0/U139/CO (FA1)                        0.40      45.01 f
+  MA0/U525/CO (FA1S)                       0.51      45.52 f
+  MA0/U524/CO (FA1S)                       0.54      46.06 f
+  MA0/U523/CO (FA1S)                       0.54      46.60 f
+  MA0/U522/CO (FA1S)                       0.54      47.14 f
+  MA0/U521/CO (FA1S)                       0.54      47.68 f
+  MA0/U520/S (FA1S)                        1.01      48.70 r
+  MA0/result[61] (MA_41)                   0.00      48.70 r
+  U24757/O (MUX2)                          0.48      49.18 r
+  out_ff_reg[61]/D (QDFFRBS)               0.00      49.18 r
+  data arrival time                                  49.18
+
+  clock clk (rise edge)                   50.00      50.00
+  clock network delay (ideal)              0.00      50.00
+  out_ff_reg[61]/CK (QDFFRBS)              0.00      50.00 r
+  library setup time                      -0.19      49.81
+  data required time                                 49.81
+  -----------------------------------------------------------
+  data required time                                 49.81
+  data arrival time                                 -49.18
+  -----------------------------------------------------------
+  slack (MET)                                         0.64
+
+
+  Startpoint: t_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_ff_reg[60]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SA                 enG500K               fsa0m_a_generic_core_ss1p62v125c
+  MA_41              enG50K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  t_reg[2]/CK (QDFFRBN)                    0.00 #     0.00 r
+  t_reg[2]/Q (QDFFRBN)                     0.68       0.68 f
+  U22175/O (INV1S)                         0.99       1.67 r
+  U22171/O (NR2P)                          0.73       2.41 f
+  U22167/O (INV3)                          0.61       3.01 r
+  U22661/O (OR2P)                          0.48       3.49 r
+  U24495/O (INV3)                          0.62       4.11 f
+  U26233/O (ND2T)                          1.09       5.20 r
+  U26086/O (INV6)                          0.14       5.34 f
+  U22628/O (BUF8CK)                        0.49       5.83 f
+  U22616/O (NR2T)                          0.79       6.61 r
+  U23975/O (INV1S)                         1.17       7.79 f
+  U22150/O (ND2)                           1.36       9.15 r
+  U33888/O (OAI22H)                        0.98      10.13 f
+  U23980/O (INV2)                          1.14      11.26 r
+  U22264/O (INV1S)                         1.68      12.94 f
+  U22266/O (BUF3)                          1.25      14.19 f
+  U36070/O (AOI22S)                        0.75      14.94 r
+  U24164/O (AN3S)                          0.72      15.66 r
+  U36073/O (ND3)                           1.41      17.07 f
+  MA0/M1_8[0] (MA_41)                      0.00      17.07 f
+  MA0/U514/O (INV1)                        1.84      18.91 r
+  MA0/U10691/O (NR2)                       0.25      19.16 f
+  MA0/U10718/CO (FA1S)                     0.65      19.82 f
+  MA0/U10708/S (FA1S)                      0.54      20.35 f
+  MA0/U10721/CO (FA1S)                     0.55      20.90 f
+  MA0/U10722/CO (FA1S)                     0.59      21.49 f
+  MA0/U10723/CO (FA1S)                     0.58      22.07 f
+  MA0/U10715/S (FA1S)                      0.53      22.59 f
+  MA0/U46/CO (FA1S)                        0.57      23.16 f
+  MA0/U615/CO (FA1S)                       0.55      23.71 f
+  MA0/U268/CO (FA1)                        0.41      24.12 f
+  MA0/U269/CO (FA1)                        0.38      24.50 f
+  MA0/U271/CO (FA1)                        0.38      24.87 f
+  MA0/U10729/CO (FA1)                      0.38      25.25 f
+  MA0/U10730/CO (FA1)                      0.38      25.63 f
+  MA0/U10731/CO (FA1)                      0.38      26.00 f
+  MA0/U10732/CO (FA1)                      0.37      26.37 f
+  MA0/U44/CO (FA1S)                        0.52      26.89 f
+  MA0/U10733/CO (FA1)                      0.41      27.30 f
+  MA0/U10734/CO (FA1)                      0.38      27.67 f
+  MA0/U273/CO (FA1)                        0.38      28.05 f
+  MA0/U270/CO (FA1)                        0.38      28.43 f
+  MA0/U272/CO (FA1)                        0.38      28.80 f
+  MA0/U10735/CO (FA1)                      0.38      29.18 f
+  MA0/U10736/CO (FA1)                      0.38      29.55 f
+  MA0/U10737/CO (FA1)                      0.38      29.93 f
+  MA0/U10738/CO (FA1)                      0.37      30.30 f
+  MA0/U43/CO (FA1S)                        0.52      30.81 f
+  MA0/U10739/CO (FA1)                      0.41      31.22 f
+  MA0/U144/CO (FA1)                        0.38      31.60 f
+  MA0/U267/CO (FA1)                        0.38      31.98 f
+  MA0/U266/CO (FA1)                        0.38      32.35 f
+  MA0/U617/CO (FA1)                        0.38      32.73 f
+  MA0/U10740/CO (FA1)                      0.38      33.10 f
+  MA0/U142/CO (FA1)                        0.38      33.48 f
+  MA0/U10741/CO (FA1)                      0.38      33.85 f
+  MA0/U143/CO (FA1)                        0.38      34.23 f
+  MA0/U10742/CO (FA1)                      0.38      34.61 f
+  MA0/U10743/CO (FA1)                      0.38      34.98 f
+  MA0/U10744/CO (FA1)                      0.38      35.36 f
+  MA0/U539/CO (FA1)                        0.38      35.73 f
+  MA0/U140/CO (FA1)                        0.38      36.11 f
+  MA0/U10725/CO (FA1)                      0.38      36.48 f
+  MA0/U141/CO (FA1)                        0.38      36.86 f
+  MA0/U538/CO (FA1)                        0.37      37.23 f
+  MA0/U537/CO (FA1S)                       0.51      37.73 f
+  MA0/U536/CO (FA1S)                       0.54      38.27 f
+  MA0/U535/CO (FA1S)                       0.54      38.81 f
+  MA0/U534/CO (FA1S)                       0.54      39.36 f
+  MA0/U533/CO (FA1S)                       0.55      39.91 f
+  MA0/U138/CO (FA1)                        0.40      40.31 f
+  MA0/U532/CO (FA1S)                       0.51      40.82 f
+  MA0/U531/CO (FA1S)                       0.54      41.36 f
+  MA0/U616/CO (FA1S)                       0.54      41.90 f
+  MA0/U530/CO (FA1S)                       0.54      42.44 f
+  MA0/U529/CO (FA1S)                       0.54      42.98 f
+  MA0/U528/CO (FA1S)                       0.54      43.52 f
+  MA0/U527/CO (FA1S)                       0.54      44.06 f
+  MA0/U526/CO (FA1S)                       0.55      44.61 f
+  MA0/U139/CO (FA1)                        0.40      45.01 f
+  MA0/U525/CO (FA1S)                       0.51      45.52 f
+  MA0/U524/CO (FA1S)                       0.54      46.06 f
+  MA0/U523/CO (FA1S)                       0.54      46.60 f
+  MA0/U522/CO (FA1S)                       0.54      47.14 f
+  MA0/U521/S (FA1S)                        1.01      48.16 r
+  MA0/result[60] (MA_41)                   0.00      48.16 r
+  U24758/O (MUX2)                          0.48      48.64 r
+  out_ff_reg[60]/D (QDFFRBS)               0.00      48.64 r
+  data arrival time                                  48.64
+
+  clock clk (rise edge)                   50.00      50.00
+  clock network delay (ideal)              0.00      50.00
+  out_ff_reg[60]/CK (QDFFRBS)              0.00      50.00 r
+  library setup time                      -0.19      49.81
+  data required time                                 49.81
+  -----------------------------------------------------------
+  data required time                                 49.81
+  data arrival time                                 -48.64
+  -----------------------------------------------------------
+  slack (MET)                                         1.18
+
+
+1

@@ -1,0 +1,26 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Mon Nov 11 19:42:25 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Unconnected ports (LINT-28)                                     1
+
+Cells                                                               6
+    Cells do not drive (LINT-1)                                     5
+    Connected to power or ground (LINT-32)                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'SA', cell 'C81481' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'C81485' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'B_600' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'C82056' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'B_604' does not drive any nets. (LINT-1)
+Warning: In design 'SA', port 'T[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SA', a pin on submodule 'GATED_5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'SLEEP_CTRL' is connected to logic 0. 
+1

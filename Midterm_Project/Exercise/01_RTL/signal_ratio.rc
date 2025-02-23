@@ -1,0 +1,135 @@
+Magic 271485
+Revision Verdi_P-2019.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 1920 1009 184 439
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/RAID2/COURSE/iclab/iclab018/Midterm_Project/Exercise/01_RTL/ISP.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 1051397.438782 1139995.346197
+cursor 1093975.49489673809
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 13
+; marker line index
+markerPos 54
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/RAID2/COURSE/iclab/iclab018/Midterm_Project/Exercise/01_RTL/ISP.fsdb"
+addSignal -h 15 -UNSIGNED -UDEC /TESTBED/u_ISP/scaled_pixel[0:15]
+addSignal -h 15 -holdScope State[2:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope pic_no_in[3:0]
+addSignal -h 15 -holdScope out_data[7:0]
+addSignal -h 15 -holdScope out_valid
+addSignal -h 15 -holdScope in_mode
+addSignal -h 15 -holdScope in_pic_no[3:0]
+addSignal -h 15 -holdScope in_ratio_mode[1:0]
+addSignal -h 15 -holdScope in_valid
+addSignal -expanded -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[0:15]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[0][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[1][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[2][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[3][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[4][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[5][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[6][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[7][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[8][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[9][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[10][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[11][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[12][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[13][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[14][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[15][7:0]
+addSignal -h 15 -UNSIGNED -UDEC /TESTBED/u_ISP/ratio_shift[0]/a[7:0]
+addSignal -h 15 -UNSIGNED -UDEC /TESTBED/u_ISP/ratio_shift[1]/a[7:0]
+addSignal -h 15 -UNSIGNED -UDEC /TESTBED/u_ISP/ratio_shift[2]/a[7:0]
+addSignal -h 15 -UNSIGNED -UDEC /TESTBED/u_ISP/ratio_shift[3]/a[7:0]
+addSignal -h 15 -UNSIGNED -UDEC /TESTBED/u_ISP/ratio_shift[4]/a[7:0]
+addSignal -h 15 /TESTBED/u_ISP/cal_data[127:0]
+addSignal -h 15 -holdScope araddr_s_inf[31:0]
+addSignal -h 15 -holdScope arburst_s_inf[1:0]
+addSignal -h 15 -holdScope arlen_s_inf[7:0]
+addSignal -h 15 -holdScope arready_s_inf
+addSignal -h 15 -holdScope arvalid_s_inf
+addSignal -h 15 -holdScope rready_s_inf
+addSignal -h 15 -holdScope rvalid_s_inf
+addSignal -h 15 /TESTBED/u_ISP/axi_write/wvalid_s_inf
+addSignal -h 15 -holdScope wdata_s_inf[127:0]
+addSignal -h 15 -holdScope wready_s_inf
+addSignal -h 15 /TESTBED/u_ISP/d1[127:0]
+addSignal -h 15 -holdScope d2[127:0]
+addSignal -h 15 -holdScope d3[127:0]
+addSignal -h 15 -holdScope w
+addSignal -h 15 -holdScope w1
+addSignal -h 15 -holdScope w2
+addSignal -h 15 -holdScope w3
+addGroup "G2"
+addSignal -h 15 /TESTBED/u_ISP/axi_write/data_in[127:0]
+addSignal -h 15 -holdScope data_valid
+addSignal -h 15 -holdScope data[127:0]
+addSignal -h 15 /TESTBED/u_ISP/d3[127:0]
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/RAID2/COURSE/iclab/iclab018/Midterm_Project/Exercise/01_RTL/ISP.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/TESTBED"
+"/TESTBED/u_ISP"
+"/TESTBED/u_ISP/axi_write"
+"/TESTBED/u_ISP/ratio_shift[4]"
+
+SCOPE_LIST_BEGIN
+"/TESTBED"
+"/TESTBED/u_ISP"
+"/TESTBED/u_ISP/axi_read"
+"/TESTBED/u_ISP/ratio_shift[0]"
+"/TESTBED/u_ISP/ratio_shift[1]"
+"/TESTBED/u_ISP/ratio_shift[9]"
+"/TESTBED/u_ISP/ratio_shift[15]"
+"/TESTBED/u_ISP/ratio_shift[2]"
+"/TESTBED/u_ISP/ratio_shift[3]"
+"/TESTBED/u_ISP/ratio_shift[4]"
+"/TESTBED/u_PATTERN"
+"/TESTBED/u_ISP/axi_write"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

@@ -1,0 +1,44 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "PATTERN": [
+        "PATTERN",
+        "ThTta",
+        "module",
+        2
+    ],
+    "CLK_2_MODULE": [
+        "CLK_2_MODULE",
+        "VH41C",
+        "module",
+        3
+    ],
+    "gray_to_bin_0000": [
+        "gray_to_bin_0000",
+        "myL9U",
+        "module",
+        5
+    ],
+    "NDFF_BUS_syn_0001": [
+        "NDFF_BUS_syn_0001",
+        "gghuR",
+        "module",
+        6
+    ],
+    "TESTBED": [
+        "TESTBED",
+        "TAUdR",
+        "module",
+        7
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        8
+    ]
+}

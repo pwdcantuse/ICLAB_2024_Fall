@@ -1,0 +1,38 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "hammingCodeGenerator": [
+        "hammingCodeGenerator",
+        "LAfEV",
+        "module",
+        4
+    ],
+    "hammingCodeGenerator_0001": [
+        "hammingCodeGenerator_0001",
+        "b6tZN",
+        "module",
+        3
+    ],
+    "hammingCodeGenerator_0002": [
+        "hammingCodeGenerator_0002",
+        "iM9GB",
+        "module",
+        2
+    ],
+    "TESTBED": [
+        "TESTBED",
+        "TAUdR",
+        "module",
+        5
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        6
+    ]
+}

@@ -1,0 +1,161 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : TETRIS
+Version: T-2022.03
+Date   : Mon Sep 30 03:21:07 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: in_position_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: State_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  in_position_reg[1]/CK (DFFHQX4)          0.00       0.00 r
+  in_position_reg[1]/Q (DFFHQX4)           0.40       0.40 r
+  U1719/Y (NAND2X4)                        0.08       0.48 f
+  U2347/Y (NOR2X1)                         0.32       0.79 r
+  U2358/Y (NAND2X1)                        0.20       1.00 f
+  U2362/Y (NAND4X4)                        0.17       1.17 r
+  U1495/Y (INVX2)                          0.14       1.31 f
+  U2410/Y (NOR2X1)                         0.13       1.44 r
+  U2411/Y (NOR2X1)                         0.09       1.53 f
+  U1738/Y (AOI21X1)                        0.21       1.73 r
+  U1720/Y (INVX2)                          0.08       1.81 f
+  U1672/Y (INVX4)                          0.08       1.89 r
+  U1637/Y (BUFX12)                         0.16       2.05 r
+  U2292/Y (MX2X2)                          0.24       2.30 f
+  U1958/Y (NAND2X1)                        0.22       2.52 r
+  U1690/Y (NOR2X1)                         0.08       2.60 f
+  U1703/Y (NOR2X1)                         0.17       2.77 r
+  U2755/Y (OAI22X1)                        0.12       2.90 f
+  U2759/Y (NOR2X1)                         0.12       3.02 r
+  U2760/Y (NAND2BX1)                       0.10       3.11 f
+  U1828/Y (INVX2)                          0.08       3.20 r
+  U1475/Y (NAND4X2)                        0.13       3.33 f
+  U2788/Y (NAND2XL)                        0.14       3.47 r
+  U1666/Y (NAND4X1)                        0.14       3.61 f
+  U2793/Y (NAND4X1)                        0.17       3.79 r
+  U2800/Y (OAI22X1)                        0.13       3.92 f
+  U2801/Y (NOR2X1)                         0.18       4.10 r
+  U3141/Y (NAND3X2)                        0.10       4.19 f
+  U3145/Y (NAND2X1)                        0.09       4.28 r
+  U3146/Y (INVX1)                          0.05       4.34 f
+  State_reg[1]/D (DFFRHQXL)                0.00       4.34 f
+  data arrival time                                   4.34
+
+  clock clk (rise edge)                    4.70       4.70
+  clock network delay (ideal)              0.00       4.70
+  clock uncertainty                       -0.10       4.60
+  State_reg[1]/CK (DFFRHQXL)               0.00       4.60 r
+  library setup time                      -0.26       4.34
+  data required time                                  4.34
+  -----------------------------------------------------------
+  data required time                                  4.34
+  data arrival time                                  -4.34
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: in_position_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: State_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  in_position_reg[0]/CK (DFFHQX4)          0.00       0.00 r
+  in_position_reg[0]/Q (DFFHQX4)           0.40       0.40 r
+  U1882/Y (NAND2XL)                        0.14       0.54 f
+  U1726/Y (AOI2BB2X1)                      0.39       0.93 f
+  U2381/Y (NAND3X4)                        0.19       1.12 r
+  U2409/Y (BUFX2)                          0.19       1.31 r
+  U1718/Y (NAND2X1)                        0.08       1.39 f
+  U2412/Y (OAI21X1)                        0.22       1.61 r
+  U2514/Y (AOI21X1)                        0.14       1.75 f
+  U2515/Y (INVX4)                          0.18       1.93 r
+  U2519/Y (MXI2X2)                         0.23       2.16 r
+  U2307/Y (INVX2)                          0.15       2.31 f
+  U1714/Y (NOR2X1)                         0.32       2.63 r
+  U2043/Y (INVXL)                          0.13       2.76 f
+  U2755/Y (OAI22X1)                        0.23       3.00 r
+  U2759/Y (NOR2X1)                         0.08       3.08 f
+  U2760/Y (NAND2BX1)                       0.12       3.20 r
+  U1828/Y (INVX2)                          0.06       3.26 f
+  U1475/Y (NAND4X2)                        0.13       3.39 r
+  U2788/Y (NAND2XL)                        0.10       3.49 f
+  U1666/Y (NAND4X1)                        0.18       3.67 r
+  U2793/Y (NAND4X1)                        0.15       3.82 f
+  U2800/Y (OAI22X1)                        0.21       4.03 r
+  U2801/Y (NOR2X1)                         0.13       4.16 f
+  U3141/Y (NAND3X2)                        0.11       4.26 r
+  U1531/Y (NOR2X1)                         0.07       4.33 f
+  State_reg[2]/D (DFFRHQXL)                0.00       4.33 f
+  data arrival time                                   4.33
+
+  clock clk (rise edge)                    4.70       4.70
+  clock network delay (ideal)              0.00       4.70
+  clock uncertainty                       -0.10       4.60
+  State_reg[2]/CK (DFFRHQXL)               0.00       4.60 r
+  library setup time                      -0.27       4.33
+  data required time                                  4.33
+  -----------------------------------------------------------
+  data required time                                  4.33
+  data arrival time                                  -4.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: tetris_mem_1_reg[1][3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: tetris[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tetris_mem_1_reg[1][3]/CK (DFFRHQXL)                    0.00       0.00 r
+  tetris_mem_1_reg[1][3]/Q (DFFRHQXL)                     0.53       0.53 f
+  U1521/Y (NOR2XL)                                        0.17       0.69 r
+  U1850/Y (NAND4XL)                                       0.15       0.84 f
+  U1848/Y (OR2XL)                                         0.24       1.08 f
+  U1634/Y (NAND2X1)                                       0.19       1.27 r
+  U1635/Y (INVX2)                                         0.07       1.34 f
+  U1474/Y (AOI21X2)                                       0.23       1.57 r
+  U3144/Y (INVX8)                                         0.15       1.72 f
+  U1468/Y (INVX8)                                         0.29       2.01 r
+  U3282/Y (NOR2X2)                                        0.22       2.23 f
+  tetris[0] (out)                                         0.00       2.23 f
+  data arrival time                                                  2.23
+
+  clock clk (rise edge)                                   4.70       4.70
+  clock network delay (ideal)                             0.00       4.70
+  clock uncertainty                                      -0.10       4.60
+  output external delay                                  -2.35       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+1

@@ -1,0 +1,370 @@
+Begin Preparing Database for Report Generation
+    Net GND:
+        
+        Circuit profile:
+                                                              Current    Voltage
+        Layer Name                       Nodes   Resistors    Sources    Sources
+        ----- --------------------  ----------  ----------  ---------  ---------
+        0     ME6_C                         48           0         48         32
+        1     ME5_C                         48           0         48         32
+        2     ME4_C                        126          73         48         32
+        3     VIA3                           0          60          0          0
+        4     ME3_C                       4619        4478         48         32
+        5     VIA2                           0        4516          0          0
+        6     ME2_C                      23175       23051         48         32
+        7     VIA1                           0       18547          0          0
+        8     ME1_C                      44066       43756      25408         32
+                                    ----------  ----------  ---------  ---------
+        9     Circuit total              72083       94481      25648        192
+        
+        Note: 96 current sources are disconnected.
+
+    Net VCC:
+        
+        Circuit profile:
+                                                              Current    Voltage
+        Layer Name                       Nodes   Resistors    Sources    Sources
+        ----- --------------------  ----------  ----------  ---------  ---------
+        0     ME6_C                         48           0         48         32
+        1     ME5_C                         48           0         48         32
+        2     ME4_C                         60          10         48         32
+        3     VIA3                           0          12          0          0
+        4     ME3_C                       4627        4489         48         32
+        5     VIA2                           0        4569          0          0
+        6     ME2_C                      23239       23098         48         32
+        7     VIA1                           0       18567          0          0
+        8     ME1_C                      44191       43875      25366         32
+                                    ----------  ----------  ---------  ---------
+        9     Circuit total              72214       94620      25606        192
+        
+        Note: 96 current sources are disconnected.
+Ended Preparing Database for Report Generation
+
+************************************************************************************
+
+Begin IR Drop (Linear) Report Generation
+    Net GND:
+          Voltage: 0
+          Threshold: 0.1
+          Minimum, Average, Maximum IR Drop: 0.000V, 30.499uV, 0.132mV
+            Range 1(   0.116mV  -     0.132mV ):        20 (  0.03%)
+            Range 2(  99.338uV  -     0.116mV ):        55 (  0.08%)
+            Range 3(  82.782uV  -    99.338uV ):      1931 (  2.68%)
+            Range 4(  66.225uV  -    82.782uV ):      3041 (  4.22%)
+            Range 5(  49.669uV  -    66.225uV ):      4160 (  5.78%)
+            Range 6(  33.113uV  -    49.669uV ):     14394 ( 20.00%)
+            Range 7(  16.556uV  -    33.113uV ):     32969 ( 45.80%)
+            Range 8(    0.000V  -    16.556uV ):     15416 ( 21.42%)
+        *** Note : 96 disconnected nodes are excluded from the report.
+            Layer with maximum IR Drop:  ME1_C
+              ME6_C: 0 [0 - 0]
+              ME5_C: 0 [0 - 0]
+              ME4_C: 4.8651e-06 [0 - 4.8651e-06]
+              ME3_C: 9.0433e-05 [0 - 9.0433e-05]
+              ME2_C: 9.3824e-05 [0 - 9.3824e-05]
+              ME1_C: 0.00013245 [0 - 0.00013245]
+          IR Report: power_log/PD_25C_avg_1/Reports/GND/GND.main.rpt
+          GIF plot: power_log/PD_25C_avg_1/Reports/GND/ir_linear.gif
+
+    Net VCC:
+          Voltage: 1.8
+          Threshold: 1.7
+          Minimum, Average, Maximum IR Drop: 1.800V, 1.800V, 1.800V
+            Range 1(    1.800V  -      1.800V ):        16 (  0.02%)
+            Range 2(    1.800V  -      1.800V ):        45 (  0.06%)
+            Range 3(    1.800V  -      1.800V ):      1427 (  1.98%)
+            Range 4(    1.800V  -      1.800V ):      3465 (  4.80%)
+            Range 5(    1.800V  -      1.800V ):      3666 (  5.08%)
+            Range 6(    1.800V  -      1.800V ):     12919 ( 17.91%)
+            Range 7(    1.800V  -      1.800V ):     34094 ( 47.28%)
+            Range 8(    1.800V  -      1.800V ):     16485 ( 22.86%)
+        *** Note : 96 disconnected nodes are excluded from the report.
+            Layer with maximum IR Drop:  ME1_C
+              ME6_C: 0 [1.8 - 1.8]
+              ME5_C: 0 [1.8 - 1.8]
+              ME4_C: 2.0266e-06 [1.8 - 1.8]
+              ME3_C: 8.9288e-05 [1.7999 - 1.8]
+              ME2_C: 9.2268e-05 [1.7999 - 1.8]
+              ME1_C: 0.00013566 [1.7999 - 1.8]
+          IR Report: power_log/PD_25C_avg_1/Reports/VCC/VCC.main.rpt
+          GIF plot: power_log/PD_25C_avg_1/Reports/VCC/ir_linear.gif
+Ended IR Drop (Linear) Report Generation
+
+************************************************************************************
+
+Begin IR Drop (Limit) Report Generation
+    Net GND:
+          Voltage: 0
+          Threshold: 0.1
+          Minimum, Average, Maximum IR Drop: 0.000V, 30.499uV, 0.132mV
+            Range 1( 100.000mV  -      0.100V ):         0 (  0.00%)
+            Range 2(  91.667mV  -   100.000mV ):         0 (  0.00%)
+            Range 3(  83.333mV  -    91.667mV ):         0 (  0.00%)
+            Range 4(  75.000mV  -    83.333mV ):         0 (  0.00%)
+            Range 5(  66.667mV  -    75.000mV ):         0 (  0.00%)
+            Range 6(  58.333mV  -    66.667mV ):         0 (  0.00%)
+            Range 7(  50.000mV  -    58.333mV ):         0 (  0.00%)
+            Range 8(  -1.000uV  -    50.000mV ):     71986 (100.00%)
+        *** Note : 96 disconnected nodes are excluded from the report.
+            Layer with maximum IR Drop:  ME1_C
+              ME6_C: 0 [0 - 0]
+              ME5_C: 0 [0 - 0]
+              ME4_C: 4.8651e-06 [0 - 4.8651e-06]
+              ME3_C: 9.0433e-05 [0 - 9.0433e-05]
+              ME2_C: 9.3824e-05 [0 - 9.3824e-05]
+              ME1_C: 0.00013245 [0 - 0.00013245]
+          IR Report: power_log/PD_25C_avg_1/Reports/GND/GND.main.rpt
+          GIF plot: power_log/PD_25C_avg_1/Reports/GND/ir_limit.gif
+
+    Net VCC:
+          Voltage: 1.8
+          Threshold: 1.7
+          Minimum, Average, Maximum IR Drop: 1.800V, 1.800V, 1.800V
+            Range 1(    1.700V  -      1.700V ):         0 (  0.00%)
+            Range 2(    1.700V  -      1.708V ):         0 (  0.00%)
+            Range 3(    1.708V  -      1.717V ):         0 (  0.00%)
+            Range 4(    1.717V  -      1.725V ):         0 (  0.00%)
+            Range 5(    1.725V  -      1.733V ):         0 (  0.00%)
+            Range 6(    1.733V  -      1.742V ):         0 (  0.00%)
+            Range 7(    1.742V  -      1.750V ):         0 (  0.00%)
+            Range 8(    1.750V  -      1.800V ):     72117 (100.00%)
+        *** Note : 96 disconnected nodes are excluded from the report.
+            Layer with maximum IR Drop:  ME1_C
+              ME6_C: 0 [1.8 - 1.8]
+              ME5_C: 0 [1.8 - 1.8]
+              ME4_C: 2.0266e-06 [1.8 - 1.8]
+              ME3_C: 8.9288e-05 [1.7999 - 1.8]
+              ME2_C: 9.2268e-05 [1.7999 - 1.8]
+              ME1_C: 0.00013566 [1.7999 - 1.8]
+          IR Report: power_log/PD_25C_avg_1/Reports/VCC/VCC.main.rpt
+          GIF plot: power_log/PD_25C_avg_1/Reports/VCC/ir_limit.gif
+Ended IR Drop (Limit) Report Generation
+
+************************************************************************************
+
+Begin Tap Current Report Generation
+    Net GND:
+          Minimum, Average, Maximum Tap Current: -16.204uA, -11.027nA, 0.000A
+          Total Current: -0.282mA
+            Range 1(  -1.000GA  -    -1.000mA ):         0 (  0.00%)
+            Range 2(  -1.000mA  -  -100.000uA ):         0 (  0.00%)
+            Range 3(-100.000uA  -   -10.000uA ):         4 (  0.02%)
+            Range 4( -10.000uA  -    -1.000uA ):        13 (  0.05%)
+            Range 5(  -1.000uA  -  -100.000nA ):       352 (  1.38%)
+            Range 6(-100.000nA  -   -10.000nA ):       557 (  2.18%)
+            Range 7( -10.000nA  -    -1.000nA ):       262 (  1.03%)
+            Range 8(  -1.000nA  -      0.000A ):     24364 ( 95.35%)
+        *** Note: 96 disconnected taps (0.000A) are excluded from the report.
+          GIF plot: power_log/PD_25C_avg_1/Reports/GND/tc.gif
+
+    Net VCC:
+          Minimum, Average, Maximum Tap Current: 0.000A, 11.045nA, 16.204uA
+          Total Current: 0.282mA
+            Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+            Range 2( 100.000uA  -     1.000mA ):         0 (  0.00%)
+            Range 3(  10.000uA  -   100.000uA ):         4 (  0.02%)
+            Range 4(   1.000uA  -    10.000uA ):        10 (  0.04%)
+            Range 5( 100.000nA  -     1.000uA ):       356 (  1.40%)
+            Range 6(  10.000nA  -   100.000nA ):       563 (  2.21%)
+            Range 7(   1.000nA  -    10.000nA ):       265 (  1.04%)
+            Range 8(    0.000A  -     1.000nA ):     24312 ( 95.30%)
+        *** Note: 96 disconnected taps (0.000A) are excluded from the report.
+          GIF plot: power_log/PD_25C_avg_1/Reports/VCC/tc.gif
+Ended Tap Current Report Generation
+
+************************************************************************************
+
+Begin Instance Based IR Drop Report Generation
+    Net GND:
+          Minimum, Average, Maximum Instance Based IR Drop: 0.000V, 36.781uV, 0.132mV
+            Range 1( 100.000mV  -      0.100V ):         0 (  0.00%)
+            Range 2(  91.667mV  -   100.000mV ):         0 (  0.00%)
+            Range 3(  83.333mV  -    91.667mV ):         0 (  0.00%)
+            Range 4(  75.000mV  -    83.333mV ):         0 (  0.00%)
+            Range 5(  66.667mV  -    75.000mV ):         0 (  0.00%)
+            Range 6(  58.333mV  -    66.667mV ):         0 (  0.00%)
+            Range 7(  50.000mV  -    58.333mV ):         0 (  0.00%)
+            Range 8(  -1.000uV  -    50.000mV ):     25552 (100.00%)
+        *** Note : 96 disconnected nodes are excluded from the report.
+          GIF plot: power_log/PD_25C_avg_1/Reports/GND/iv.gif
+
+    Net VCC:
+          Minimum, Average, Maximum Instance Based IR Drop: 1.800V, 1.800V, 1.800V
+            Range 1(    1.700V  -      1.700V ):         0 (  0.00%)
+            Range 2(    1.700V  -      1.708V ):         0 (  0.00%)
+            Range 3(    1.708V  -      1.717V ):         0 (  0.00%)
+            Range 4(    1.717V  -      1.725V ):         0 (  0.00%)
+            Range 5(    1.725V  -      1.733V ):         0 (  0.00%)
+            Range 6(    1.733V  -      1.742V ):         0 (  0.00%)
+            Range 7(    1.742V  -      1.750V ):         0 (  0.00%)
+            Range 8(    1.750V  -      1.800V ):     25510 (100.00%)
+        *** Note : 96 disconnected nodes are excluded from the report.
+          GIF plot: power_log/PD_25C_avg_1/Reports/VCC/iv.gif
+Ended Instance Based IR Drop Report Generation
+
+************************************************************************************
+
+Begin Effective Instance Voltage Report Generation
+    Net GND:
+
+    Net VCC:
+        
+         Avg EIV:
+          Minimum, Average, Maximum Effective Instance Voltage: 1.800V, 1.800V, 1.800V
+            Range 1(    1.800V  -      1.800V ):        10 (  0.02%)
+            Range 2(    1.800V  -      1.800V ):        57 (  0.13%)
+            Range 3(    1.800V  -      1.800V ):      1455 (  3.23%)
+            Range 4(    1.800V  -      1.800V ):      2764 (  6.14%)
+            Range 5(    1.800V  -      1.800V ):      2312 (  5.13%)
+            Range 6(    1.800V  -      1.800V ):      8110 ( 18.00%)
+            Range 7(    1.800V  -      1.800V ):     20423 ( 45.34%)
+            Range 8(    1.800V  -      1.800V ):      9915 ( 22.01%)
+          GIF plot: power_log/PD_25C_avg_1/Reports/VCC_GND.avg_div.gif
+          GIF Limit plot: power_log/PD_25C_avg_1/Reports/VCC_GND.avg_limit_div.gif
+          **** Note: Histogram and gif file are generated based on elapsed EIV results.
+Ended Effective Instance Voltage Report Generation
+
+************************************************************************************
+
+Begin Voltage Source Current Report Generation
+    Net GND:
+          Minimum, Average, Maximum Voltage Source Current: 0.000A, 1.467uA, 18.928uA
+          Total Current: 0.282mA
+            Range 1(  16.562uA  -    18.929uA ):         3 (  1.56%)
+            Range 2(  14.196uA  -    16.562uA ):         1 (  0.52%)
+            Range 3(  11.830uA  -    14.196uA ):         9 (  4.69%)
+            Range 4(   9.464uA  -    11.830uA ):         5 (  2.60%)
+            Range 5(   7.098uA  -     9.464uA ):         6 (  3.12%)
+            Range 6(   4.732uA  -     7.098uA ):         0 (  0.00%)
+            Range 7(   2.366uA  -     4.732uA ):         0 (  0.00%)
+            Range 8(    0.000A  -     2.366uA ):       168 ( 87.50%)
+          GIF plot: power_log/PD_25C_avg_1/Reports/GND/vc.gif
+
+    Net VCC:
+          Minimum, Average, Maximum Voltage Source Current: -21.605uA, -1.468uA, 0.000A
+          Total Current: -0.282mA
+            Range 1( -21.607uA  -   -18.904uA ):         2 (  1.04%)
+            Range 2( -18.904uA  -   -16.204uA ):         0 (  0.00%)
+            Range 3( -16.204uA  -   -13.503uA ):         5 (  2.60%)
+            Range 4( -13.503uA  -   -10.802uA ):         5 (  2.60%)
+            Range 5( -10.802uA  -    -8.102uA ):         8 (  4.17%)
+            Range 6(  -8.102uA  -    -5.401uA ):         4 (  2.08%)
+            Range 7(  -5.401uA  -    -2.701uA ):         0 (  0.00%)
+            Range 8(  -2.701uA  -      0.000A ):       168 ( 87.50%)
+          GIF plot: power_log/PD_25C_avg_1/Reports/VCC/vc.gif
+Ended Voltage Source Current Report Generation
+
+************************************************************************************
+
+Begin Resistor Current Report Generation
+    Net GND:
+          Minimum, Average, Maximum Resistor Current: 0.000A, 0.597uA, 21.669uA
+            Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+            Range 2( 100.000uA  -     1.000mA ):         0 (  0.00%)
+            Range 3(  10.000uA  -   100.000uA ):        66 (  0.07%)
+            Range 4(   1.000uA  -    10.000uA ):     20473 ( 21.67%)
+            Range 5(   0.100uA  -     1.000uA ):     39852 ( 42.18%)
+            Range 6(  10.000nA  -     0.100uA ):     23588 ( 24.97%)
+            Range 7(   1.000nA  -    10.000nA ):      9699 ( 10.27%)
+            Range 8(    0.000A  -     1.000nA ):       803 (  0.85%)
+          GIF plot: power_log/PD_25C_avg_1/Reports/GND/rc.gif
+
+    Net VCC:
+          Minimum, Average, Maximum Resistor Current: 0.000A, 0.588uA, 83.023uA
+            Range 1(   1.000mA  -     1.000GA ):         0 (  0.00%)
+            Range 2( 100.000uA  -     1.000mA ):         0 (  0.00%)
+            Range 3(  10.000uA  -   100.000uA ):       151 (  0.16%)
+            Range 4(   1.000uA  -    10.000uA ):     18540 ( 19.59%)
+            Range 5(   0.100uA  -     1.000uA ):     34335 ( 36.29%)
+            Range 6(  10.000nA  -     0.100uA ):      8918 (  9.43%)
+            Range 7(   1.000nA  -    10.000nA ):         0 (  0.00%)
+            Range 8(    0.000A  -     1.000nA ):     32676 ( 34.53%)
+          GIF plot: power_log/PD_25C_avg_1/Reports/VCC/rc.gif
+Ended Resistor Current Report Generation
+
+************************************************************************************
+
+Begin Resistor Voltage Report Generation
+    Net GND:
+          Minimum, Average, Maximum Resistor Voltage: 0.000V, 0.244uV, 17.046uV
+            Range 1(  14.915uV  -    17.048uV ):         1 (  0.00%)
+            Range 2(  12.785uV  -    14.915uV ):         1 (  0.00%)
+            Range 3(  10.654uV  -    12.785uV ):         0 (  0.00%)
+            Range 4(   8.523uV  -    10.654uV ):         2 (  0.00%)
+            Range 5(   6.392uV  -     8.523uV ):         2 (  0.00%)
+            Range 6(   4.262uV  -     6.392uV ):        32 (  0.03%)
+            Range 7(   2.131uV  -     4.262uV ):       429 (  0.45%)
+            Range 8(    0.000V  -     2.131uV ):     94014 ( 99.51%)
+          GIF plot: power_log/PD_25C_avg_1/Reports/GND/rv.gif
+
+    Net VCC:
+          Minimum, Average, Maximum Resistor Voltage: 0.000V, 0.245uV, 16.212uV
+            Range 1(  14.186uV  -    16.214uV ):         1 (  0.00%)
+            Range 2(  12.159uV  -    14.186uV ):         1 (  0.00%)
+            Range 3(  10.133uV  -    12.159uV ):         1 (  0.00%)
+            Range 4(   8.106uV  -    10.133uV ):         2 (  0.00%)
+            Range 5(   6.080uV  -     8.106uV ):         1 (  0.00%)
+            Range 6(   4.053uV  -     6.080uV ):        42 (  0.04%)
+            Range 7(   2.027uV  -     4.053uV ):       547 (  0.58%)
+            Range 8(    0.000V  -     2.027uV ):     94025 ( 99.37%)
+          GIF plot: power_log/PD_25C_avg_1/Reports/VCC/rv.gif
+Ended Resistor Voltage Report Generation
+
+************************************************************************************
+
+Begin Power Gate I/Idsat Report Generation
+    Net GND:
+          No data found
+
+    Net VCC:
+          No data found
+Ended Power Gate I/Idsat Report Generation
+
+************************************************************************************
+
+Begin Power Gate Voltage Report Generation
+    Net GND:
+          No data found.
+
+    Net VCC:
+          No data found.
+Ended Power Gate Voltage Report Generation
+
+************************************************************************************
+
+Begin Voltage Across Vias and Contacts Report Generation
+    Net GND:
+
+    Net VCC:
+Ended Voltage Across Vias and Contacts Report Generation
+
+************************************************************************************
+
+Begin Weak Grid Connectivity Report
+    Net GND:
+
+    Net VCC:
+Ended Weak Grid Connectivity Report
+
+************************************************************************************
+
+Begin Grid Integrity Report Generation
+    Net GND:
+          # Missing Cell Power-Grid Views: 0
+          # Physically Disconnected Instances: 0
+          # Instances with Floating Power Pins: 0
+          # Disconnected Wire Segments: 96
+          # Weakly Connected Metal Segments: 165
+          # Dropped Voltage Sources: 0
+
+    Net VCC:
+          # Missing Cell Power-Grid Views: 0
+          # Physically Disconnected Instances: 0
+          # Instances with Floating Power Pins: 0
+          # Disconnected Wire Segments: 96
+          # Weakly Connected Metal Segments: 167
+          # Dropped Voltage Sources: 0
+Ended Grid Integrity Report Generation
+
+************************************************************************************
+

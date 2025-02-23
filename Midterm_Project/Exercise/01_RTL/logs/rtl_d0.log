@@ -1,0 +1,1120 @@
+vcs -timescale=1ns/1fs -j4                -sverilog +v2k -full64 -Mupdate -R -debug_access+all -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v -f "filelist.f"	 -o "simv"      	 -l "vcs.log"      	 -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a +define+RTL +define+PERF +notimingchecks  +define+D0
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sun Nov 17 12:15:00 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TESTBED.v'
+Parsing included file 'PATTERN.v'.
+Parsing included file '../00_TESTBED/pseudo_DRAM.v'.
+Back to file 'PATTERN.v'.
+Back to file 'TESTBED.v'.
+Parsing included file 'ISP.v'.
+Back to file 'TESTBED.v'.
+Top Level Modules:
+       TESTBED
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+5 modules and 0 UDP read.
+recompiling module pseudo_DRAM
+recompiling module PATTERN
+Both modules done.
+	However, due to incremental compilation, only 2 modules need to be compiled. 
+make[1]: Entering directory `/RAID2/COURSE/iclab/iclab018/Midterm_Project/Exercise/01_RTL/csrc'
+make[1]: Leaving directory `/RAID2/COURSE/iclab/iclab018/Midterm_Project/Exercise/01_RTL/csrc'
+make[1]: Entering directory `/RAID2/COURSE/iclab/iclab018/Midterm_Project/Exercise/01_RTL/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _47178_archive_1.so _47197_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/pli.a -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/RAID2/COURSE/iclab/iclab018/Midterm_Project/Exercise/01_RTL/csrc'
+Notice: timing checks disabled with +notimingcheck at compile-time
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Nov 17 12:15 2024
+[Info] Start to read dram.dat../00_TESTBED/DRAM/dram0.dat
+121
+[1;34mPASS PATTERN NO.   0 [1;32mCycles: 515[1;0m | your output =         189
+[1;34mPASS PATTERN NO.   1 [1;32mCycles: 514[1;0m | your output =           0
+[1;34mPASS PATTERN NO.   2 [1;32mCycles: 539[1;0m | your output =           2
+[1;34mPASS PATTERN NO.   3 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.   4 [1;32mCycles: 671[1;0m | your output =         191
+[1;34mPASS PATTERN NO.   5 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.   6 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.   7 [1;32mCycles: 600[1;0m | your output =           2
+[1;34mPASS PATTERN NO.   8 [1;32mCycles: 660[1;0m | your output =          61
+[1;34mPASS PATTERN NO.   9 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  10 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  11 [1;32mCycles: 698[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  12 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  13 [1;32mCycles: 568[1;0m | your output =          30
+[1;34mPASS PATTERN NO.  14 [1;32mCycles: 587[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  15 [1;32mCycles: 694[1;0m | your output =          30
+[1;34mPASS PATTERN NO.  16 [1;32mCycles:   1[1;0m | your output =         125
+[1;34mPASS PATTERN NO.  17 [1;32mCycles: 590[1;0m | your output =         187
+[1;34mPASS PATTERN NO.  18 [1;32mCycles: 701[1;0m | your output =         191
+[1;34mPASS PATTERN NO.  19 [1;32mCycles: 607[1;0m | your output =         191
+[1;34mPASS PATTERN NO.  20 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  21 [1;32mCycles:   1[1;0m | your output =          30
+[1;34mPASS PATTERN NO.  22 [1;32mCycles: 511[1;0m | your output =          93
+[1;34mPASS PATTERN NO.  23 [1;32mCycles: 704[1;0m | your output =           0
+[1;34mPASS PATTERN NO.  24 [1;32mCycles: 679[1;0m | your output =           0
+[1;34mPASS PATTERN NO.  25 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  26 [1;32mCycles: 518[1;0m | your output =          14
+[1;34mPASS PATTERN NO.  27 [1;32mCycles: 643[1;0m | your output =         189
+[1;34mPASS PATTERN NO.  28 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  29 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO.  30 [1;32mCycles: 588[1;0m | your output =          63
+[1;34mPASS PATTERN NO.  31 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO.  32 [1;32mCycles: 509[1;0m | your output =         188
+[1;34mPASS PATTERN NO.  33 [1;32mCycles: 695[1;0m | your output =         189
+[1;34mPASS PATTERN NO.  34 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  35 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  36 [1;32mCycles: 702[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  37 [1;32mCycles: 540[1;0m | your output =         219
+[1;34mPASS PATTERN NO.  38 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  39 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  40 [1;32mCycles: 624[1;0m | your output =          62
+[1;34mPASS PATTERN NO.  41 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  42 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  43 [1;32mCycles: 562[1;0m | your output =          53
+[1;34mPASS PATTERN NO.  44 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  45 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  46 [1;32mCycles:   1[1;0m | your output =         191
+[1;34mPASS PATTERN NO.  47 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  48 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  49 [1;32mCycles:   1[1;0m | your output =          53
+[1;34mPASS PATTERN NO.  50 [1;32mCycles: 624[1;0m | your output =         127
+[1;34mPASS PATTERN NO.  51 [1;32mCycles: 603[1;0m | your output =         220
+[1;34mPASS PATTERN NO.  52 [1;32mCycles: 544[1;0m | your output =         236
+[1;34mPASS PATTERN NO.  53 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  54 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO.  55 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  56 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  57 [1;32mCycles: 547[1;0m | your output =          30
+[1;34mPASS PATTERN NO.  58 [1;32mCycles:   1[1;0m | your output =          61
+[1;34mPASS PATTERN NO.  59 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  60 [1;32mCycles: 526[1;0m | your output =          30
+[1;34mPASS PATTERN NO.  61 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  62 [1;32mCycles: 530[1;0m | your output =          94
+[1;34mPASS PATTERN NO.  63 [1;32mCycles: 556[1;0m | your output =         125
+[1;34mPASS PATTERN NO.  64 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  65 [1;32mCycles: 521[1;0m | your output =          45
+[1;34mPASS PATTERN NO.  66 [1;32mCycles: 570[1;0m | your output =          45
+[1;34mPASS PATTERN NO.  67 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO.  68 [1;32mCycles:   1[1;0m | your output =          94
+[1;34mPASS PATTERN NO.  69 [1;32mCycles: 542[1;0m | your output =           6
+[1;34mPASS PATTERN NO.  70 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  71 [1;32mCycles: 545[1;0m | your output =          93
+[1;34mPASS PATTERN NO.  72 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  73 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  74 [1;32mCycles: 579[1;0m | your output =         244
+[1;34mPASS PATTERN NO.  75 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  76 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  77 [1;32mCycles:   1[1;0m | your output =         191
+[1;34mPASS PATTERN NO.  78 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO.  79 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  80 [1;32mCycles:   1[1;0m | your output =          30
+[1;34mPASS PATTERN NO.  81 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO.  82 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO.  83 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  84 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO.  85 [1;32mCycles: 593[1;0m | your output =         191
+[1;34mPASS PATTERN NO.  86 [1;32mCycles: 670[1;0m | your output =           0
+[1;34mPASS PATTERN NO.  87 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  88 [1;32mCycles: 607[1;0m | your output =          14
+[1;34mPASS PATTERN NO.  89 [1;32mCycles:   1[1;0m | your output =         191
+[1;34mPASS PATTERN NO.  90 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  91 [1;32mCycles:   1[1;0m | your output =         189
+[1;34mPASS PATTERN NO.  92 [1;32mCycles: 704[1;0m | your output =          30
+[1;34mPASS PATTERN NO.  93 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  94 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO.  95 [1;32mCycles: 664[1;0m | your output =          93
+[1;34mPASS PATTERN NO.  96 [1;32mCycles: 591[1;0m | your output =           6
+[1;34mPASS PATTERN NO.  97 [1;32mCycles:   1[1;0m | your output =          93
+[1;34mPASS PATTERN NO.  98 [1;32mCycles: 564[1;0m | your output =         188
+[1;34mPASS PATTERN NO.  99 [1;32mCycles:   1[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 100 [1;32mCycles: 671[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 101 [1;32mCycles: 624[1;0m | your output =          30
+[1;34mPASS PATTERN NO. 102 [1;32mCycles: 608[1;0m | your output =          45
+[1;34mPASS PATTERN NO. 103 [1;32mCycles: 699[1;0m | your output =         120
+[1;34mPASS PATTERN NO. 104 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 105 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 106 [1;32mCycles: 698[1;0m | your output =          93
+[1;34mPASS PATTERN NO. 107 [1;32mCycles: 565[1;0m | your output =         222
+[1;34mPASS PATTERN NO. 108 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 109 [1;32mCycles: 562[1;0m | your output =          11
+[1;34mPASS PATTERN NO. 110 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 111 [1;32mCycles: 621[1;0m | your output =          14
+[1;34mPASS PATTERN NO. 112 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 113 [1;32mCycles: 696[1;0m | your output =          94
+[1;34mPASS PATTERN NO. 114 [1;32mCycles: 524[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 115 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 116 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 117 [1;32mCycles: 583[1;0m | your output =          93
+[1;34mPASS PATTERN NO. 118 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 119 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 120 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 121 [1;32mCycles: 535[1;0m | your output =          46
+[1;34mPASS PATTERN NO. 122 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 123 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 124 [1;32mCycles: 639[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 125 [1;32mCycles: 695[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 126 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 127 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 128 [1;32mCycles: 520[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 129 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 130 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 131 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 132 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 133 [1;32mCycles: 651[1;0m | your output =          93
+[1;34mPASS PATTERN NO. 134 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 135 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 136 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 137 [1;32mCycles: 648[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 138 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 139 [1;32mCycles: 684[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 140 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 141 [1;32mCycles:   1[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 142 [1;32mCycles: 697[1;0m | your output =          45
+[1;34mPASS PATTERN NO. 143 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 144 [1;32mCycles: 577[1;0m | your output =          30
+[1;34mPASS PATTERN NO. 145 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 146 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 147 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 148 [1;32mCycles: 588[1;0m | your output =           9
+[1;34mPASS PATTERN NO. 149 [1;32mCycles: 626[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 150 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 151 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 152 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 153 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 154 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 155 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 156 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 157 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 158 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 159 [1;32mCycles: 666[1;0m | your output =          53
+[1;34mPASS PATTERN NO. 160 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 161 [1;32mCycles: 609[1;0m | your output =          14
+[1;34mPASS PATTERN NO. 162 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 163 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 164 [1;32mCycles: 521[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 165 [1;32mCycles: 546[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 166 [1;32mCycles:   1[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 167 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 168 [1;32mCycles:   1[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 169 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 170 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 171 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 172 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 173 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 174 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 175 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 176 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 177 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 178 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 179 [1;32mCycles: 687[1;0m | your output =          14
+[1;34mPASS PATTERN NO. 180 [1;32mCycles: 617[1;0m | your output =          45
+[1;34mPASS PATTERN NO. 181 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 182 [1;32mCycles: 552[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 183 [1;32mCycles:   1[1;0m | your output =          93
+[1;34mPASS PATTERN NO. 184 [1;32mCycles: 654[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 185 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 186 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 187 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 188 [1;32mCycles:   1[1;0m | your output =          93
+[1;34mPASS PATTERN NO. 189 [1;32mCycles: 649[1;0m | your output =          62
+[1;34mPASS PATTERN NO. 190 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 191 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 192 [1;32mCycles: 516[1;0m | your output =           3
+[1;34mPASS PATTERN NO. 193 [1;32mCycles: 548[1;0m | your output =          29
+[1;34mPASS PATTERN NO. 194 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 195 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 196 [1;32mCycles: 659[1;0m | your output =          59
+[1;34mPASS PATTERN NO. 197 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 198 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 199 [1;32mCycles: 628[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 200 [1;32mCycles: 587[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 201 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 202 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 203 [1;32mCycles: 703[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 204 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 205 [1;32mCycles:   1[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 206 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 207 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 208 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 209 [1;32mCycles:   1[1;0m | your output =          93
+[1;34mPASS PATTERN NO. 210 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 211 [1;32mCycles: 613[1;0m | your output =          30
+[1;34mPASS PATTERN NO. 212 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 213 [1;32mCycles: 519[1;0m | your output =         221
+[1;34mPASS PATTERN NO. 214 [1;32mCycles: 640[1;0m | your output =          14
+[1;34mPASS PATTERN NO. 215 [1;32mCycles: 506[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 216 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 217 [1;32mCycles: 523[1;0m | your output =         187
+[1;34mPASS PATTERN NO. 218 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 219 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 220 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 221 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 222 [1;32mCycles: 700[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 223 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 224 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 225 [1;32mCycles:   1[1;0m | your output =          53
+[1;34mPASS PATTERN NO. 226 [1;32mCycles:   1[1;0m | your output =          30
+[1;34mPASS PATTERN NO. 227 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 228 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 229 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 230 [1;32mCycles: 700[1;0m | your output =         244
+[1;34mPASS PATTERN NO. 231 [1;32mCycles: 659[1;0m | your output =         120
+[1;34mPASS PATTERN NO. 232 [1;32mCycles:   1[1;0m | your output =         221
+[1;34mPASS PATTERN NO. 233 [1;32mCycles: 635[1;0m | your output =          53
+[1;34mPASS PATTERN NO. 234 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 235 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 236 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 237 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 238 [1;32mCycles: 613[1;0m | your output =          28
+[1;34mPASS PATTERN NO. 239 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 240 [1;32mCycles:   1[1;0m | your output =         187
+[1;34mPASS PATTERN NO. 241 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 242 [1;32mCycles: 590[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 243 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 244 [1;32mCycles: 638[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 245 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 246 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 247 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 248 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 249 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 250 [1;32mCycles: 677[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 251 [1;32mCycles: 704[1;0m | your output =          45
+[1;34mPASS PATTERN NO. 252 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 253 [1;32mCycles: 619[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 254 [1;32mCycles: 645[1;0m | your output =           9
+[1;34mPASS PATTERN NO. 255 [1;32mCycles: 635[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 256 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 257 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 258 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 259 [1;32mCycles: 612[1;0m | your output =         110
+[1;34mPASS PATTERN NO. 260 [1;32mCycles: 590[1;0m | your output =          58
+[1;34mPASS PATTERN NO. 261 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 262 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 263 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 264 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 265 [1;32mCycles: 654[1;0m | your output =         109
+[1;34mPASS PATTERN NO. 266 [1;32mCycles: 555[1;0m | your output =          46
+[1;34mPASS PATTERN NO. 267 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 268 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 269 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 270 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 271 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 272 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 273 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 274 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 275 [1;32mCycles: 578[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 276 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 277 [1;32mCycles: 535[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 278 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 279 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 280 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 281 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 282 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 283 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 284 [1;32mCycles: 694[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 285 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 286 [1;32mCycles: 528[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 287 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 288 [1;32mCycles: 507[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 289 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 290 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 291 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 292 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 293 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 294 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 295 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 296 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 297 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 298 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 299 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 300 [1;32mCycles:   1[1;0m | your output =          93
+[1;34mPASS PATTERN NO. 301 [1;32mCycles: 563[1;0m | your output =          53
+[1;34mPASS PATTERN NO. 302 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 303 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 304 [1;32mCycles:   1[1;0m | your output =          30
+[1;34mPASS PATTERN NO. 305 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 306 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 307 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 308 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 309 [1;32mCycles: 603[1;0m | your output =          14
+[1;34mPASS PATTERN NO. 310 [1;32mCycles:   1[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 311 [1;32mCycles:   1[1;0m | your output =          14
+[1;34mPASS PATTERN NO. 312 [1;32mCycles: 613[1;0m | your output =          93
+[1;34mPASS PATTERN NO. 313 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 314 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 315 [1;32mCycles: 686[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 316 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 317 [1;32mCycles: 504[1;0m | your output =          53
+[1;34mPASS PATTERN NO. 318 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 319 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 320 [1;32mCycles: 534[1;0m | your output =          11
+[1;34mPASS PATTERN NO. 321 [1;32mCycles: 636[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 322 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 323 [1;32mCycles: 579[1;0m | your output =          25
+[1;34mPASS PATTERN NO. 324 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 325 [1;32mCycles: 702[1;0m | your output =           6
+[1;34mPASS PATTERN NO. 326 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 327 [1;32mCycles: 576[1;0m | your output =         118
+[1;34mPASS PATTERN NO. 328 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 329 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 330 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 331 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 332 [1;32mCycles:   1[1;0m | your output =          25
+[1;34mPASS PATTERN NO. 333 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 334 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 335 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 336 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 337 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 338 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 339 [1;32mCycles: 538[1;0m | your output =         181
+[1;34mPASS PATTERN NO. 340 [1;32mCycles: 587[1;0m | your output =         110
+[1;34mPASS PATTERN NO. 341 [1;32mCycles:   1[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 342 [1;32mCycles: 602[1;0m | your output =         119
+[1;34mPASS PATTERN NO. 343 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 344 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 345 [1;32mCycles:   1[1;0m | your output =         181
+[1;34mPASS PATTERN NO. 346 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 347 [1;32mCycles: 687[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 348 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 349 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 350 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 351 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 352 [1;32mCycles:   1[1;0m | your output =          93
+[1;34mPASS PATTERN NO. 353 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 354 [1;32mCycles: 685[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 355 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 356 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 357 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 358 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 359 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 360 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 361 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 362 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 363 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 364 [1;32mCycles: 567[1;0m | your output =          45
+[1;34mPASS PATTERN NO. 365 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 366 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 367 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 368 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 369 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 370 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 371 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 372 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 373 [1;32mCycles: 575[1;0m | your output =          93
+[1;34mPASS PATTERN NO. 374 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 375 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 376 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 377 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 378 [1;32mCycles: 542[1;0m | your output =           3
+[1;34mPASS PATTERN NO. 379 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 380 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 381 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 382 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 383 [1;32mCycles: 682[1;0m | your output =          25
+[1;34mPASS PATTERN NO. 384 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 385 [1;32mCycles: 594[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 386 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 387 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 388 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 389 [1;32mCycles: 628[1;0m | your output =          11
+[1;34mPASS PATTERN NO. 390 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 391 [1;32mCycles:   1[1;0m | your output =          45
+[1;34mPASS PATTERN NO. 392 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 393 [1;32mCycles: 600[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 394 [1;32mCycles: 622[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 395 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 396 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 397 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 398 [1;32mCycles: 627[1;0m | your output =          46
+[1;34mPASS PATTERN NO. 399 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 400 [1;32mCycles: 661[1;0m | your output =          44
+[1;34mPASS PATTERN NO. 401 [1;32mCycles: 538[1;0m | your output =           9
+[1;34mPASS PATTERN NO. 402 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 403 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 404 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 405 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 406 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 407 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 408 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 409 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 410 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 411 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 412 [1;32mCycles: 572[1;0m | your output =         239
+[1;34mPASS PATTERN NO. 413 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 414 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 415 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 416 [1;32mCycles: 678[1;0m | your output =         188
+[1;34mPASS PATTERN NO. 417 [1;32mCycles: 528[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 418 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 419 [1;32mCycles: 693[1;0m | your output =          52
+[1;34mPASS PATTERN NO. 420 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 421 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 422 [1;32mCycles: 517[1;0m | your output =          25
+[1;34mPASS PATTERN NO. 423 [1;32mCycles: 641[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 424 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 425 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 426 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 427 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 428 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 429 [1;32mCycles:   1[1;0m | your output =          25
+[1;34mPASS PATTERN NO. 430 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 431 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 432 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 433 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 434 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 435 [1;32mCycles: 612[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 436 [1;32mCycles: 574[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 437 [1;32mCycles: 551[1;0m | your output =         119
+[1;34mPASS PATTERN NO. 438 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 439 [1;32mCycles: 639[1;0m | your output =          28
+[1;34mPASS PATTERN NO. 440 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 441 [1;32mCycles: 515[1;0m | your output =          89
+[1;34mPASS PATTERN NO. 442 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 443 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 444 [1;32mCycles: 667[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 445 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 446 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 447 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 448 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 449 [1;32mCycles: 599[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 450 [1;32mCycles:   1[1;0m | your output =           3
+[1;34mPASS PATTERN NO. 451 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 452 [1;32mCycles: 548[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 453 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 454 [1;32mCycles: 558[1;0m | your output =         220
+[1;34mPASS PATTERN NO. 455 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 456 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 457 [1;32mCycles: 644[1;0m | your output =         109
+[1;34mPASS PATTERN NO. 458 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 459 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 460 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 461 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 462 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 463 [1;32mCycles:   1[1;0m | your output =          89
+[1;34mPASS PATTERN NO. 464 [1;32mCycles: 579[1;0m | your output =           5
+[1;34mPASS PATTERN NO. 465 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 466 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 467 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 468 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 469 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 470 [1;32mCycles: 597[1;0m | your output =           4
+[1;34mPASS PATTERN NO. 471 [1;32mCycles:   1[1;0m | your output =          25
+[1;34mPASS PATTERN NO. 472 [1;32mCycles:   1[1;0m | your output =          25
+[1;34mPASS PATTERN NO. 473 [1;32mCycles: 680[1;0m | your output =          44
+[1;34mPASS PATTERN NO. 474 [1;32mCycles: 617[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 475 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 476 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 477 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 478 [1;32mCycles:   1[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 479 [1;32mCycles: 644[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 480 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 481 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 482 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 483 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 484 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 485 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 486 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 487 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 488 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 489 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 490 [1;32mCycles: 545[1;0m | your output =           9
+[1;34mPASS PATTERN NO. 491 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 492 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 493 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 494 [1;32mCycles: 633[1;0m | your output =          25
+[1;34mPASS PATTERN NO. 495 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 496 [1;32mCycles: 515[1;0m | your output =           9
+[1;34mPASS PATTERN NO. 497 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 498 [1;32mCycles: 524[1;0m | your output =          11
+[1;34mPASS PATTERN NO. 499 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 500 [1;32mCycles: 557[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 501 [1;32mCycles: 524[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 502 [1;32mCycles: 573[1;0m | your output =           4
+[1;34mPASS PATTERN NO. 503 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 504 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 505 [1;32mCycles: 513[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 506 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 507 [1;32mCycles: 665[1;0m | your output =           3
+[1;34mPASS PATTERN NO. 508 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 509 [1;32mCycles: 673[1;0m | your output =           5
+[1;34mPASS PATTERN NO. 510 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 511 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 512 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 513 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 514 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 515 [1;32mCycles: 670[1;0m | your output =          44
+[1;34mPASS PATTERN NO. 516 [1;32mCycles: 605[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 517 [1;32mCycles: 519[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 518 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 519 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 520 [1;32mCycles:   1[1;0m | your output =          44
+[1;34mPASS PATTERN NO. 521 [1;32mCycles: 629[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 522 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 523 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 524 [1;32mCycles: 703[1;0m | your output =          12
+[1;34mPASS PATTERN NO. 525 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 526 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 527 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 528 [1;32mCycles: 613[1;0m | your output =          52
+[1;34mPASS PATTERN NO. 529 [1;32mCycles: 624[1;0m | your output =           3
+[1;34mPASS PATTERN NO. 530 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 531 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 532 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 533 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 534 [1;32mCycles:   1[1;0m | your output =           9
+[1;34mPASS PATTERN NO. 535 [1;32mCycles: 584[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 536 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 537 [1;32mCycles: 616[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 538 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 539 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 540 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 541 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 542 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 543 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 544 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 545 [1;32mCycles: 523[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 546 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 547 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 548 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 549 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 550 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 551 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 552 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 553 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 554 [1;32mCycles: 559[1;0m | your output =          11
+[1;34mPASS PATTERN NO. 555 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 556 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 557 [1;32mCycles: 523[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 558 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 559 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 560 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 561 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 562 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 563 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 564 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 565 [1;32mCycles:   1[1;0m | your output =          12
+[1;34mPASS PATTERN NO. 566 [1;32mCycles: 559[1;0m | your output =           4
+[1;34mPASS PATTERN NO. 567 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 568 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 569 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 570 [1;32mCycles: 530[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 571 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 572 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 573 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 574 [1;32mCycles: 650[1;0m | your output =           3
+[1;34mPASS PATTERN NO. 575 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 576 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 577 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 578 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 579 [1;32mCycles:   1[1;0m | your output =          44
+[1;34mPASS PATTERN NO. 580 [1;32mCycles: 643[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 581 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 582 [1;32mCycles: 507[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 583 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 584 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 585 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 586 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 587 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 588 [1;32mCycles:   1[1;0m | your output =          44
+[1;34mPASS PATTERN NO. 589 [1;32mCycles: 553[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 590 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 591 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 592 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 593 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 594 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 595 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 596 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 597 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 598 [1;32mCycles: 512[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 599 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 600 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 601 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 602 [1;32mCycles: 703[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 603 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 604 [1;32mCycles: 584[1;0m | your output =          25
+[1;34mPASS PATTERN NO. 605 [1;32mCycles: 631[1;0m | your output =           5
+[1;34mPASS PATTERN NO. 606 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 607 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 608 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 609 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 610 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 611 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 612 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 613 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 614 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 615 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 616 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 617 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 618 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 619 [1;32mCycles: 505[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 620 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 621 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 622 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 623 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 624 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 625 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 626 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 627 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 628 [1;32mCycles: 704[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 629 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 630 [1;32mCycles: 649[1;0m | your output =           9
+[1;34mPASS PATTERN NO. 631 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 632 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 633 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 634 [1;32mCycles: 627[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 635 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 636 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 637 [1;32mCycles: 536[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 638 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 639 [1;32mCycles: 663[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 640 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 641 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 642 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 643 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 644 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 645 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 646 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 647 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 648 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 649 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 650 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 651 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 652 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 653 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 654 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 655 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 656 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 657 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 658 [1;32mCycles: 625[1;0m | your output =          44
+[1;34mPASS PATTERN NO. 659 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 660 [1;32mCycles: 693[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 661 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 662 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 663 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 664 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 665 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 666 [1;32mCycles: 597[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 667 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 668 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 669 [1;32mCycles: 640[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 670 [1;32mCycles:   1[1;0m | your output =          44
+[1;34mPASS PATTERN NO. 671 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 672 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 673 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 674 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 675 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 676 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 677 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 678 [1;32mCycles: 700[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 679 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 680 [1;32mCycles:   1[1;0m | your output =           9
+[1;34mPASS PATTERN NO. 681 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 682 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 683 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 684 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 685 [1;32mCycles: 621[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 686 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 687 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 688 [1;32mCycles: 561[1;0m | your output =          20
+[1;34mPASS PATTERN NO. 689 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 690 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 691 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 692 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 693 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 694 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 695 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 696 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 697 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 698 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 699 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 700 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 701 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 702 [1;32mCycles: 687[1;0m | your output =           3
+[1;34mPASS PATTERN NO. 703 [1;32mCycles: 555[1;0m | your output =           5
+[1;34mPASS PATTERN NO. 704 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 705 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 706 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 707 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 708 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 709 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 710 [1;32mCycles: 601[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 711 [1;32mCycles:   1[1;0m | your output =          44
+[1;34mPASS PATTERN NO. 712 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 713 [1;32mCycles: 526[1;0m | your output =          89
+[1;34mPASS PATTERN NO. 714 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 715 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 716 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 717 [1;32mCycles: 531[1;0m | your output =          21
+[1;34mPASS PATTERN NO. 718 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 719 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 720 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 721 [1;32mCycles:   1[1;0m | your output =           5
+[1;34mPASS PATTERN NO. 722 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 723 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 724 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 725 [1;32mCycles: 560[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 726 [1;32mCycles: 700[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 727 [1;32mCycles:   1[1;0m | your output =           5
+[1;34mPASS PATTERN NO. 728 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 729 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 730 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 731 [1;32mCycles: 632[1;0m | your output =           4
+[1;34mPASS PATTERN NO. 732 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 733 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 734 [1;32mCycles: 645[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 735 [1;32mCycles: 667[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 736 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 737 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 738 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 739 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 740 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 741 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 742 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 743 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 744 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 745 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 746 [1;32mCycles: 671[1;0m | your output =           3
+[1;34mPASS PATTERN NO. 747 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 748 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 749 [1;32mCycles: 661[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 750 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 751 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 752 [1;32mCycles: 518[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 753 [1;32mCycles: 652[1;0m | your output =           9
+[1;34mPASS PATTERN NO. 754 [1;32mCycles:   1[1;0m | your output =           9
+[1;34mPASS PATTERN NO. 755 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 756 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 757 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 758 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 759 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 760 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 761 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 762 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 763 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 764 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 765 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 766 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 767 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 768 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 769 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 770 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 771 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 772 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 773 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 774 [1;32mCycles:   1[1;0m | your output =           4
+[1;34mPASS PATTERN NO. 775 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 776 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 777 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 778 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 779 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 780 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 781 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 782 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 783 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 784 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 785 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 786 [1;32mCycles: 512[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 787 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 788 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 789 [1;32mCycles: 568[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 790 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 791 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 792 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 793 [1;32mCycles: 692[1;0m | your output =           3
+[1;34mPASS PATTERN NO. 794 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 795 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 796 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 797 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 798 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 799 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 800 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 801 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 802 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 803 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 804 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 805 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 806 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 807 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 808 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 809 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 810 [1;32mCycles: 690[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 811 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 812 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 813 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 814 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 815 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 816 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 817 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 818 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 819 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 820 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 821 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 822 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 823 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 824 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 825 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 826 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 827 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 828 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 829 [1;32mCycles: 658[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 830 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 831 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 832 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 833 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 834 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 835 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 836 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 837 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 838 [1;32mCycles: 602[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 839 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 840 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 841 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 842 [1;32mCycles:   1[1;0m | your output =           4
+[1;34mPASS PATTERN NO. 843 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 844 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 845 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 846 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 847 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 848 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 849 [1;32mCycles:   1[1;0m | your output =           2
+[1;34mPASS PATTERN NO. 850 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 851 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 852 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 853 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 854 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 855 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 856 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 857 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 858 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 859 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 860 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 861 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 862 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 863 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 864 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 865 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 866 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 867 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 868 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 869 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 870 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 871 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 872 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 873 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 874 [1;32mCycles: 623[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 875 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 876 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 877 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 878 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 879 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 880 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 881 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 882 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 883 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 884 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 885 [1;32mCycles: 536[1;0m | your output =          11
+[1;34mPASS PATTERN NO. 886 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 887 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 888 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 889 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 890 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 891 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 892 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 893 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 894 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 895 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 896 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 897 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 898 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 899 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 900 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 901 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 902 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 903 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 904 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 905 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 906 [1;32mCycles: 680[1;0m | your output =          24
+[1;34mPASS PATTERN NO. 907 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 908 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 909 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 910 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 911 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 912 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 913 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 914 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 915 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 916 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 917 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 918 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 919 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 920 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 921 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 922 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 923 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 924 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 925 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 926 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 927 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 928 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 929 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 930 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 931 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 932 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 933 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 934 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 935 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 936 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 937 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 938 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 939 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 940 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 941 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 942 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 943 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 944 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 945 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 946 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 947 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 948 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 949 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 950 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 951 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 952 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 953 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 954 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 955 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 956 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 957 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 958 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 959 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 960 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 961 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 962 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 963 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 964 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 965 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 966 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 967 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 968 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 969 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 970 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 971 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 972 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 973 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 974 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 975 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 976 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 977 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 978 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 979 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 980 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 981 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 982 [1;32mCycles: 571[1;0m | your output =           3
+[1;34mPASS PATTERN NO. 983 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 984 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 985 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 986 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 987 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 988 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 989 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 990 [1;32mCycles:   1[1;0m | your output =          24
+[1;34mPASS PATTERN NO. 991 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 992 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 993 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 994 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 995 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 996 [1;32mCycles:   1[1;0m | your output =           1
+[1;34mPASS PATTERN NO. 997 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 998 [1;32mCycles:   1[1;0m | your output =           0
+[1;34mPASS PATTERN NO. 999 [1;32mCycles:   1[1;0m | your output =           0
+[1;33m                `oo+oy+`                            [1;35m Congratulation!!! [1;0m                                   
+[1;33m               /h/----+y        `+++++:             [1;35m PASS This Lab........Maybe [1;0m                          
+[1;33m             .y------:m/+ydoo+:y:---:+o             [1;35m Total Latency : 135803    [1;0m                                
+[1;33m              o+------/y--::::::+oso+:/y                                                                                     
+[1;33m              s/-----:/:----------:+ooy+-                                                                                    
+[1;33m             /o----------------/yhyo/::/o+/:-.`                                                                              
+[1;33m            `ys----------------:::--------:::+yyo+                                                                           
+[1;33m            .d/:-------------------:--------/--/hos/                                                                         
+[1;33m            y/-------------------::ds------:s:/-:sy-                                                                         
+[1;33m           +y--------------------::os:-----:ssm/o+`                                                                          
+[1;33m          `d:-----------------------:-----/+o++yNNmms                                                                        
+[1;33m           /y-----------------------------------hMMMMN.                                                                      
+[1;33m           o+---------------------://:----------:odmdy/+.                                                                    
+[1;33m           o+---------------------::y:------------::+o-/h                                                                    
+[1;33m           :y-----------------------+s:------------/h:-:d                                                                    
+[1;33m           `m/-----------------------+y/---------:oy:--/y                                                                    
+[1;33m            /h------------------------:os++/:::/+o/:--:h-                                                                    
+[1;33m         `:+ym--------------------------://++++o/:---:h/                                                                     
+[1;31m        `hhhhhoooo++oo+/:[1;33m--------------------:oo----[1;31m+dd+                                                 
+[1;31m         shyyyhhhhhhhhhhhso/:[1;33m---------------:+/---[1;31m/ydyyhs:`                                              
+[1;31m         .mhyyyyyyhhhdddhhhhhs+:[1;33m----------------[1;31m:sdmhyyyyyyo:                                            
+[1;31m        `hhdhhyyyyhhhhhddddhyyyyyo++/:[1;33m--------[1;31m:odmyhmhhyyyyhy                                            
+[1;31m        -dyyhhyyyyyyhdhyhhddhhyyyyyhhhs+/::[1;33m-[1;31m:ohdmhdhhhdmdhdmy:                                           
+[1;31m         hhdhyyyyyyyyyddyyyyhdddhhyyyyyhhhyyhdhdyyhyys+ossyhssy:-`                                                           
+[1;31m         `Ndyyyyyyyyyyymdyyyyyyyhddddhhhyhhhhhhhhy+/:[1;33m-------::/+o++++-`                                            
+[1;31m          dyyyyyyyyyyyyhNyydyyyyyyyyyyhhhhyyhhy+/[1;33m------------------:/ooo:`                                         
+[1;31m         :myyyyyyyyyyyyyNyhmhhhyyyyyhdhyyyhho/[1;33m-------------------------:+o/`                                       
+[1;31m        /dyyyyyyyyyyyyyyddmmhyyyyyyhhyyyhh+:[1;33m-----------------------------:+s-                                      
+[1;31m      +dyyyyyyyyyyyyyyydmyyyyyyyyyyyyyds:[1;33m---------------------------------:s+                                      
+[1;31m      -ddhhyyyyyyyyyyyyyddyyyyyyyyyyyhd+[1;33m------------------------------------:oo              `-++o+:.`             
+[1;31m       `/dhshdhyyyyyyyyyhdyyyyyyyyyydh:[1;33m---------------------------------------s/            -o/://:/+s             
+[1;31m         os-:/oyhhhhyyyydhyyyyyyyyyds:[1;33m----------------------------------------:h:--.`      `y:------+os            
+[1;33m         h+-----[1;31m:/+oosshdyyyyyyyyhds[1;33m-------------------------------------------+h//o+s+-.` :o-------s/y  
+[1;33m         m:------------[1;31mdyyyyyyyyymo[1;33m--------------------------------------------oh----:://++oo------:s/d  
+[1;33m        `N/-----------+[1;31mmyyyyyyyydo[1;33m---------------------------------------------sy---------:/s------+o/d  
+[1;33m        .m-----------:d[1;31mhhyyyyyyd+[1;33m----------------------------------------------y+-----------+:-----oo/h  
+[1;33m        +s-----------+N[1;31mhmyyyyhd/[1;33m----------------------------------------------:h:-----------::-----+o/m  
+[1;33m        h/----------:d/[1;31mmmhyyhh:[1;33m-----------------------------------------------oo-------------------+o/h  
+[1;33m       `y-----------so /[1;31mNhydh:[1;33m-----------------------------------------------/h:-------------------:soo  
+[1;33m    `.:+o:---------+h   [1;31mmddhhh/:[1;33m---------------:/osssssoo+/::---------------+d+//++///::+++//::::::/y+`  
+[1;33m   -s+/::/--------+d.   [1;31mohso+/+y/:[1;33m-----------:yo+/:-----:/oooo/:----------:+s//::-.....--:://////+/:`    
+[1;33m   s/------------/y`           `/oo:--------:y/-------------:/oo+:------:/s:                                                 
+[1;33m   o+:--------::++`              `:so/:-----s+-----------------:oy+:--:+s/``````                                             
+[1;33m    :+o++///+oo/.                   .+o+::--os-------------------:oy+oo:`/o+++++o-                                           
+[1;33m       .---.`                          -+oo/:yo:-------------------:oy-:h/:---:+oyo                                          
+[1;33m                                          `:+omy/---------------------+h:----:y+//so                                         
+[1;33m                                              `-ys:-------------------+s-----+s///om                                         
+[1;33m                                                 -os+::---------------/y-----ho///om                                         
+[1;33m                                                    -+oo//:-----------:h-----h+///+d                                         
+[1;33m                                                       `-oyy+:---------s:----s/////y                                         
+[1;33m                                                           `-/o+::-----:+----oo///+s                                         
+[1;33m                                                               ./+o+::-------:y///s:                                         
+[1;33m                                                                   ./+oo/-----oo/+h                                          
+[1;33m                                                                       `://++++syo`                                          
+[1;0m
+$finish called from file "PATTERN.v", line 850.
+$finish at simulation time             49972680
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 499726800 ps
+CPU Time:      1.210 seconds;       Data structure size:   0.1Mb
+Sun Nov 17 12:15:05 2024
+CPU time: .930 seconds to compile + .397 seconds to elab + .375 seconds to link + 1.251 seconds in simulation

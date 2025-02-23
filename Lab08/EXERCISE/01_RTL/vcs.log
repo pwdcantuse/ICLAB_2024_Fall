@@ -1,0 +1,53 @@
+Command: vcs -timescale=1ns/1fs -j8 -sverilog +v2k -full64 -Mupdate -R -debug_access+all \
+-y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v -f filelist.f -o simv -l \
+vcs.log -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a \
++define+RTL +define+CG +notimingchecks
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Tue Nov 12 16:24:49 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TESTBED.v'
+Parsing included file 'PATTERN_CG.v'.
+Back to file 'TESTBED.v'.
+Parsing included file 'SA.v'.
+Parsing included file 'GATED_OR.v'.
+Back to file 'SA.v'.
+Back to file 'TESTBED.v'.
+Top Level Modules:
+       TESTBED
+TimeScale is 1 ns / 10 ps
+
+Warning-[PCWM-W] Port connection width mismatch
+SA.v, 1093
+"GATED_OR GATED_5( .CLOCK (clk),  .SLEEP_CTRL (0),  .RST_N (rst_n),  .CLOCK_GATED (clk_delay));"
+  The following 32-bit expression is connected to 1-bit port "SLEEP_CTRL" of 
+  module "GATED_OR", instance "GATED_5".
+  Expression: 0
+  Instantiated module defined at: "GATED_OR.v", 2
+  Use +lint=PCWM for more details.
+
+Starting vcs inline pass...
+
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+5 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+CPU time: 1.484 seconds to compile

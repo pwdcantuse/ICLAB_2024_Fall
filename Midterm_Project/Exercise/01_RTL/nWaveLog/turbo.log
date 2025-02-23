@@ -1,0 +1,3 @@
+Command Line: /usr/cad/synopsys/verdi/2019.06/platform/LINUXAMD64/bin/Novas -nWave -ssf ISP.fsdb
+uname(Linux ee30 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 15:41:52 UTC 2023 x86_64)
+au time 352.167711 3.217662 4.024098 delta 297590784 297590784 total 732643328 732643328

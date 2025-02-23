@@ -1,0 +1,161 @@
+Magic 271485
+Revision Verdi_P-2019.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 1920 1009 223 439
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/RAID2/COURSE/iclab/iclab018/Midterm_Project/Exercise/01_RTL/ISP.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 309492.857143 350614.285714
+cursor 324813.25950829167
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 49
+; marker line index
+markerPos 88
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/RAID2/COURSE/iclab/iclab018/Midterm_Project/Exercise/01_RTL/ISP.fsdb"
+addSignal -h 15 -UNSIGNED -UDEC /TESTBED/u_ISP/State[2:0]
+addSignal -expanded -h 15 -UNSIGNED -UDEC -holdScope focus_map[0:35]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[0][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[1][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[2][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[3][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[4][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[5][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[6][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[7][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[8][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[9][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[10][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[11][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[12][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[13][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[14][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[15][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[16][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[17][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[18][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[19][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[20][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[21][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[22][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[23][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[24][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[25][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[26][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[27][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[28][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[29][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[30][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[31][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[32][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[33][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[34][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_map[35][7:0]
+addSignal -expanded -h 15 -UNSIGNED -UDEC -holdScope sub_out[0:2]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sub_out[0][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sub_out[1][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sub_out[2][7:0]
+addSignal -expanded -h 15 -UNSIGNED -UDEC -holdScope temp_sub_focus_1[0:2]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope temp_sub_focus_1[0][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope temp_sub_focus_1[1][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope temp_sub_focus_1[2][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope temp_sum[0:3]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope temp_sum_focus_2_1[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope temp_sum_focus_4_1[8:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope temp_sum_focus_6_1[9:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope t[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope t_focus_cal[4:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope t_for_focus[3:0]
+addSignal -expanded -h 15 -UNSIGNED -UDEC -holdScope focus_a_in[0:2]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_a_in[0][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_a_in[1][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_a_in[2][7:0]
+addSignal -expanded -h 15 -UNSIGNED -UDEC -holdScope focus_b_in[0:2]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_b_in[0][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_b_in[1][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_b_in[2][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_sum_2[9:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_sum_4[12:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope focus_sum_6[13:0]
+addSignal -h 15 -holdScope mode_in
+addSignal -h 15 -UNSIGNED -UDEC -holdScope pic_no_in[3:0]
+addSignal -expanded -h 15 -UNSIGNED -UDEC -holdScope pix[0:2]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope pix[0][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope pix[1][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope pix[2][7:0]
+addSignal -h 15 -holdScope cal_data[127:0]
+addSignal -expanded -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[0:15]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[0][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[1][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[2][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[3][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[4][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[5][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[6][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[7][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[8][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[9][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[10][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[11][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[12][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[13][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[14][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope scaled_pixel_without_rgb[15][7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope div_ans_of_2[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope div_ans_of_4[8:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope div_ans_of_6[8:0]
+addGroup "G2"
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/RAID2/COURSE/iclab/iclab018/Midterm_Project/Exercise/01_RTL/ISP.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/TESTBED"
+"/TESTBED/u_ISP"
+
+SCOPE_LIST_BEGIN
+"/TESTBED"
+"/TESTBED/u_ISP"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

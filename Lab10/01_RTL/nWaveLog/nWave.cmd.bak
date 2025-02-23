@@ -1,0 +1,1006 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/RAID2/COURSE/iclab/iclab018/Lab10/01_RTL/Program.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/\$unit_0x0359e3aa"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/usertype"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/check_inst"
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/\$unit_0x0359e3aa"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 )} 
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/CHECKER"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvResizeWindow -win $_nWave1 0 23 1920 1009
+wvResizeWindow -win $_nWave1 0 23 1920 1009
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 3 4 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 3 4 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvGetSignalClose -win $_nWave1
+wvZoomAll -win $_nWave1
+wvZoom -win $_nWave1 504300905.383104 512380492.652259
+wvSetCursor -win $_nWave1 508920080.030102
+wvSetCursor -win $_nWave1 508951826.934893
+wvSetCursor -win $_nWave1 508962409.236489
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/\$unit_0x0359e3aa"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvGetSignalClose -win $_nWave1
+wvResizeWindow -win $_nWave1 2601 328 893 202
+wvResizeWindow -win $_nWave1 1920 23 1920 1009
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/\$unit_0x0359e3aa"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/\$unit_0x0359e3aa"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvExpandBus -win $_nWave1 {("G1" 9)}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 13 )} 
+wvSetCursor -win $_nWave1 508962409.236489
+wvSetCursor -win $_nWave1 508840712.768126
+wvSetCursor -win $_nWave1 508962409.236489
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 14 )} 
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 15 )} 
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 15 )} 
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvZoom -win $_nWave1 592208229.744597 614202208.015717
+wvZoom -win $_nWave1 601195945.815999 601988132.328711
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 16 17 18 19 20 )} 
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvSetPosition -win $_nWave1 {("G1" 13)}
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G1" 16)}
+wvSetPosition -win $_nWave1 {("G1" 17)}
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvSetPosition -win $_nWave1 {("G1" 19)}
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/sel_action_valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 21 )} 
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/CHECKER"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/DRAM"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/check_inst"
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/sel_action_valid} \
+{/TESTBED/check_inst/clk} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/sel_action_valid} \
+{/TESTBED/check_inst/clk} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 20 )} 
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvSelectGroup -win $_nWave1 {G2}
+wvSelectSignal -win $_nWave1 {( "G1" 20 )} 
+wvSetCursor -win $_nWave1 601441331.683950 -snap {("G2" 0)}
+wvZoomAll -win $_nWave1
+wvSelectGroup -win $_nWave1 {G2}
+wvSelectGroup -win $_nWave1 {G2}
+wvSelectGroup -win $_nWave1 {G2}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoom -win $_nWave1 223994200.510805 226232650.216110
+wvSetCursor -win $_nWave1 225606705.210103
+wvSetCursor -win $_nWave1 225608171.123466
+wvZoom -win $_nWave1 225551000.502308 225633091.650637
+wvSetCursor -win $_nWave1 225614705.813871
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvZoom -win $_nWave1 47557248.919450 48256153.045187
+wvSetCursor -win $_nWave1 47210199.768598
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 21 )} 
+wvSetPosition -win $_nWave1 {("G1" 16)}
+wvSetPosition -win $_nWave1 {("G1" 13)}
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvSetCursor -win $_nWave1 459591.669941
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvZoomAll -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvZoom -win $_nWave1 172977.878193 174704.204322
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvZoom -win $_nWave1 845320877.092338 848688689.351670
+wvSetCursor -win $_nWave1 848585030.428129
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvZoom -win $_nWave1 848580619.410108 848624729.590322
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 847958382.778145
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoom -win $_nWave1 843013298.655632 848456038.482197
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/D} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+{/TESTBED/inf/Program_inf/sel_action_valid} \
+{/TESTBED/check_inst/clk} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/D} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+{/TESTBED/inf/Program_inf/sel_action_valid} \
+{/TESTBED/check_inst/clk} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 13)}
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G1" 16)}
+wvSetPosition -win $_nWave1 {("G1" 17)}
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvSetPosition -win $_nWave1 {("G1" 19)}
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvSetPosition -win $_nWave1 {("G1" 23)}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvExpandBus -win $_nWave1 {("G2" 1)}
+wvZoomAll -win $_nWave1
+wvZoom -win $_nWave1 839707856.660118 850372595.481336
+wvSelectSignal -win $_nWave1 {( "G2" 6 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/\$unit_0x0359e3aa"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvSetPosition -win $_nWave1 {("G2" 8)}
+wvSetPosition -win $_nWave1 {("G2" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+{/TESTBED/inf/Program_inf/sel_action_valid} \
+{/TESTBED/check_inst/clk} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/inf/Program_inf/D} \
+{/TESTBED/inf/Program_inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/Program_inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/Program_inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/Program_inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/Program_inf/R_DATA\[63:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 8 )} 
+wvSetPosition -win $_nWave1 {("G2" 8)}
+wvSetPosition -win $_nWave1 {("G2" 8)}
+wvSetPosition -win $_nWave1 {("G2" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+{/TESTBED/inf/Program_inf/sel_action_valid} \
+{/TESTBED/check_inst/clk} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/inf/Program_inf/D} \
+{/TESTBED/inf/Program_inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/Program_inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/Program_inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/Program_inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/Program_inf/R_DATA\[63:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 8 )} 
+wvSetPosition -win $_nWave1 {("G2" 8)}
+wvGetSignalClose -win $_nWave1
+wvResizeWindow -win $_nWave1 1920 23 1920 1009
+wvSelectSignal -win $_nWave1 {( "G1" 21 )} 
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvSetPosition -win $_nWave1 {("G1" 19)}
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvSetPosition -win $_nWave1 {("G1" 17)}
+wvSetPosition -win $_nWave1 {("G1" 16)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvSetPosition -win $_nWave1 {("G1" 13)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 13)}
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvSelectSignal -win $_nWave1 {( "G1" 20 )} 
+wvZoom -win $_nWave1 848469198.377495 848657839.706339
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 19 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/\$unit_0x0359e3aa"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 14 )} 
+wvSetCursor -win $_nWave1 848411479.761924
+wvSetCursor -win $_nWave1 848579900.378449
+wvSetCursor -win $_nWave1 848578364.628146
+wvSetCursor -win $_nWave1 848572221.626935
+wvResizeWindow -win $_nWave1 1920 23 1920 1009
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvZoom -win $_nWave1 0.000000 43227093.148936
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomAll -win $_nWave1
+wvZoom -win $_nWave1 839479753.063830 852853072.808511
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoom -win $_nWave1 848442722.679916 848622930.534631
+wvSetCursor -win $_nWave1 848617690.448060
+wvSetCursor -win $_nWave1 848573085.808843
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/inf/Program_inf/sel_action_valid} \
+{/TESTBED/test_p/data_dir_in} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+{/TESTBED/check_inst/clk} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/inf/Program_inf/D} \
+{/TESTBED/inf/Program_inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/Program_inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/Program_inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/Program_inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/Program_inf/R_DATA\[63:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 15 )} 
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/inf/Program_inf/sel_action_valid} \
+{/TESTBED/test_p/data_dir_in} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+{/TESTBED/check_inst/clk} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/inf/Program_inf/D} \
+{/TESTBED/inf/Program_inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/Program_inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/Program_inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/Program_inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/Program_inf/R_DATA\[63:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 15 )} 
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 15 )} 
+wvExpandBus -win $_nWave1 {("G1" 15)}
+wvSelectSignal -win $_nWave1 {( "G1" 15 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 16 )} 
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoom -win $_nWave1 198356.447176 241299.595534
+wvSetCursor -win $_nWave1 209351.111401
+wvSelectSignal -win $_nWave1 {( "G2" 8 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvZoom -win $_nWave1 232928.509675 281658.323415
+wvSetCursor -win $_nWave1 257777.258667
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/inf/Program_inf/sel_action_valid} \
+{/TESTBED/test_p/data_dir_in} \
+{/TESTBED/test_p/data_dir_in.Index_A\[11:0\]} \
+{/TESTBED/test_p/data_dir_in.Index_B\[11:0\]} \
+{/TESTBED/test_p/data_dir_in.Index_C\[11:0\]} \
+{/TESTBED/test_p/data_dir_in.Index_D\[11:0\]} \
+{/TESTBED/test_p/data_dir_in.M\[3:0\]} \
+{/TESTBED/test_p/data_dir_in.D\[4:0\]} \
+{/TESTBED/test_p/no_in\[7:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+{/TESTBED/check_inst/clk} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/inf/Program_inf/D} \
+{/TESTBED/inf/Program_inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/Program_inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/Program_inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/Program_inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/Program_inf/R_DATA\[63:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/test_p/complete_golden} \
+{/TESTBED/test_p/warn_golden\[1:0\]} \
+{/TESTBED/inf/Program_inf/out_valid} \
+{/TESTBED/inf/Program_inf/complete} \
+{/TESTBED/inf/Program_inf/warn_msg\[1:0\]} \
+{/TESTBED/test_p/action_in\[1:0\]} \
+{/TESTBED/test_p/formula_in\[2:0\]} \
+{/TESTBED/test_p/mode_in\[1:0\]} \
+{/TESTBED/test_p/absList\[0:3\]} \
+{/TESTBED/test_p/absList\[0\]\[11:0\]} \
+{/TESTBED/test_p/absList\[1\]\[11:0\]} \
+{/TESTBED/test_p/absList\[2\]\[11:0\]} \
+{/TESTBED/test_p/absList\[3\]\[11:0\]} \
+{/TESTBED/inf/Program_inf/sel_action_valid} \
+{/TESTBED/test_p/data_dir_in} \
+{/TESTBED/test_p/data_dir_in.Index_A\[11:0\]} \
+{/TESTBED/test_p/data_dir_in.Index_B\[11:0\]} \
+{/TESTBED/test_p/data_dir_in.Index_C\[11:0\]} \
+{/TESTBED/test_p/data_dir_in.Index_D\[11:0\]} \
+{/TESTBED/test_p/data_dir_in.M\[3:0\]} \
+{/TESTBED/test_p/data_dir_in.D\[4:0\]} \
+{/TESTBED/test_p/no_in\[7:0\]} \
+{/TESTBED/test_p/dramList\[0:3\]} \
+{/TESTBED/test_p/inList\[0:3\]} \
+{/TESTBED/inf/Program_inf/data_no_valid} \
+{/TESTBED/inf/Program_inf/date_valid} \
+{/TESTBED/inf/Program_inf/formula_valid} \
+{/TESTBED/inf/Program_inf/index_valid} \
+{/TESTBED/inf/Program_inf/mode_valid} \
+{/TESTBED/check_inst/clk} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/inf/Program_inf/D} \
+{/TESTBED/inf/Program_inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/Program_inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/Program_inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/Program_inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/Program_inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/Program_inf/R_DATA\[63:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvGetSignalClose -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 702815.242701
+wvZoom -win $_nWave1 696732.656021 710003.754231
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 20 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 21 )} 
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 256819.280678
+wvSelectSignal -win $_nWave1 {( "G1" 16 )} 
+wvExit

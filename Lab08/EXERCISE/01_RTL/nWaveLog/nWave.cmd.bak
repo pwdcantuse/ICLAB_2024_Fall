@@ -1,0 +1,45 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/iclab/iclab018/Lab08/EXERCISE/01_RTL/SA.fsdb}
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/iclab/iclab018/Lab08/EXERCISE/01_RTL/SA_CG.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvGetSignalClose -win $_nWave1
+wvZoom -win $_nWave1 4323692.166667 4888012.833333
+wvZoom -win $_nWave1 4573181.303508 4623871.159882
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoom -win $_nWave1 4558579.294112 4683792.132314
+wvSetCursor -win $_nWave1 4609982.459268
+wvSelectGroup -win $_nWave1 {G2}
+wvExit

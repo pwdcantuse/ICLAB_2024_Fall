@@ -1,0 +1,32 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Mon Sep 30 03:20:45 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                               18
+    Unloaded nets (LINT-2)                                         18
+--------------------------------------------------------------------------------
+
+Warning: In design 'TETRIS', net 'net7940' driven by pin 'C24536/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7939' driven by pin 'C24535/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7938' driven by pin 'C24509/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7937' driven by pin 'C23798/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7936' driven by pin 'C23797/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7935' driven by pin 'C23096/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7934' driven by pin 'C23095/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7933' driven by pin 'C22394/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7932' driven by pin 'C22393/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7931' driven by pin 'C22367/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7930' driven by pin 'C21656/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7929' driven by pin 'C21655/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7928' driven by pin 'C20931/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7927' driven by pin 'C20203/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7926' driven by pin 'C19530/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7925' driven by pin 'C19509/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7924' driven by pin 'C19253/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net7923' driven by pin 'C19247/Z' has no loads. (LINT-2)
+1

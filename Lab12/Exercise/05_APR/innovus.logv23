@@ -1,0 +1,2293 @@
+[12/06 23:07:37      0s] 
+[12/06 23:07:37      0s] Cadence Innovus(TM) Implementation System.
+[12/06 23:07:37      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/06 23:07:37      0s] 
+[12/06 23:07:37      0s] Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+[12/06 23:07:37      0s] Options:	
+[12/06 23:07:37      0s] Date:		Fri Dec  6 23:07:37 2024
+[12/06 23:07:37      0s] Host:		ee30 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7773X 64-Core Processor 512KB)
+[12/06 23:07:37      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[12/06 23:07:37      0s] 
+[12/06 23:07:37      0s] License:
+[12/06 23:07:38      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[12/06 23:07:38      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/06 23:07:51     11s] @(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+[12/06 23:07:51     11s] @(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+[12/06 23:07:51     11s] @(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[12/06 23:07:51     11s] @(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+[12/06 23:07:51     11s] @(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+[12/06 23:07:51     11s] @(#)CDS: CPE v20.15-s071
+[12/06 23:07:51     11s] @(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[12/06 23:07:51     11s] @(#)CDS: OA 22.60-p058 Tue Jun 15 18:38:04 2021
+[12/06 23:07:51     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[12/06 23:07:51     11s] @(#)CDS: RCDB 11.15.0
+[12/06 23:07:51     11s] @(#)CDS: STYLUS 20.10-p029_1 (06/24/2021 01:33 PDT)
+[12/06 23:07:51     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_153045_ee30_iclab018_lXavTY.
+
+[12/06 23:07:51     11s] Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+[12/06 23:07:52     13s] 
+[12/06 23:07:52     13s] **INFO:  MMMC transition support version v31-84 
+[12/06 23:07:52     13s] 
+[12/06 23:07:52     13s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/06 23:07:52     13s] <CMD> suppressMessage ENCEXT-2799
+[12/06 23:07:53     13s] <CMD> getVersion
+[12/06 23:07:53     13s] [INFO] Loading Pegasus 21.21 fill procedures
+[12/06 23:07:53     13s] <CMD> win
+[12/06 23:08:10     14s] <CMD> encMessage warning 0
+[12/06 23:08:10     14s] Suppress "**WARN ..." messages.
+[12/06 23:08:10     14s] <CMD> encMessage debug 0
+[12/06 23:08:10     14s] <CMD> encMessage info 0
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[12/06 23:08:11     15s] To increase the message display limit, refer to the product command reference manual.
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[12/06 23:08:11     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 23:08:11     15s] **WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 23:08:11     15s] **WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 23:08:11     15s] **WARN: (IMPLF-200):	Pin 'I' in macro 'XMD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 23:08:11     15s] **WARN: (IMPLF-200):	Pin 'I' in macro 'XMC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 23:08:11     15s] **WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 23:08:11     15s] **WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 23:08:11     15s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 23:08:11     15s] Loading view definition file from /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/viewDefinition.tcl
+[12/06 23:08:11     15s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/LIB/fsa0m_a_generic_core_ss1p62v125c.lib)
+[12/06 23:08:12     15s] *** End library_loading (cpu=0.01min, real=0.02min, mem=18.5M, fe_cpu=0.27min, fe_real=0.58min, fe_mem=937.2M) ***
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[12/06 23:08:12     16s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[12/06 23:08:12     16s] To increase the message display limit, refer to the product command reference manual.
+[12/06 23:08:12     16s] *** Netlist is unique.
+[12/06 23:08:12     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:12     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:12     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:12     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:12     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:12     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:12     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:12     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:12     16s] Loading preference file /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/gui.pref.tcl ...
+[12/06 23:08:12     16s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[12/06 23:08:12     16s] 
+[12/06 23:08:12     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[12/06 23:08:12     16s] 
+[12/06 23:08:12     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[12/06 23:08:12     16s] 
+[12/06 23:08:12     16s] TimeStamp Deleting Cell Server Begin ...
+[12/06 23:08:12     16s] 
+[12/06 23:08:12     16s] TimeStamp Deleting Cell Server End ...
+[12/06 23:08:12     16s] 
+[12/06 23:08:12     16s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[12/06 23:08:12     16s] 
+[12/06 23:08:12     16s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[12/06 23:08:12     16s] **WARN: (IMPSYC-2):	Timing information is not defined for cell VCCKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/06 23:08:12     16s] **WARN: (IMPSYC-2):	Timing information is not defined for cell VCC3IOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/06 23:08:12     16s] **WARN: (IMPSYC-2):	Timing information is not defined for cell GNDKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/06 23:08:12     16s] **WARN: (IMPSYC-2):	Timing information is not defined for cell GNDIOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/06 23:08:13     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:13     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:13     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:13     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:13     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:13     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:13     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:13     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/06 23:08:13     16s] Loading place ...
+[12/06 23:08:15     17s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[12/06 23:08:15     17s] {RT RC_Corner 0 6 6 {5 0} 1}
+[12/06 23:08:15     17s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[12/06 23:08:15     18s] 
+[12/06 23:08:15     18s] TimeStamp Deleting Cell Server Begin ...
+[12/06 23:08:15     18s] 
+[12/06 23:08:15     18s] TimeStamp Deleting Cell Server End ...
+[12/06 23:08:15     18s] 
+[12/06 23:08:15     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[12/06 23:08:15     18s] 
+[12/06 23:08:15     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[12/06 23:08:15     18s] 
+[12/06 23:08:15     18s] TimeStamp Deleting Cell Server Begin ...
+[12/06 23:08:15     18s] 
+[12/06 23:08:15     18s] TimeStamp Deleting Cell Server End ...
+[12/06 23:08:15     18s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.15-s105_1. They will be removed in the next release. 
+[12/06 23:08:15     18s] timing_enable_default_delay_arc
+[12/06 23:08:25     18s] <CMD> setDrawView place
+[12/06 23:08:26     18s] <CMD> zoomBox 1151.73900 1078.53500 2961.41100 2698.57800
+[12/06 23:08:27     19s] <CMD> zoomBox 1939.65700 1581.24000 2742.61800 2300.06100
+[12/06 23:08:27     19s] <CMD> zoomBox 2331.73400 1829.68500 2634.57000 2100.78800
+[12/06 23:08:28     19s] <CMD> zoomBox 2453.53500 1910.23100 2587.90700 2030.52300
+[12/06 23:08:33     19s] <CMD> zoomBox 2466.33800 1914.45500 2580.55400 2016.70300
+[12/06 23:08:43     20s] <CMD> getFillerMode -quiet
+[12/06 23:10:12     25s] <CMD> set_pg_library_mode -celltype techonly -default_area_cap 0.5 -filler_cells {FILLERCC FILLERBC FILLERAC FILLER8C FILLER8 FILLER64 FILLER4C FILLER4 FILLER32 FILLER2C FILLER2 FILLER16 FILLER1} -extraction_tech_file RC/icecaps.tch -lef_layermap layermap/lefdef.layermap.libgen -power_pins {VCC 1.8} -ground_pins GND
+[12/06 23:10:36     26s] <CMD> generate_pg_library -output power_log
+[12/06 23:10:37     26s] Started PGV Library Generator at 23:10:36 12/06/2024
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** INFO:  (VOLTUS_LGEN-3599): Library generation settings: 
+[12/06 23:10:37     26s] 	Mode: TECH 
+[12/06 23:10:37     26s] 	Capacitance: area_cap 
+[12/06 23:10:37     26s] 	Current Distribution: estimation 
+[12/06 23:10:37     26s] 	Grid Port Definition: LEF 
+[12/06 23:10:37     26s] 	Grid Current Sinks: LEF pin 
+[12/06 23:10:37     26s] 	Power Gate: no
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** INFO:  (VOLTUS_LGEN-3598): Processing LEF files: 
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/header6_V55_20ka_cic.lef
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/fsa0m_a_generic_core.lef
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/fsa0m_a_t33_generic_io.lef
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/BONDPAD.lef
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN2 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN2B1 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN2B1P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN2B1S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN2B1T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN2P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN2S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN2T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3B1 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3B1P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3B1S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3B1T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3B2 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3B2P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3B2S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3B2T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN3T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN4 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN4B1 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN4B1P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN4B1S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN4B1T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN4P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN4S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AN4T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ANTENNA has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO112 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO112P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO112S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO112T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO12 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO12P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO12S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO12T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO13 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO13P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO13S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO13T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO22 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO222 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO222P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO222S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO222T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO22P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO22S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AO22T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI112H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI112HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI112HS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI112HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI12H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI12HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI12HS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI12HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI13H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI13HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI13HS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI13HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI222H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI222HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI222HS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI22H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI22HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI22HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro AOI22S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BHD1 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF1 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF12CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF1CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF1S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF2 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF2CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF3CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF4 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF4CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF6 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF6CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF8 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUF8CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUFB1 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUFB2 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUFB3 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUFT1 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUFT2 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUFT3 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro BUFT4 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro CMPE4 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro CMPE4S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DBFRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DBFRSBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DBHRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DBHRBS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DBZRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DBZRSBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DELA has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DELB has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DELC has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFCLRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFCRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFFN has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFFP has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFFRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFFRBP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFFRBS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFFRBT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFFRSBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFFS has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFFSBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFTRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFTRBS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZCLRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZCRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZN has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZP has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZRBP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZRBS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZRBT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZRSBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZS has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZSBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZTRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DFZTRBS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DLHN has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DLHP has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DLHRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DLHRBP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DLHRBS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro DLHS has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FA1 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FA1P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FA1S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FA1T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FA2 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FA2P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FA2S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FA3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FA3P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FA3S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FACS1 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FACS1P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FACS1S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FACS2 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FACS2P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro FACS2S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro GCKETF has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro GCKETN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro GCKETP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro GCKETT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro HA1 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro HA1P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro HA1S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro HA1T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro HA2 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro HA2P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro HA2T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro HA3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro HA3P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro HA3T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV1 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV12 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV12CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV1CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV1S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV2 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV2CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV3CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV4 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV4CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV6 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV6CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV8 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INV8CK has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INVT1 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INVT2 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro INVT4 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro JKFN has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro JKFRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro JKFRBP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro JKZN has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro JKZRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro JKZRBP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MAO222 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MAO222P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MAO222S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MAO222T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MAOI1 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MAOI1H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MAOI1HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MAOI1HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MAOI1S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MOAI1 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MOAI1H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MOAI1HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MOAI1HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MOAI1S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MULBE has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MULBEP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MULBET has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MULPA has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MULPAP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MULPAT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX2 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX2F has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX2P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX2S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX2T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX3P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX3S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX3T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX4 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX4P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX4S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUX4T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUXB2 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUXB2P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUXB2S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUXB2T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUXB4 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUXB4P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUXB4S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MUXB4T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MXL2H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MXL2HF has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MXL2HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MXL2HS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MXL2HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MXL3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MXL3P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MXL3S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro MXL3T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND2 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND2F has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND2P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND2S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND2T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND3HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND3P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND3S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND4 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND4P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND4S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ND4T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR2 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR2F has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR2P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR2T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR3H has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR3HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR3HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR4 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR4P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR4S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro NR4T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA112 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA112P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA112S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA112T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA12 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA12P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA12S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA12T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA13 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA13P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA13S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA13T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA22 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA222 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA222P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA222S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA222T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA22P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA22S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OA22T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI112H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI112HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI112HS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI112HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI12H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI12HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI12HS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI12HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI13H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI13HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI13HS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI13HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI222H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI222HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI222HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI222S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI22H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI22HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI22HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OAI22S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR2 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR2B1 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR2B1P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR2B1S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR2B1T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR2P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR2S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR2T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3B1 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3B1P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3B1S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3B1T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3B2 has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3B2P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3B2S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3B2T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3P has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3S has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro OR3T has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro PDI has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro PDIX has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro PUI has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDBHN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDBHS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFFN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFFP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFFRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFFRBP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFFRBS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFFRBT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFFRSBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFFS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFZN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFZP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFZRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFZRBP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFZRBS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFZRBT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFZRSBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDFZS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDLHN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDLHP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDLHRBN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDLHRBP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDLHRBS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDLHS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro QDLHSN has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro RAM2 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro RAM2S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro RAM3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro RAM3S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro RAM5 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro RAM5S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro TIE0 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro TIE1 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR2H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR2HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR2HS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR2HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR3P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR3S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR3T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR4 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR4P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR4S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XNR4T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR2H has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR2HP has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR2HS has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR2HT has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR3 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR3P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR3S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR3T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR4 has been
+[12/06 23:10:37     26s] found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR4P has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR4S has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:37     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:37     26s] ignoring it.
+[12/06 23:10:37     26s] 
+[12/06 23:10:37     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XOR4T has
+[12/06 23:10:37     26s] been found in file
+[12/06 23:10:42     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef,
+[12/06 23:10:42     26s] ignoring it.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro GNDIOC has
+[12/06 23:10:42     26s] been found in file
+[12/06 23:10:42     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef,
+[12/06 23:10:42     26s] ignoring it.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro GNDIOD has
+[12/06 23:10:42     26s] been found in file
+[12/06 23:10:42     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef,
+[12/06 23:10:42     26s] ignoring it.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro VCC3IOC has
+[12/06 23:10:42     26s] been found in file
+[12/06 23:10:42     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef,
+[12/06 23:10:42     26s] ignoring it.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro VCC3IOD has
+[12/06 23:10:42     26s] been found in file
+[12/06 23:10:42     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef,
+[12/06 23:10:42     26s] ignoring it.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XMC has been
+[12/06 23:10:42     26s] found in file
+[12/06 23:10:42     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef,
+[12/06 23:10:42     26s] ignoring it.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro XMD has been
+[12/06 23:10:42     26s] found in file
+[12/06 23:10:42     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef,
+[12/06 23:10:42     26s] ignoring it.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro YA2GSC has
+[12/06 23:10:42     26s] been found in file
+[12/06 23:10:42     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef,
+[12/06 23:10:42     26s] ignoring it.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro YA2GSD has
+[12/06 23:10:42     26s] been found in file
+[12/06 23:10:42     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef,
+[12/06 23:10:42     26s] ignoring it.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ZMA2GSC has
+[12/06 23:10:42     26s] been found in file
+[12/06 23:10:42     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef,
+[12/06 23:10:42     26s] ignoring it.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3073): A duplicate definition of macro ZMA2GSD has
+[12/06 23:10:42     26s] been found in file
+[12/06 23:10:42     26s] /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP.inn.dat/libs/lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef,
+[12/06 23:10:42     26s] ignoring it.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3106): The following cells do not contain any supply
+[12/06 23:10:42     26s] pins: , ZMA2GSC, ZMA2GSD, VCC3IOD, XMD, YA2GSD, YA2GSC, VCC3IOC, GNDIOC,
+[12/06 23:10:42     26s] GNDIOD, XMC
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3036): Duplicate macro definitions were found while
+[12/06 23:10:42     26s] processing the LEF files. This may indicate that the MergeLef program
+[12/06 23:10:42     26s] should have been run before starting VOLTUS_LGEN.
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** INFO:  (VOLTUS_LGEN-3606): 
+[12/06 23:10:42     26s] Power Grid View Generation Statistics:
+[12/06 23:10:42     26s]         # Total number of cells: 427 
+[12/06 23:10:42     26s]         # TECH view created: 409 (95%)
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3971): The following cells failed to create some of
+[12/06 23:10:42     26s] the PGV views:
+[12/06 23:10:42     26s]  CELL                      				 REASON                    
+[12/06 23:10:42     26s]  ==== 							 ====== 
+[12/06 23:10:42     26s]  BONDPADCGU_m              				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  BONDPADCNU_m              				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  BONDPADD_m                				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  CORNERC                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  CORNERCD                  				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  CORNERD                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTY16C                  				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTY16D                  				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTY1C                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTY1D                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTY2C                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTY2D                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTY4C                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTY4D                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTY8C                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTY8D                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTYGRC                  				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  EMPTYGRD                  				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  GNDIOC                    				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  GNDIOD                    				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  VCC3IOC                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  VCC3IOD                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  XMC                       				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  XMD                       				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  YA2GSC                    				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  YA2GSD                    				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  ZMA2GSC                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s]  ZMA2GSD                   				 No PowerPin found in LEF.
+[12/06 23:10:42     26s]  
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] ** WARN:  (VOLTUS_LGEN-3971): The following cells contain large
+[12/06 23:10:42     26s] capacitances, please verify whether the specified or characterized
+[12/06 23:10:42     26s] capacitance value is correct.Voltus will keep these capacitance value for
+[12/06 23:10:42     26s] library generation
+[12/06 23:10:42     26s] GNDKC                     4.01698e-12
+[12/06 23:10:42     26s] GNDKD                     4.38716e-12
+[12/06 23:10:42     26s] VCCKC                     4.01698e-12
+[12/06 23:10:42     26s] VCCKD                     4.38716e-12
+[12/06 23:10:42     26s] 
+[12/06 23:10:42     26s] Finished PGV Library Generator at 23:10:42 12/06/2024 (cpu=0:00:01, real=0:00:06, peak mem=1249.88MB)
+[12/06 23:10:42     26s] Current Innovus resource usage: (total cpu=0:00:29, real=0:03:07, mem=1249.88MB)
+[12/06 23:11:40     36s] <CMD> set_pg_library_mode -celltype techonly -default_area_cap 0.5 -filler_cells {FILLERCC FILLERBC FILLERAC FILLER8C FILLER8 FILLER64 FILLER4C FILLER4 FILLER32 FILLER2C FILLER2 FILLER16 FILLER1} -extraction_tech_file RC/icecaps.tch -lef_layermap layermap/lefdef.layermap.libgen -power_pins {VCC 1.8} -ground_pins GND
+[12/06 23:20:04     59s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Fri Dec  6 23:20:04 2024
+  Total CPU time:     0:00:57
+  Total real time:    0:12:29
+  Peak memory (main): 1249.88MB
+
+[12/06 23:20:04     59s] 
+[12/06 23:20:04     59s] *** Memory Usage v#1 (Current mem = 2004.098M, initial mem = 284.375M) ***
+[12/06 23:20:04     59s] 
+[12/06 23:20:04     59s] *** Summary of all messages that are not suppressed in this session:
+[12/06 23:20:04     59s] Severity  ID               Count  Summary                                  
+[12/06 23:20:04     59s] WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+[12/06 23:20:04     59s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[12/06 23:20:04     59s] WARNING   IMPLF-200            7  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/06 23:20:04     59s] WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+[12/06 23:20:04     59s] WARNING   IMPFP-3961          16  The techSite '%s' has no related standar...
+[12/06 23:20:04     59s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[12/06 23:20:04     59s] WARNING   IMPSYC-2             4  Timing information is not defined for ce...
+[12/06 23:20:04     59s] WARNING   IMPVL-159          764  Pin '%s' of cell '%s' is defined in LEF ...
+[12/06 23:20:04     59s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[12/06 23:20:04     59s] WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+[12/06 23:20:04     59s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[12/06 23:20:04     59s] WARNING   TECHLIB-302          1  No function defined for cell '%s'. The c...
+[12/06 23:20:04     59s] *** Message Summary: 1201 warning(s), 0 error(s)
+[12/06 23:20:04     59s] 
+[12/06 23:20:04     59s] --- Ending "Innovus" (totcpu=0:00:59.4, real=0:12:27, mem=2004.1M) ---

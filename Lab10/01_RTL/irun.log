@@ -1,0 +1,49 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Nov 25, 2024 at 13:22:28 CST
+irun
+	-f filelist.f
+		TESTBED.sv
+	-define COV
+	-loadpli1 debpli:novas_pli_boot
+	-notimingchecks
+	-debug
+	-define CORRECT
+	-coverage U
+	-covoverwrite
+Loading snapshot worklib.TESTBED:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'Program.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +all dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the SVA assertions, layer (0).
+*Verdi* : End of traversing the SVA assertions.
+                                                             Congratulations                                                                
+Simulation complete via $finish(1) at time 1210722 NS + 3
+./PATTERN.sv:826         $finish;
+ncsim> exit
+ncsim: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+ncsim: *W,CGDEFN: Default name "TESTBED.check_inst.spec1" will be generated for covergroup instance "spec1" as the name of the covergroup instance is not specified explicitly: ./CHECKER.sv, 109.
+ncsim: *W,CGDEFN: Default name "TESTBED.check_inst.spec2" will be generated for covergroup instance "spec2" as the name of the covergroup instance is not specified explicitly: ./CHECKER.sv, 110.
+ncsim: *W,CGDEFN: Default name "TESTBED.check_inst.spec3" will be generated for covergroup instance "spec3" as the name of the covergroup instance is not specified explicitly: ./CHECKER.sv, 111.
+ncsim: *W,CGDEFN: Default name "TESTBED.check_inst.spec4" will be generated for covergroup instance "spec4" as the name of the covergroup instance is not specified explicitly: ./CHECKER.sv, 112.
+ncsim: *W,CGDEFN: Default name "TESTBED.check_inst.spec5" will be generated for covergroup instance "spec5" as the name of the covergroup instance is not specified explicitly: ./CHECKER.sv, 113.
+ncsim: *W,CGDEFN: Default name "TESTBED.check_inst.spec6" will be generated for covergroup instance "spec6" as the name of the covergroup instance is not specified explicitly: ./CHECKER.sv, 114.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  TESTBED(TESTBED)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_00000000_3befd758.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_00000000_3befd758.ucd
+TOOL:	irun(64)	15.20-s084: Exiting on Nov 25, 2024 at 13:22:29 CST  (total: 00:00:01)

@@ -1,0 +1,19 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Mon Oct 21 09:36:17 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                                5
+    Unloaded nets (LINT-2)                                          5
+--------------------------------------------------------------------------------
+
+Warning: In design 'MDC', net 'net301' driven by pin 'C5678/Z' has no loads. (LINT-2)
+Warning: In design 'MDC', net 'net300' driven by pin 'C5641/Z' has no loads. (LINT-2)
+Warning: In design 'MDC', net 'net299' driven by pin 'C5456/Z' has no loads. (LINT-2)
+Warning: In design 'MDC', net 'H2_out[0]' driven by pin 'H2/OUT_code[0]' has no loads. (LINT-2)
+Warning: In design 'MDC', net 'H2_out[3]' driven by pin 'H2/OUT_code[3]' has no loads. (LINT-2)
+1

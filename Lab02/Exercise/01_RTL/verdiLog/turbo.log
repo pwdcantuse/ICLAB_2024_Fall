@@ -1,0 +1,3 @@
+Command Line: /usr/cad/synopsys/verdi/2019.06/platform/LINUXAMD64/bin/Novas -ssf BB.fsdb -sv -f filelist.f -nologo +define+RTL +v2k -autoalias
+uname(Linux ee21 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 15:41:52 UTC 2023 x86_64)
+au time 221333.688411 1065.395319 2250.419421 delta 318857216 318857216 total 753909760 753909760

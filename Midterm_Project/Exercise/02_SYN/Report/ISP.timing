@@ -1,0 +1,256 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 6
+Design : ISP
+Version: T-2022.03
+Date   : Sun Nov 17 12:18:06 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: t_focus_cal_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: focus_a_reg[1][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ISP                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  t_focus_cal_reg[3]/CK (QDFFRBT)          0.00 #     0.00 r
+  t_focus_cal_reg[3]/Q (QDFFRBT)           0.59       0.59 r
+  U3426/O (INV4)                           0.16       0.75 f
+  U4135/O (ND3HT)                          0.19       0.93 r
+  U3415/O (OR2P)                           0.36       1.29 r
+  U5613/O (INV4)                           0.19       1.48 f
+  U7221/O (MOAI1S)                         0.35       1.83 f
+  U7223/O (NR2)                            0.23       2.06 r
+  U7224/O (ND3)                            0.14       2.20 f
+  U7225/O (AO12)                           0.34       2.55 f
+  U7227/O (NR2)                            0.20       2.74 r
+  U7228/O (OAI112HS)                       0.18       2.93 f
+  U7229/O (AOI12HS)                        0.21       3.14 r
+  U4664/O (ND3S)                           0.21       3.35 f
+  focus_a_reg[1][0]/D (QDFFS)              0.00       3.35 f
+  data arrival time                                   3.35
+
+  clock clk (rise edge)                    3.60       3.60
+  clock network delay (ideal)              0.00       3.60
+  clock uncertainty                       -0.10       3.50
+  focus_a_reg[1][0]/CK (QDFFS)             0.00       3.50 r
+  library setup time                      -0.15       3.35
+  data required time                                  3.35
+  -----------------------------------------------------------
+  data required time                                  3.35
+  data arrival time                                  -3.35
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: focus_sum_6_reg[10]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: div_ans_of_6_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ISP                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  focus_sum_6_reg[10]/CK (QDFFP)           0.00 #     0.00 r
+  focus_sum_6_reg[10]/Q (QDFFP)            0.46       0.46 f
+  U4845/O (INV4)                           0.11       0.57 r
+  U3653/O (ND2T)                           0.08       0.65 f
+  U3652/O (ND2F)                           0.11       0.76 r
+  U4828/O (ND2T)                           0.09       0.85 f
+  U5357/O (NR2F)                           0.18       1.04 r
+  U4832/O (ND2T)                           0.10       1.14 f
+  U3491/O (ND3P)                           0.22       1.36 r
+  U4849/O (NR2T)                           0.13       1.48 f
+  U5375/O (ND3HT)                          0.13       1.62 r
+  U5376/O (OAI12HT)                        0.15       1.77 f
+  U4905/O (NR2F)                           0.13       1.90 r
+  U4900/O (NR2F)                           0.06       1.96 f
+  U3729/O (ND3HT)                          0.14       2.11 r
+  U5384/O (BUF12CK)                        0.24       2.35 r
+  U3666/O (INV12)                          0.04       2.38 f
+  U3779/O (MOAI1H)                         0.27       2.65 f
+  U3679/O (OAI12HT)                        0.28       2.93 r
+  U3678/O (NR2T)                           0.14       3.07 f
+  U4914/O (ND2T)                           0.11       3.18 r
+  U3651/O (ND2T)                           0.07       3.24 f
+  U3523/O (ND3P)                           0.09       3.33 r
+  div_ans_of_6_reg[1]/D (QDFFRBS)          0.00       3.33 r
+  data arrival time                                   3.33
+
+  clock clk (rise edge)                    3.60       3.60
+  clock network delay (ideal)              0.00       3.60
+  clock uncertainty                       -0.10       3.50
+  div_ans_of_6_reg[1]/CK (QDFFRBS)         0.00       3.50 r
+  library setup time                      -0.17       3.33
+  data required time                                  3.33
+  -----------------------------------------------------------
+  data required time                                  3.33
+  data arrival time                                  -3.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rst_n (input port clocked by clk)
+  Endpoint: awaddr_s_inf[13]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ISP                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  rst_n (in)                               0.00       0.00 r
+  U5308/O (INV8CK)                         0.11       0.11 f
+  U3822/O (INV8CK)                         0.59       0.70 r
+  U3466/O (ND2T)                           0.34       1.04 f
+  U5927/O (NR2)                            0.66       1.70 r
+  awaddr_s_inf[13] (out)                   0.00       1.70 r
+  data arrival time                                   1.70
+
+  clock clk (rise edge)                    3.60       3.60
+  clock network delay (ideal)              0.00       3.60
+  clock uncertainty                       -0.10       3.50
+  output external delay                   -1.80       1.70
+  data required time                                  1.70
+  -----------------------------------------------------------
+  data required time                                  1.70
+  data arrival time                                  -1.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rst_n (input port clocked by clk)
+  Endpoint: awaddr_s_inf[12]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ISP                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  rst_n (in)                               0.00       0.00 r
+  U5308/O (INV8CK)                         0.11       0.11 f
+  U3822/O (INV8CK)                         0.59       0.70 r
+  U3466/O (ND2T)                           0.34       1.04 f
+  U5897/O (NR2)                            0.66       1.70 r
+  awaddr_s_inf[12] (out)                   0.00       1.70 r
+  data arrival time                                   1.70
+
+  clock clk (rise edge)                    3.60       3.60
+  clock network delay (ideal)              0.00       3.60
+  clock uncertainty                       -0.10       3.50
+  output external delay                   -1.80       1.70
+  data required time                                  1.70
+  -----------------------------------------------------------
+  data required time                                  1.70
+  data arrival time                                  -1.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rst_n (input port clocked by clk)
+  Endpoint: awaddr_s_inf[11]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ISP                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  rst_n (in)                               0.00       0.00 r
+  U5308/O (INV8CK)                         0.11       0.11 f
+  U3822/O (INV8CK)                         0.59       0.70 r
+  U3466/O (ND2T)                           0.34       1.04 f
+  U5933/O (NR2)                            0.66       1.70 r
+  awaddr_s_inf[11] (out)                   0.00       1.70 r
+  data arrival time                                   1.70
+
+  clock clk (rise edge)                    3.60       3.60
+  clock network delay (ideal)              0.00       3.60
+  clock uncertainty                       -0.10       3.50
+  output external delay                   -1.80       1.70
+  data required time                                  1.70
+  -----------------------------------------------------------
+  data required time                                  1.70
+  data arrival time                                  -1.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: rst_n (input port clocked by clk)
+  Endpoint: awaddr_s_inf[10]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ISP                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  rst_n (in)                               0.00       0.00 r
+  U5308/O (INV8CK)                         0.11       0.11 f
+  U3822/O (INV8CK)                         0.59       0.70 r
+  U3466/O (ND2T)                           0.34       1.04 f
+  U5905/O (NR2)                            0.66       1.70 r
+  awaddr_s_inf[10] (out)                   0.00       1.70 r
+  data arrival time                                   1.70
+
+  clock clk (rise edge)                    3.60       3.60
+  clock network delay (ideal)              0.00       3.60
+  clock uncertainty                       -0.10       3.50
+  output external delay                   -1.80       1.70
+  data required time                                  1.70
+  -----------------------------------------------------------
+  data required time                                  1.70
+  data arrival time                                  -1.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

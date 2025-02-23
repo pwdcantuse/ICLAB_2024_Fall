@@ -1,0 +1,5090 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/iclab/iclab018/Lab08/EXERCISE_wocg/01_RTL/SA.fsdb}
+wvResizeWindow -win $_nWave1 0 23 1920 1009
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvGetSignalClose -win $_nWave1
+wvZoomAll -win $_nWave1
+wvZoom -win $_nWave1 974144.707924 992744.129555
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 6 7 8 )} 
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 6 7 8 )} 
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvGetSignalClose -win $_nWave1
+wvZoom -win $_nWave1 979476.645216 995999.902373
+wvSetCursor -win $_nWave1 985009.881707
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoom -win $_nWave1 976592.307692 999900.000000
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetCursor -win $_nWave1 991501.681719
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoom -win $_nWave1 12698809.152689 13024031.781377
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvResizeWindow -win $_nWave1 0 23 1920 1009
+wvResizeWindow -win $_nWave1 0 23 1920 1009
+wvGetSignalOpen -win $_nWave1
+wvGetSignalClose -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 11 12 )} 
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 11 12 )} 
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvGetSignalClose -win $_nWave1
+wvSetRadix -win $_nWave1 -2Com
+wvSelectSignal -win $_nWave1 {( "G1" 11 12 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvExpandBus -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 76)}
+wvScrollDown -win $_nWave1 2
+wvSelectSignal -win $_nWave1 {( "G1" 76 )} 
+wvExpandBus -win $_nWave1 {("G1" 76)}
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvSetCursor -win $_nWave1 12474531.086589
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 35
+wvScrollUp -win $_nWave1 60
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvCollapseBus -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 76)}
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 12607068.747539
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectSignal -win $_nWave1 {( "G1" 12 )} 
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvZoom -win $_nWave1 12751655.286758 12938412.899915
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 12945960.628790
+wvSelectSignal -win $_nWave1 {( "G1" 13 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 13 )} 
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvExpandBus -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 140)}
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSetRadix -win $_nWave1 -2Com
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 40
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvSetPosition -win $_nWave1 {("G1" 141)}
+wvSetPosition -win $_nWave1 {("G1" 141)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/xW\[0\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[1\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[2\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[3\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[4\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[5\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[6\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[7\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[8\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[9\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[10\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[11\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[12\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[13\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[14\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[15\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[16\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[17\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[18\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[19\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[20\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[21\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[22\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[23\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[24\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[25\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[26\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[27\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[28\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[29\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[30\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[31\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[32\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[33\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[34\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[35\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[36\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[37\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[38\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[39\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[40\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[41\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[42\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[43\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[44\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[45\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[46\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[47\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[48\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[49\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[50\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[51\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[52\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[53\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[54\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[55\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[56\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[57\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[58\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[59\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[60\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[61\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[62\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[63\]\[18:0\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 141 )} 
+wvSetPosition -win $_nWave1 {("G1" 141)}
+wvSetPosition -win $_nWave1 {("G1" 141)}
+wvSetPosition -win $_nWave1 {("G1" 141)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/xW\[0\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[1\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[2\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[3\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[4\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[5\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[6\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[7\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[8\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[9\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[10\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[11\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[12\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[13\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[14\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[15\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[16\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[17\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[18\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[19\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[20\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[21\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[22\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[23\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[24\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[25\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[26\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[27\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[28\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[29\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[30\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[31\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[32\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[33\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[34\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[35\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[36\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[37\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[38\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[39\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[40\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[41\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[42\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[43\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[44\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[45\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[46\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[47\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[48\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[49\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[50\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[51\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[52\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[53\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[54\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[55\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[56\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[57\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[58\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[59\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[60\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[61\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[62\]\[18:0\]} \
+{/TESTBED/I_SA/xW\[63\]\[18:0\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 141 )} 
+wvSetPosition -win $_nWave1 {("G1" 141)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 141 )} 
+wvExpandBus -win $_nWave1 {("G1" 141)}
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 23
+wvSelectSignal -win $_nWave1 {( "G1" 141 )} 
+wvSetRadix -win $_nWave1 -2Com
+wvSelectSignal -win $_nWave1 {( "G1" 141 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvSelectSignal -win $_nWave1 {( "G1" 141 )} 
+wvSetPosition -win $_nWave1 {("G1" 141)}
+wvCollapseBus -win $_nWave1 {("G1" 141)}
+wvSetPosition -win $_nWave1 {("G1" 141)}
+wvScrollUp -win $_nWave1 29
+wvSelectSignal -win $_nWave1 {( "G1" 76 )} 
+wvSetPosition -win $_nWave1 {("G1" 76)}
+wvCollapseBus -win $_nWave1 {("G1" 76)}
+wvSetPosition -win $_nWave1 {("G1" 76)}
+wvSetPosition -win $_nWave1 {("G1" 77)}
+wvScrollUp -win $_nWave1 15
+wvScrollUp -win $_nWave1 13
+wvSetCursor -win $_nWave1 11677594.760471
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 12075253.556548
+wvSetCursor -win $_nWave1 12442614.539590
+wvSetCursor -win $_nWave1 12607358.897964
+wvZoom -win $_nWave1 12539188.818637 12654699.230831
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvSetCursor -win $_nWave1 12619409.262688
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 12622996.087908
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectSignal -win $_nWave1 {( "G1" 12 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 12 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvSetRadix -win $_nWave1 -Unsigned
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/DR0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvGetSignalClose -win $_nWave1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvSelectSignal -win $_nWave1 {( "G1" 12 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetRadix -win $_nWave1 -2Com
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/DR0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvSetPosition -win $_nWave1 {("G1" 78)}
+wvSetPosition -win $_nWave1 {("G1" 78)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 78 )} 
+wvSetPosition -win $_nWave1 {("G1" 78)}
+wvSelectSignal -win $_nWave1 {( "G1" 78 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetRadix -win $_nWave1 -2Com
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetPosition -win $_nWave1 {("G1" 94)}
+wvSetPosition -win $_nWave1 {("G1" 94)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 79 80 81 82 83 84 85 86 87 88 89 90 91 92 \
+           93 94 )} 
+wvSetPosition -win $_nWave1 {("G1" 94)}
+wvSetPosition -win $_nWave1 {("G1" 94)}
+wvSetPosition -win $_nWave1 {("G1" 94)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 79 80 81 82 83 84 85 86 87 88 89 90 91 92 \
+           93 94 )} 
+wvSetPosition -win $_nWave1 {("G1" 94)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 79 80 81 82 83 84 85 86 87 88 89 90 91 92 \
+           93 94 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetRadix -win $_nWave1 -2Com
+wvSetCursor -win $_nWave1 12583101.807398
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvSetPosition -win $_nWave1 {("G1" 99)}
+wvSetPosition -win $_nWave1 {("G1" 99)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_SA/MA0/sum1\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum2\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum3\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum4\[61:0\]} \
+{/TESTBED/I_SA/MA0/sum5\[62:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 95 96 97 98 99 )} 
+wvSetPosition -win $_nWave1 {("G1" 99)}
+wvSetPosition -win $_nWave1 {("G1" 99)}
+wvSetPosition -win $_nWave1 {("G1" 99)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_SA/MA0/sum1\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum2\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum3\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum4\[61:0\]} \
+{/TESTBED/I_SA/MA0/sum5\[62:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 95 96 97 98 99 )} 
+wvSetPosition -win $_nWave1 {("G1" 99)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 95 96 97 98 99 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetRadix -win $_nWave1 -2Com
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvSetPosition -win $_nWave1 {("G1" 100)}
+wvSetPosition -win $_nWave1 {("G1" 100)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_SA/MA0/sum1\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum2\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum3\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum4\[61:0\]} \
+{/TESTBED/I_SA/MA0/sum5\[62:0\]} \
+{/TESTBED/I_SA/MA0/temp\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 100 )} 
+wvSetPosition -win $_nWave1 {("G1" 100)}
+wvSetPosition -win $_nWave1 {("G1" 100)}
+wvSetPosition -win $_nWave1 {("G1" 100)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_SA/MA0/sum1\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum2\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum3\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum4\[61:0\]} \
+{/TESTBED/I_SA/MA0/sum5\[62:0\]} \
+{/TESTBED/I_SA/MA0/temp\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 100 )} 
+wvSetPosition -win $_nWave1 {("G1" 100)}
+wvGetSignalClose -win $_nWave1
+wvSetRadix -win $_nWave1 -2Com
+wvSelectSignal -win $_nWave1 {( "G1" 100 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "G1" 100 )} 
+wvExpandBus -win $_nWave1 {("G1" 100)}
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 12586981.434676
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvSetPosition -win $_nWave1 {("G1" 109)}
+wvSetPosition -win $_nWave1 {("G1" 109)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_SA/MA0/sum1\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum2\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum3\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum4\[61:0\]} \
+{/TESTBED/I_SA/MA0/sum5\[62:0\]} \
+{/TESTBED/I_SA/MA0/temp\[0:7\]} \
+{/TESTBED/I_SA/MA0/temp\[0\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[1\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[2\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[3\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[4\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[5\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[6\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[7\]\[59:0\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 109 )} 
+wvSetPosition -win $_nWave1 {("G1" 109)}
+wvSetPosition -win $_nWave1 {("G1" 109)}
+wvSetPosition -win $_nWave1 {("G1" 109)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_SA/MA0/sum1\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum2\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum3\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum4\[61:0\]} \
+{/TESTBED/I_SA/MA0/sum5\[62:0\]} \
+{/TESTBED/I_SA/MA0/temp\[0:7\]} \
+{/TESTBED/I_SA/MA0/temp\[0\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[1\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[2\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[3\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[4\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[5\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[6\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[7\]\[59:0\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 109 )} 
+wvSetPosition -win $_nWave1 {("G1" 109)}
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectSignal -win $_nWave1 {( "G1" 109 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 109 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetRadix -win $_nWave1 -2Com
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectSignal -win $_nWave1 {( "G1" 109 )} 
+wvExpandBus -win $_nWave1 {("G1" 109)}
+wvSetRadix -win $_nWave1 -2Com
+wvSelectSignal -win $_nWave1 {( "G1" 109 )} 
+wvSetRadix -win $_nWave1 -2Com
+wvZoom -win $_nWave1 12922375.512957 12978593.508245
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 110 )} 
+wvZoom -win $_nWave1 12559398.931849 12595880.064405
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectSignal -win $_nWave1 {( "G1" 110 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvSetPosition -win $_nWave1 {("G1" 116)}
+wvSelectSignal -win $_nWave1 {( "G1" 110 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 110 111 112 113 114 115 116 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 109)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvSetPosition -win $_nWave1 {("G1" 110)}
+wvSetPosition -win $_nWave1 {("G1" 110)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_SA/MA0/sum1\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum2\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum3\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum4\[61:0\]} \
+{/TESTBED/I_SA/MA0/sum5\[62:0\]} \
+{/TESTBED/I_SA/MA0/temp\[0:7\]} \
+{/TESTBED/I_SA/MA0/temp\[0\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[1\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[2\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[3\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[4\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[5\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[6\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[7\]\[59:0\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 110 )} 
+wvSetPosition -win $_nWave1 {("G1" 110)}
+wvSetPosition -win $_nWave1 {("G1" 110)}
+wvSetPosition -win $_nWave1 {("G1" 110)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_SA/MA0/sum1\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum2\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum3\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum4\[61:0\]} \
+{/TESTBED/I_SA/MA0/sum5\[62:0\]} \
+{/TESTBED/I_SA/MA0/temp\[0:7\]} \
+{/TESTBED/I_SA/MA0/temp\[0\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[1\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[2\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[3\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[4\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[5\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[6\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[7\]\[59:0\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 110 )} 
+wvSetPosition -win $_nWave1 {("G1" 110)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 110 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetRadix -win $_nWave1 -2Com
+wvSelectSignal -win $_nWave1 {( "G1" 110 )} 
+wvExpandBus -win $_nWave1 {("G1" 110)}
+wvSetCursor -win $_nWave1 12583257.315109
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvSetCursor -win $_nWave1 12588805.776335
+wvSetCursor -win $_nWave1 12592088.615893
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvSetCursor -win $_nWave1 12602672.305686
+wvSetCursor -win $_nWave1 12607781.513731
+wvSetCursor -win $_nWave1 12607781.513731
+wvSetCursor -win $_nWave1 12617361.856773
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvSetPosition -win $_nWave1 {("G1" 119)}
+wvSetPosition -win $_nWave1 {("G1" 119)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_SA/MA0/sum1\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum2\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum3\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum4\[61:0\]} \
+{/TESTBED/I_SA/MA0/sum5\[62:0\]} \
+{/TESTBED/I_SA/MA0/temp\[0:7\]} \
+{/TESTBED/I_SA/MA0/temp\[0\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[1\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[2\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[3\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[4\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[5\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[6\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[7\]\[59:0\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[7\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 119 )} 
+wvSetPosition -win $_nWave1 {("G1" 119)}
+wvSetPosition -win $_nWave1 {("G1" 119)}
+wvSetPosition -win $_nWave1 {("G1" 119)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_SA/MA0/sum1\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum2\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum3\[60:0\]} \
+{/TESTBED/I_SA/MA0/sum4\[61:0\]} \
+{/TESTBED/I_SA/MA0/sum5\[62:0\]} \
+{/TESTBED/I_SA/MA0/temp\[0:7\]} \
+{/TESTBED/I_SA/MA0/temp\[0\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[1\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[2\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[3\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[4\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[5\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[6\]\[59:0\]} \
+{/TESTBED/I_SA/MA0/temp\[7\]\[59:0\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[7\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 119 )} 
+wvSetPosition -win $_nWave1 {("G1" 119)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 119 )} 
+wvExpandBus -win $_nWave1 {("G1" 119)}
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvSelectSignal -win $_nWave1 {( "G1" 79 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 79 80 81 82 83 84 85 86 87 88 89 90 91 92 \
+           93 94 95 96 97 98 99 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 80 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 79 )} 
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvSelectSignal -win $_nWave1 {( "G1" 78 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 95 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 95 96 97 98 99 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 95 96 97 98 99 100 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 95 96 97 98 99 100 101 102 103 104 105 106 \
+           107 108 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 113)}
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvSelectSignal -win $_nWave1 {( "G1" 78 )} 
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 2
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 3
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 3
+wvScrollDown -win $_nWave1 5
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 3
+wvScrollDown -win $_nWave1 4
+wvScrollDown -win $_nWave1 3
+wvScrollDown -win $_nWave1 3
+wvScrollDown -win $_nWave1 3
+wvScrollDown -win $_nWave1 3
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 4
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 2
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 4
+wvScrollUp -win $_nWave1 6
+wvScrollUp -win $_nWave1 7
+wvScrollUp -win $_nWave1 3
+wvScrollUp -win $_nWave1 4
+wvScrollUp -win $_nWave1 9
+wvScrollUp -win $_nWave1 5
+wvScrollUp -win $_nWave1 4
+wvScrollUp -win $_nWave1 2
+wvScrollUp -win $_nWave1 3
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 2
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 3
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 3
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 3
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 3
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 2
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvSetPosition -win $_nWave1 {("G1" 114)}
+wvSetPosition -win $_nWave1 {("G1" 114)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[7\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[7\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 114 )} 
+wvSetPosition -win $_nWave1 {("G1" 114)}
+wvSetPosition -win $_nWave1 {("G1" 114)}
+wvSetPosition -win $_nWave1 {("G1" 114)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[7\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[7\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 114 )} 
+wvSetPosition -win $_nWave1 {("G1" 114)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 114 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetRadix -win $_nWave1 -2Com
+wvSetPosition -win $_nWave1 {("G1" 113)}
+wvSetPosition -win $_nWave1 {("G1" 112)}
+wvSetPosition -win $_nWave1 {("G1" 111)}
+wvSetPosition -win $_nWave1 {("G1" 110)}
+wvSetPosition -win $_nWave1 {("G1" 109)}
+wvSetPosition -win $_nWave1 {("G1" 108)}
+wvSetPosition -win $_nWave1 {("G1" 107)}
+wvSetPosition -win $_nWave1 {("G1" 106)}
+wvSetPosition -win $_nWave1 {("G1" 105)}
+wvSetPosition -win $_nWave1 {("G1" 104)}
+wvSetPosition -win $_nWave1 {("G1" 103)}
+wvSetPosition -win $_nWave1 {("G1" 102)}
+wvSetPosition -win $_nWave1 {("G1" 101)}
+wvSetPosition -win $_nWave1 {("G1" 100)}
+wvSetPosition -win $_nWave1 {("G1" 99)}
+wvSetPosition -win $_nWave1 {("G1" 98)}
+wvSetPosition -win $_nWave1 {("G1" 97)}
+wvSetPosition -win $_nWave1 {("G1" 96)}
+wvSetPosition -win $_nWave1 {("G1" 95)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 95)}
+wvSetPosition -win $_nWave1 {("G1" 96)}
+wvSelectSignal -win $_nWave1 {( "G1" 96 )} 
+wvExpandBus -win $_nWave1 {("G1" 96)}
+wvSelectSignal -win $_nWave1 {( "G1" 96 )} 
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvZoom -win $_nWave1 12584237.543265 12640461.950349
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoom -win $_nWave1 12284552.189658 12350111.701087
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 82 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 81 )} 
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvZoom -win $_nWave1 12609183.945298 12653056.470056
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 12622167.765988
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectGroup -win $_nWave1 {G2}
+wvSelectGroup -win $_nWave1 {G2}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvSetPosition -win $_nWave1 {("G1" 122)}
+wvSetPosition -win $_nWave1 {("G1" 121)}
+wvSetPosition -win $_nWave1 {("G1" 122)}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvMoveSelected -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA/MA0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_SA"
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[7\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[7\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[7\]\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/I_SA/xW\[0:63\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_SA/State\[2:0\]} \
+{/TESTBED/I_SA/clk} \
+{/TESTBED/I_SA/in_valid} \
+{/TESTBED/I_SA/out_valid} \
+{/TESTBED/I_SA/t\[5:0\]} \
+{/TESTBED/I_SA/w_K\[7:0\]} \
+{/TESTBED/I_SA/w_Q\[7:0\]} \
+{/TESTBED/I_SA/w_V\[7:0\]} \
+{/TESTBED/I_SA/out_data\[63:0\]} \
+{/TESTBED/I_SA/out_ff\[62:0\]} \
+{/TESTBED/I_SA/QK_T\[0:63\]} \
+{/TESTBED/I_SA/QK_T\[0\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[1\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[2\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[3\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[4\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[5\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[6\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[7\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[8\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[9\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[10\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[11\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[12\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[13\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[14\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[15\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[16\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[17\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[18\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[19\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[20\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[21\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[22\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[23\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[24\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[25\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[26\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[27\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[28\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[29\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[30\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[31\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[32\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[33\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[34\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[35\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[36\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[37\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[38\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[39\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[40\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[41\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[42\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[43\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[44\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[45\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[46\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[47\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[48\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[49\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[50\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[51\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[52\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[53\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[54\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[55\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[56\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[57\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[58\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[59\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[60\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[61\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[62\]\[40:0\]} \
+{/TESTBED/I_SA/QK_T\[63\]\[40:0\]} \
+{/TESTBED/I_SA/xW\[0:63\]} \
+{/TESTBED/I_SA/w_in\[0:63\]} \
+{/TESTBED/I_SA/MA0/result\[62:0\]} \
+{/TESTBED/I_SA/MA0/M1_1\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_2\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_3\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_4\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_5\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_6\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_7\[40:0\]} \
+{/TESTBED/I_SA/MA0/M1_8\[40:0\]} \
+{/TESTBED/I_SA/MA0/M2_1\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_2\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_3\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_4\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_5\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_6\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_7\[18:0\]} \
+{/TESTBED/I_SA/MA0/M2_8\[18:0\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_Q\[7\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_K\[7\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[0\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[1\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[2\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[3\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[4\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[5\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[6\]\[0:7\]} \
+{/TESTBED/I_PATTERN/gold_matmul1\[7\]\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/I_SA/xW\[0:63\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvExpandBus -win $_nWave1 {("G2" 1)}
+wvScrollUp -win $_nWave1 36
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvSelectSignal -win $_nWave1 {( "G2" 4 )} 
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvSelectSignal -win $_nWave1 {( "G1" 82 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 81 )} 
+wvExit

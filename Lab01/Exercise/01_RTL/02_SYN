@@ -1,0 +1,212 @@
+//############################################################################
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//   (C) Copyright Laboratory System Integration and Silicon Implementation
+//   All Right Reserved
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+//   ICLAB 2024 Fall
+//   Lab01 Exercise		: Snack Shopping Calculator
+//   Author     		  : Yu-Hsiang Wang
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+//   File Name   : SSC.v
+//   Module Name : SSC
+//   Release version : V1.0 (Release Date: 2024-09)
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//############################################################################
+
+module SSC(
+    // Input signals
+    card_num,
+    input_money,
+    snack_num,
+    price, 
+    // Output signals
+    out_valid,
+    out_change
+);
+
+//================================================================
+//   INPUT AND OUTPUT DECLARATION                         
+//================================================================
+input [63:0] card_num;
+input [8:0] input_money;
+input [31:0] snack_num;
+input [31:0] price;
+output out_valid;
+output [8:0] out_change;    
+
+//================================================================
+//    Wire & Registers 
+//================================================================
+// Declare the wire/reg you would use in your circuit
+// remember 
+// wire for port connection and cont. assignment
+// reg for proc. assignment
+wire [7:0] sum_of_even, sum_of_odd, sum;
+wire [4:0] shift_1, shift_2, shift_3, shift_4, shift_5, shift_6, shift_7, shift_8;
+wire [7:0] product_1, 
+           product_2, 
+           product_3, 
+           product_4, 
+           product_5, 
+           product_6, 
+           product_7, 
+           product_8;
+
+wire [7:0] com_1, com_2, com_3, com_4, com_5, com_6, com_7, com_8, 
+com_9, com_10, com_11, com_12, com_13, com_14, com_15, com_16, 
+com_17, com_18, com_19, com_20, com_21, com_22, com_23, com_24, 
+com_25, com_26, com_27, com_28, com_29, com_30, com_31, com_32, 
+com_33, com_34, com_35, com_36, com_37, com_38, com_39, com_40, 
+com_41, com_42, com_43, com_44, com_45, com_46, com_47, com_48;
+
+
+wire [8:0] change_1, change_2, change_3, change_4, change_5, change_6, change_7, change_8;
+
+wire vv_1, vv_2, vv_3, vv_4, vv_5, vv_6, vv_7, vv_8;
+
+
+//================================================================
+//    DESIGN
+//================================================================
+
+//////////// port /////////////
+
+assign out_valid = (sum == 8'd150)? 1'b1 : 
+(sum == 8'd140)? 1'b1 : 
+(sum == 8'd150) ? 1'b1 : 
+(sum == 8'd140) ? 1'b1 : 
+(sum == 8'd130) ? 1'b1 : 
+(sum == 8'd120) ? 1'b1 : 
+(sum == 8'd110) ? 1'b1 : 
+(sum == 8'd100) ? 1'b1 : 
+(sum == 8'd90) ? 1'b1 : 
+(sum == 8'd80) ? 1'b1 : 
+(sum == 8'd70) ? 1'b1 : 
+(sum == 8'd60) ? 1'b1 : 
+(sum == 8'd50) ? 1'b1 : 
+(sum == 8'd40) ? 1'b1 : 
+(sum == 8'd30) ? 1'b1 : 
+(sum == 8'd20) ? 1'b1 : 
+(sum == 8'd10) ? 1'b1 : 
+(sum == 8'd0) ? 1'b1 : 1'b0;
+
+
+assign out_change = (out_valid)? (vv_1)?input_money:(vv_2) ? change_1 : 
+(vv_3) ? change_2 : 
+(vv_4) ? change_3 : 
+(vv_5) ? change_4 : 
+(vv_6) ? change_5 : 
+(vv_7) ? change_6 : 
+(vv_8) ? change_7 : 
+change_8 :input_money;
+
+
+
+
+//////////////////////////////
+
+assign sum_of_even = card_num[3:0] + card_num[11:8] + card_num[19:16] + card_num[27:24] + card_num[35:32] + card_num[43:40] + card_num[51:48] + card_num[59:56];
+assign sum_of_odd = (shift_1 > 9 ? shift_1 - 9 : shift_1) + (shift_2 > 9 ? shift_2 - 9 : shift_2) + (shift_3 > 9 ? shift_3 - 9 : shift_3) + (shift_4 > 9 ? shift_4 - 9 : shift_4) + 
+(shift_5 > 9 ? shift_5 - 9 : shift_5) + (shift_6 > 9 ? shift_6 - 9 : shift_6) + 
+(shift_7 > 9 ? shift_7 - 9 : shift_7) + (shift_8 > 9 ? shift_8 - 9 : shift_8);
+
+assign sum = sum_of_even + sum_of_odd;
+
+assign shift_1 = (card_num[7:4] << 1);
+assign shift_2 = (card_num[15:12] << 1);
+assign shift_3 = (card_num[23:20] << 1);
+assign shift_4 = (card_num[31:28] << 1);
+assign shift_5 = (card_num[39:36] << 1);
+assign shift_6 = (card_num[47:44] << 1);
+assign shift_7 = (card_num[55:52] << 1);
+assign shift_8 = (card_num[63:60] << 1);
+
+
+assign product_1 = snack_num[3:0] * price[3:0];
+assign product_2 = snack_num[7:4] * price[7:4];
+assign product_3 = snack_num[11:8] * price[11:8];
+assign product_4 = snack_num[15:12] * price[15:12];
+assign product_5 = snack_num[19:16] * price[19:16];
+assign product_6 = snack_num[23:20] * price[23:20];
+assign product_7 = snack_num[27:24] * price[27:24];
+assign product_8 = snack_num[31:28] * price[31:28];
+
+
+assign com_1 = product_1;
+assign com_2 = product_2;
+assign com_3 = product_3;
+assign com_4 = product_4;
+assign com_15 = product_5;
+assign com_16 = product_6;
+assign com_17 = product_7;
+assign com_18 = product_8;
+
+
+assign change_1 = (vv_1)?input_money:input_money-com_34;
+assign change_2 = (vv_2)?change_1:change_1-com_40;
+assign change_3 = (vv_3)?change_2:change_2-com_44;
+assign change_4 = (vv_4)?change_3:change_3-com_46;
+assign change_5 = (vv_5)?change_4:change_4-com_45;
+assign change_6 = (vv_6)?change_5:change_5-com_41;
+assign change_7 = (vv_7)?change_6:change_6-com_35;
+assign change_8 = (vv_8)?change_7:change_7-com_27;
+
+assign vv_1 = (com_34>input_money);
+assign vv_2 = (com_40>change_1);
+assign vv_3 = (com_44>change_2);
+assign vv_4 = (com_46>change_3);
+assign vv_5 = (com_45>change_4);
+assign vv_6 = (com_41>change_5);
+assign vv_7 = (com_35>change_6);
+assign vv_8 = (com_27>change_7);
+
+
+
+
+
+//////////////// sort /////////////////////
+
+Compare C0(com_1, com_2, com_5, com_6);
+Compare C1(com_3, com_4, com_7, com_8);
+Compare C2(com_5, com_7, com_9, com_10);
+Compare C3(com_6, com_8, com_11, com_12);
+Compare C4(com_10, com_11, com_13, com_14);
+Compare C5(com_15, com_16, com_19, com_20);
+Compare C6(com_17, com_18, com_21, com_22);
+Compare C7(com_19, com_21, com_47, com_23);
+Compare C8(com_20, com_22, com_24, com_48);
+Compare C9(com_23, com_24, com_25, com_26);
+Compare C10(com_9, com_47, com_27, com_28);
+Compare C11(com_13, com_25, com_29, com_30);
+Compare C12(com_14, com_26, com_31, com_32);
+Compare C13(com_12, com_48, com_33, com_34);
+Compare C14(com_28, com_29, com_35, com_36);
+Compare C15(com_30, com_31, com_37, com_38);
+Compare C16(com_32, com_33, com_39, com_40);
+Compare C17(com_36, com_37, com_41, com_42);
+Compare C18(com_38, com_39, com_43, com_44);
+Compare C19(com_42, com_43, com_45, com_46); // 27 35 41 45 46 44 40 34 
+
+//////////////////////////////////////////
+
+
+
+endmodule
+
+
+module Compare(a, b, sma, lar);
+    input[7:0] a;
+    input[7:0] b;
+    output[7:0] sma;
+    output[7:0] lar;
+
+    wire bi = (a>b);
+
+    assign sma = (bi)?b:a;
+    assign lar = (bi)?a:b;
+
+endmodule

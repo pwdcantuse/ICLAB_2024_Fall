@@ -1,0 +1,156 @@
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+<> User: iclab018
+
+Host: ee30
+
+Report date: Sat 23 Nov 2024 00:42:12 CST
+
+Report options: -detail -text -metrics covergroup -out ./Report/Coverage_Detail.log -type -covered
+
+Coverage database path: /RAID2/COURSE/iclab/iclab018/Lab10/01_RTL/cov_work/scope/test
+
+Coverage model files: /RAID2/COURSE/iclab/iclab018/Lab10/01_RTL/cov_work/scope/icc_00000000_3befd758.ucm
+
+Coverage data files: /RAID2/COURSE/iclab/iclab018/Lab10/01_RTL/cov_work/scope/test/icc_00000000_3befd758.ucd
+
+CCF files:  None
+
+
+Coverage database date: Fri 22 Nov 2024 21:35:52 CST
+
+*** There were no refinement files applied ***
+
+ <>
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+Coverage Table Legend
+---------------------
+  EXCL   excluded using refinement rule
+  P-EXCL excluded from parent
+  U-EXCL excluded and unreachable by IEV
+  T-EXCL excluded from type
+  S-EXCL smart excluded using refinement rule
+  EXCL(S) smart indirect excluded
+  EMPTY  all children are excluded
+  CONST  marked constant during simulation
+  IGN    marked ignored during simulation
+  UNG    marked ungradeable during simulation
+  DES    marked deselected during simulation
+  UNR    marked unreachable by IEV
+
+
+Covered CoverGroup Detail Report, Type Based
+============================================
+
+Type name: Checker
+File name: /RAID2/COURSE/iclab/iclab018/Lab10/01_RTL/CHECKER.sv
+Number of covered cover bins: 91 of 91
+
+Name                           Average, Covered Grade         Line  Source Code                    
+---------------------------------------------------------------------------------------------------
+Spec1                          100.00%, 100.00% (8/8)         61    covergroup Spec1 @(posedge clk iff(inf.formula_valid)); 
+|--fm_info_f_type              100.00% (8/8)                  64    coverpoint fm_info.f_type{     
+| |--type_bin[Formula_A]       100.00% (450/150)              65    bins type_bin [] = {[Formula_A:Formula_H]}; 
+| |--type_bin[Formula_B]       100.00% (450/150)              65    bins type_bin [] = {[Formula_A:Formula_H]}; 
+| |--type_bin[Formula_C]       100.00% (450/150)              65    bins type_bin [] = {[Formula_A:Formula_H]}; 
+| |--type_bin[Formula_D]       100.00% (450/150)              65    bins type_bin [] = {[Formula_A:Formula_H]}; 
+| |--type_bin[Formula_E]       100.00% (450/150)              65    bins type_bin [] = {[Formula_A:Formula_H]}; 
+| |--type_bin[Formula_F]       100.00% (450/150)              65    bins type_bin [] = {[Formula_A:Formula_H]}; 
+| |--type_bin[Formula_G]       100.00% (450/150)              65    bins type_bin [] = {[Formula_A:Formula_H]}; 
+| |--type_bin[Formula_H]       100.00% (449/150)              65    bins type_bin [] = {[Formula_A:Formula_H]}; 
+Spec2                          100.00%, 100.00% (3/3)         69    covergroup Spec2 @(posedge clk iff(inf.mode_valid)); 
+|--fm_info_f_mode              100.00% (3/3)                  72    coverpoint fm_info.f_mode{     
+| |--mode_bin[Insensitive]     100.00% (1200/150)             73    bins mode_bin [] = {[Insensitive:Sensitive]}; 
+| |--mode_bin[Normal]          100.00% (1200/150)             73    bins mode_bin [] = {[Insensitive:Sensitive]}; 
+| |--mode_bin[Sensitive]       100.00% (1200/150)             73    bins mode_bin [] = {[Insensitive:Sensitive]}; 
+Spec3                          100.00%, 100.00% (35/35)       77    covergroup Spec3 @(posedge clk iff(inf.mode_valid)); 
+|--fm_info_f_type              100.00% (8/8)                  80    coverpoint fm_info.f_type;     
+| |--auto[Formula_A]           100.00% (450/150)              80    coverpoint fm_info.f_type;     
+| |--auto[Formula_B]           100.00% (450/150)              80    coverpoint fm_info.f_type;     
+| |--auto[Formula_C]           100.00% (450/150)              80    coverpoint fm_info.f_type;     
+| |--auto[Formula_D]           100.00% (450/150)              80    coverpoint fm_info.f_type;     
+| |--auto[Formula_E]           100.00% (450/150)              80    coverpoint fm_info.f_type;     
+| |--auto[Formula_F]           100.00% (450/150)              80    coverpoint fm_info.f_type;     
+| |--auto[Formula_G]           100.00% (450/150)              80    coverpoint fm_info.f_type;     
+| |--auto[Formula_H]           100.00% (450/150)              80    coverpoint fm_info.f_type;     
+|--fm_info_f_mode              100.00% (3/3)                  81    coverpoint fm_info.f_mode;     
+| |--auto[Insensitive]         100.00% (1200/150)             81    coverpoint fm_info.f_mode;     
+| |--auto[Normal]              100.00% (1200/150)             81    coverpoint fm_info.f_mode;     
+| |--auto[Sensitive]           100.00% (1200/150)             81    coverpoint fm_info.f_mode;     
+|--__fm_info_f_type_X_fm_info_f_mode 100.00% (24/24)                82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_A],auto[Insensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_A],auto[Normal] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_A],auto[Sensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_B],auto[Insensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_B],auto[Normal] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_B],auto[Sensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_C],auto[Insensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_C],auto[Normal] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_C],auto[Sensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_D],auto[Insensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_D],auto[Normal] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_D],auto[Sensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_E],auto[Insensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_E],auto[Normal] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_E],auto[Sensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_F],auto[Insensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_F],auto[Normal] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_F],auto[Sensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_G],auto[Insensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_G],auto[Normal] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_G],auto[Sensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_H],auto[Insensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_H],auto[Normal] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Formula_H],auto[Sensitive] 100.00% (150/150)              82    cross fm_info.f_type, fm_info.f_mode; 
+Spec4                          100.00%, 100.00% (4/4)         85    covergroup Spec4 @(negedge clk iff(inf.out_valid)); 
+|--inf_warn_msg                100.00% (4/4)                  88    coverpoint inf.warn_msg{       
+| |--warn_msg_bin[No_Warn]     100.00% (729/50)               89    bins warn_msg_bin [] = {[No_Warn:Data_Warn]}; 
+| |--warn_msg_bin[Date_Warn]   100.00% (4016/50)              89    bins warn_msg_bin [] = {[No_Warn:Data_Warn]}; 
+| |--warn_msg_bin[Risk_Warn]   100.00% (50/50)                89    bins warn_msg_bin [] = {[No_Warn:Data_Warn]}; 
+| |--warn_msg_bin[Data_Warn]   100.00% (607/50)               89    bins warn_msg_bin [] = {[No_Warn:Data_Warn]}; 
+Spec5                          100.00%, 100.00% (9/9)         93    covergroup Spec5 @(posedge clk iff(inf.sel_action_valid)); 
+|--__coverpoint_0              100.00% (9/9)                  96    coverpoint inf.D.d_act[0]{     
+| |--action_bin[Index_Check=>Index_Check] 100.00% (2999/300)             97    bins action_bin [] = ([Index_Check:Check_Valid_Date]=>[Index_Check:Check_Valid_Date]); 
+| |--action_bin[Index_Check=>Update] 100.00% (300/300)              97    bins action_bin [] = ([Index_Check:Check_Valid_Date]=>[Index_Check:Check_Valid_Date]); 
+| |--action_bin[Index_Check=>Check_Valid_Date] 100.00% (301/300)              97    bins action_bin [] = ([Index_Check:Check_Valid_Date]=>[Index_Check:Check_Valid_Date]); 
+| |--action_bin[Update=>Index_Check] 100.00% (300/300)              97    bins action_bin [] = ([Index_Check:Check_Valid_Date]=>[Index_Check:Check_Valid_Date]); 
+| |--action_bin[Update=>Update] 100.00% (300/300)              97    bins action_bin [] = ([Index_Check:Check_Valid_Date]=>[Index_Check:Check_Valid_Date]); 
+| |--action_bin[Update=>Check_Valid_Date] 100.00% (300/300)              97    bins action_bin [] = ([Index_Check:Check_Valid_Date]=>[Index_Check:Check_Valid_Date]); 
+| |--action_bin[Check_Valid_Date=>Index_Check] 100.00% (300/300)              97    bins action_bin [] = ([Index_Check:Check_Valid_Date]=>[Index_Check:Check_Valid_Date]); 
+| |--action_bin[Check_Valid_Date=>Update] 100.00% (301/300)              97    bins action_bin [] = ([Index_Check:Check_Valid_Date]=>[Index_Check:Check_Valid_Date]); 
+| |--action_bin[Check_Valid_Date=>Check_Valid_Date] 100.00% (300/300)              97    bins action_bin [] = ([Index_Check:Check_Valid_Date]=>[Index_Check:Check_Valid_Date]); 
+Spec6                          100.00%, 100.00% (32/32)       101   covergroup Spec6 @(posedge clk iff(act_ff==Update && inf.index_valid)); 
+|--__coverpoint_0              100.00% (32/32)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[0:127]               100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[128:255]             100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[256:383]             100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[384:511]             100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[512:639]             100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[640:767]             100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[768:895]             100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[896:1023]            100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[1024:1151]           100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[1152:1279]           100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[1280:1407]           100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[1408:1535]           100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[1536:1663]           100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[1664:1791]           100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[1792:1919]           100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[1920:2047]           100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[2048:2175]           100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[2176:2303]           100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[2304:2431]           100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[2432:2559]           100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[2560:2687]           100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[2688:2815]           100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[2816:2943]           100.00% (115/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[2944:3071]           100.00% (114/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[3072:3199]           100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[3200:3327]           100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[3328:3455]           100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[3456:3583]           100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[3584:3711]           100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[3712:3839]           100.00% (112/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[3840:3967]           100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+| |--auto[3968:4095]           100.00% (113/1)                104   coverpoint inf.D.d_index[0]{   
+

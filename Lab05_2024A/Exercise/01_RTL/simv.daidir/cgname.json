@@ -1,0 +1,50 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "PATTERN": [
+        "PATTERN",
+        "ThTta",
+        "module",
+        2
+    ],
+    "max_pooling": [
+        "max_pooling",
+        "IKPjI",
+        "module",
+        3
+    ],
+    "median": [
+        "median",
+        "r2iP5",
+        "module",
+        4
+    ],
+    "TESTBED": [
+        "TESTBED",
+        "TAUdR",
+        "module",
+        5
+    ],
+    "SINGLE_PORT_51216": [
+        "SINGLE_PORT_51216",
+        "PrbiK",
+        "module",
+        8
+    ],
+    "SINGLE_PORT_12816": [
+        "SINGLE_PORT_12816",
+        "IjCQB",
+        "module",
+        6
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        7
+    ]
+}

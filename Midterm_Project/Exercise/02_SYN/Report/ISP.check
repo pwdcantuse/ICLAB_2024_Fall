@@ -1,0 +1,193 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sun Nov 17 12:16:54 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     38
+    Unconnected ports (LINT-28)                                    12
+    Shorted outputs (LINT-31)                                      12
+    Constant outputs (LINT-52)                                     14
+
+Cells                                                              61
+    Cells do not drive (LINT-1)                                     5
+    Connected to power or ground (LINT-32)                         54
+    Nets connected to multiple pins on same cell (LINT-33)          2
+
+Nets                                                               14
+    Unloaded nets (LINT-2)                                         14
+--------------------------------------------------------------------------------
+
+Warning: In design 'ISP', cell 'B_195' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_196' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_215' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_216' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_218' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', net 'net575' driven by pin 'div_1158/QUOTIENT_9' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net574' driven by pin 'div_1158/QUOTIENT_10' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net573' driven by pin 'div_1158/QUOTIENT_11' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net572' driven by pin 'div_1158/QUOTIENT_12' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net571' driven by pin 'div_1158/QUOTIENT_13' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net570' driven by pin 'C9968/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net569' driven by pin 'C9939/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net568' driven by pin 'C9924/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net567' driven by pin 'C9801/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net566' driven by pin 'C9660/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net565' driven by pin 'C9650/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net564' driven by pin 'C9334/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net563' driven by pin 'C9324/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'axi_write/net1812' driven by pin 'axi_write/C1078/Z' has no loads. (LINT-2)
+Warning: In design 'AXI_READ', port 'rid_s_inf[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_READ', port 'rid_s_inf[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_READ', port 'rid_s_inf[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_READ', port 'rid_s_inf[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_READ', port 'rresp_s_inf[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_READ', port 'rresp_s_inf[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_WRITE', port 'bid_s_inf[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_WRITE', port 'bid_s_inf[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_WRITE', port 'bid_s_inf[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_WRITE', port 'bid_s_inf[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_WRITE', port 'bresp_s_inf[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_WRITE', port 'bresp_s_inf[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'AXI_READ', output port 'arid_s_inf[3]' is connected directly to output port 'arburst_s_inf[1]'. (LINT-31)
+Warning: In design 'AXI_READ', output port 'arid_s_inf[3]' is connected directly to output port 'arsize_s_inf[0]'. (LINT-31)
+Warning: In design 'AXI_READ', output port 'arid_s_inf[3]' is connected directly to output port 'arsize_s_inf[1]'. (LINT-31)
+Warning: In design 'AXI_READ', output port 'arid_s_inf[3]' is connected directly to output port 'arid_s_inf[0]'. (LINT-31)
+Warning: In design 'AXI_READ', output port 'arid_s_inf[3]' is connected directly to output port 'arid_s_inf[1]'. (LINT-31)
+Warning: In design 'AXI_READ', output port 'arid_s_inf[3]' is connected directly to output port 'arid_s_inf[2]'. (LINT-31)
+Warning: In design 'AXI_WRITE', output port 'awid_s_inf[3]' is connected directly to output port 'awburst_s_inf[1]'. (LINT-31)
+Warning: In design 'AXI_WRITE', output port 'awid_s_inf[3]' is connected directly to output port 'awsize_s_inf[0]'. (LINT-31)
+Warning: In design 'AXI_WRITE', output port 'awid_s_inf[3]' is connected directly to output port 'awsize_s_inf[1]'. (LINT-31)
+Warning: In design 'AXI_WRITE', output port 'awid_s_inf[3]' is connected directly to output port 'awid_s_inf[0]'. (LINT-31)
+Warning: In design 'AXI_WRITE', output port 'awid_s_inf[3]' is connected directly to output port 'awid_s_inf[1]'. (LINT-31)
+Warning: In design 'AXI_WRITE', output port 'awid_s_inf[3]' is connected directly to output port 'awid_s_inf[2]'. (LINT-31)
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[31]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[30]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[29]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[28]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[27]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[26]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[25]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[24]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[23]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[22]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[21]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[20]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[19]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[18]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[17]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[16]' is connected to logic 1. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[9]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[8]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[7]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[6]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[5]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[4]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[3]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[2]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[1]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[0]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_read' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'read_num[6]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[31]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[30]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[29]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[28]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[27]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[26]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[25]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[24]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[23]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[22]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[21]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[20]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[19]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[18]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[17]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[16]' is connected to logic 1. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[9]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[8]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[7]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[6]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[5]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[4]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[3]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[2]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[1]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'begin_addr[0]' is connected to logic 0. 
+Warning: In design 'ISP', a pin on submodule 'axi_write' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'write_num[6]' is connected to logic 0. 
+Warning: In design 'ISP', the same net is connected to more than one pin on submodule 'axi_read'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'begin_addr[31]', 'begin_addr[30]'', 'begin_addr[29]', 'begin_addr[28]', 'begin_addr[27]', 'begin_addr[26]', 'begin_addr[25]', 'begin_addr[24]', 'begin_addr[23]', 'begin_addr[22]', 'begin_addr[21]', 'begin_addr[20]', 'begin_addr[19]', 'begin_addr[18]', 'begin_addr[17]', 'begin_addr[9]', 'begin_addr[8]', 'begin_addr[7]', 'begin_addr[6]', 'begin_addr[5]', 'begin_addr[4]', 'begin_addr[3]', 'begin_addr[2]', 'begin_addr[1]', 'begin_addr[0]', 'read_num[6]'.
+Warning: In design 'ISP', the same net is connected to more than one pin on submodule 'axi_write'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'begin_addr[31]', 'begin_addr[30]'', 'begin_addr[29]', 'begin_addr[28]', 'begin_addr[27]', 'begin_addr[26]', 'begin_addr[25]', 'begin_addr[24]', 'begin_addr[23]', 'begin_addr[22]', 'begin_addr[21]', 'begin_addr[20]', 'begin_addr[19]', 'begin_addr[18]', 'begin_addr[17]', 'begin_addr[9]', 'begin_addr[8]', 'begin_addr[7]', 'begin_addr[6]', 'begin_addr[5]', 'begin_addr[4]', 'begin_addr[3]', 'begin_addr[2]', 'begin_addr[1]', 'begin_addr[0]', 'write_num[6]'.
+Warning: In design 'AXI_READ', output port 'arid_s_inf[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_READ', output port 'arid_s_inf[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_READ', output port 'arid_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_READ', output port 'arid_s_inf[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_READ', output port 'arsize_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_READ', output port 'arsize_s_inf[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_READ', output port 'arburst_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_WRITE', output port 'awid_s_inf[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_WRITE', output port 'awid_s_inf[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_WRITE', output port 'awid_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_WRITE', output port 'awid_s_inf[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_WRITE', output port 'awsize_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_WRITE', output port 'awsize_s_inf[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'AXI_WRITE', output port 'awburst_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+1

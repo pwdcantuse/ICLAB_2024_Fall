@@ -1,0 +1,1700 @@
+[12/04 17:54:53      0s] 
+[12/04 17:54:53      0s] Cadence Innovus(TM) Implementation System.
+[12/04 17:54:53      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/04 17:54:53      0s] 
+[12/04 17:54:53      0s] Version:	v20.15-s105_1, built Tue Jul 27 14:15:35 PDT 2021
+[12/04 17:54:53      0s] Options:	
+[12/04 17:54:53      0s] Date:		Wed Dec  4 17:54:53 2024
+[12/04 17:54:53      0s] Host:		ee30 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (64cores*256cpus*AMD EPYC 7773X 64-Core Processor 512KB)
+[12/04 17:54:53      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[12/04 17:54:53      0s] 
+[12/04 17:54:53      0s] License:
+[12/04 17:54:53      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[12/04 17:54:53      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/04 17:55:06     12s] @(#)CDS: Innovus v20.15-s105_1 (64bit) 07/27/2021 14:15 (Linux 2.6.32-431.11.2.el6.x86_64)
+[12/04 17:55:06     12s] @(#)CDS: NanoRoute 20.15-s105_1 NR210726-1341/20_15-UB (database version 18.20.554) {superthreading v2.14}
+[12/04 17:55:06     12s] @(#)CDS: AAE 20.15-s020 (64bit) 07/27/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[12/04 17:55:06     12s] @(#)CDS: CTE 20.15-s024_1 () Jul 23 2021 04:46:45 ( )
+[12/04 17:55:06     12s] @(#)CDS: SYNTECH 20.15-s012_1 () Jul 12 2021 23:29:38 ( )
+[12/04 17:55:06     12s] @(#)CDS: CPE v20.15-s071
+[12/04 17:55:06     12s] @(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[12/04 17:55:06     12s] @(#)CDS: OA 22.60-p058 Tue Jun 15 18:38:04 2021
+[12/04 17:55:06     12s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[12/04 17:55:06     12s] @(#)CDS: RCDB 11.15.0
+[12/04 17:55:06     12s] @(#)CDS: STYLUS 20.10-p029_1 (06/24/2021 01:33 PDT)
+[12/04 17:55:06     12s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_119102_ee30_iclab018_zVqayu.
+
+[12/04 17:55:06     12s] Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+[12/04 17:55:08     13s] 
+[12/04 17:55:08     13s] **INFO:  MMMC transition support version v31-84 
+[12/04 17:55:08     13s] 
+[12/04 17:55:08     13s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/04 17:55:08     13s] <CMD> suppressMessage ENCEXT-2799
+[12/04 17:55:08     13s] <CMD> getVersion
+[12/04 17:55:09     13s] [INFO] Loading Pegasus 21.21 fill procedures
+[12/04 17:55:09     13s] <CMD> win
+[12/04 17:55:24     14s] <CMD> encMessage warning 0
+[12/04 17:55:24     14s] Suppress "**WARN ..." messages.
+[12/04 17:55:24     14s] <CMD> encMessage debug 0
+[12/04 17:55:24     14s] <CMD> encMessage info 0
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[12/04 17:55:25     15s] To increase the message display limit, refer to the product command reference manual.
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[12/04 17:55:25     15s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/04 17:55:25     15s] **WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/04 17:55:25     15s] **WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/04 17:55:25     15s] **WARN: (IMPLF-200):	Pin 'I' in macro 'XMD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/04 17:55:25     15s] **WARN: (IMPLF-200):	Pin 'I' in macro 'XMC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/04 17:55:25     15s] **WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/04 17:55:25     15s] **WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/04 17:55:25     15s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/04 17:55:25     15s] Loading view definition file from /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP_floorplan.inn.dat/viewDefinition.tcl
+[12/04 17:55:25     15s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/LIB/fsa0m_a_generic_core_ss1p62v125c.lib)
+[12/04 17:55:25     15s] *** End library_loading (cpu=0.01min, real=0.00min, mem=17.5M, fe_cpu=0.26min, fe_real=0.53min, fe_mem=947.4M) ***
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[12/04 17:55:25     15s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[12/04 17:55:25     15s] To increase the message display limit, refer to the product command reference manual.
+[12/04 17:55:25     16s] *** Netlist is unique.
+[12/04 17:55:25     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:25     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:25     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:25     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:25     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:25     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:25     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:25     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:26     16s] Loading preference file /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR/CHIP_floorplan.inn.dat/gui.pref.tcl ...
+[12/04 17:55:26     16s] 
+[12/04 17:55:26     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[12/04 17:55:26     16s] 
+[12/04 17:55:26     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[12/04 17:55:26     16s] 
+[12/04 17:55:26     16s] TimeStamp Deleting Cell Server Begin ...
+[12/04 17:55:26     16s] 
+[12/04 17:55:26     16s] TimeStamp Deleting Cell Server End ...
+[12/04 17:55:26     16s] 
+[12/04 17:55:26     16s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[12/04 17:55:26     16s] 
+[12/04 17:55:26     16s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[12/04 17:55:26     16s] **WARN: (IMPSYC-2):	Timing information is not defined for cell VCCKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/04 17:55:26     16s] **WARN: (IMPSYC-2):	Timing information is not defined for cell VCC3IOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/04 17:55:26     16s] **WARN: (IMPSYC-2):	Timing information is not defined for cell GNDKD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/04 17:55:26     16s] **WARN: (IMPSYC-2):	Timing information is not defined for cell GNDIOD; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/04 17:55:26     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:26     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:26     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:26     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:26     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:26     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:26     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:26     16s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:55:26     16s] Loading place ...
+[12/04 17:55:27     16s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[12/04 17:55:27     16s] {RT RC_Corner 0 6 6 {5 0} 1}
+[12/04 17:55:27     17s] 
+[12/04 17:55:27     17s] TimeStamp Deleting Cell Server Begin ...
+[12/04 17:55:27     17s] 
+[12/04 17:55:27     17s] TimeStamp Deleting Cell Server End ...
+[12/04 17:55:27     17s] 
+[12/04 17:55:27     17s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[12/04 17:55:27     17s] 
+[12/04 17:55:27     17s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[12/04 17:55:27     17s] 
+[12/04 17:55:27     17s] TimeStamp Deleting Cell Server Begin ...
+[12/04 17:55:27     17s] 
+[12/04 17:55:27     17s] TimeStamp Deleting Cell Server End ...
+[12/04 17:55:27     17s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.15-s105_1. They will be removed in the next release. 
+[12/04 17:55:27     17s] timing_enable_default_delay_arc
+[12/04 17:55:37     17s] <CMD> getIoFlowFlag
+[12/04 17:56:01     19s] <CMD> setIoFlowFlag 0
+[12/04 17:56:01     19s] <CMD> floorPlan -site core_5040 -r 0.990696095076 0.7 10000 10000 10000 10000
+[12/04 17:56:01     19s] Adjusting Core to Bottom to: 10000.9200.
+[12/04 17:56:01     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:01     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:01     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:01     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:01     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:01     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:01     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:01     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:01     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:01     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:01     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:01     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:01     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:01     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:01     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:01     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:01     19s] Start create_tracks
+[12/04 17:56:01     19s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[12/04 17:56:01     19s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/04 17:56:01     19s] <CMD> uiSetTool select
+[12/04 17:56:01     19s] <CMD> getIoFlowFlag
+[12/04 17:56:01     19s] <CMD> fit
+[12/04 17:56:07     19s] <CMD> setIoFlowFlag 0
+[12/04 17:56:07     19s] <CMD> floorPlan -site core_5040 -r 0.964090079124 0.699522 10000.6 10000.92 10000.6 10000.48
+[12/04 17:56:07     19s] Adjusting Core to Bottom to: 10001.4800.
+[12/04 17:56:07     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:07     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:07     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:07     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:07     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:07     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:07     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:07     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:07     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:07     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:07     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:07     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:07     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:07     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:07     19s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:07     19s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:07     19s] Start create_tracks
+[12/04 17:56:07     19s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[12/04 17:56:07     19s] <CMD> uiSetTool select
+[12/04 17:56:07     19s] <CMD> getIoFlowFlag
+[12/04 17:56:07     19s] <CMD> fit
+[12/04 17:56:19     20s] <CMD> getIoFlowFlag
+[12/04 17:56:33     21s] <CMD> setIoFlowFlag 0
+[12/04 17:56:33     21s] <CMD> floorPlan -site core_5040 -r 0.964090079124 0.699522 5000 5000 5000 5000
+[12/04 17:56:33     21s] Adjusting Core to Bottom to: 5000.6800.
+[12/04 17:56:33     21s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:33     21s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:33     21s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:33     21s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:33     21s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:33     21s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:33     21s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:33     21s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:33     21s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:33     21s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:33     21s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:33     21s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:33     21s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:33     21s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:33     21s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:33     21s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:33     21s] Start create_tracks
+[12/04 17:56:33     21s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[12/04 17:56:33     21s] <CMD> uiSetTool select
+[12/04 17:56:33     21s] <CMD> getIoFlowFlag
+[12/04 17:56:33     21s] <CMD> fit
+[12/04 17:56:42     22s] <CMD> setIoFlowFlag 0
+[12/04 17:56:42     22s] <CMD> floorPlan -site core_5040 -r 0.964090079124 0.699522 1000 100 1000 1000
+[12/04 17:56:42     22s] Adjusting Core to Bottom to: 100.6800.
+[12/04 17:56:42     22s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:42     22s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:42     22s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:42     22s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:42     22s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:42     22s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:42     22s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:42     22s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:42     22s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:42     22s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:42     22s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:42     22s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:42     22s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:42     22s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:42     22s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:56:42     22s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:56:42     22s] Start create_tracks
+[12/04 17:56:42     22s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[12/04 17:56:42     22s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/04 17:56:42     22s] <CMD> uiSetTool select
+[12/04 17:56:42     22s] <CMD> getIoFlowFlag
+[12/04 17:56:42     22s] <CMD> fit
+[12/04 17:57:08     23s] <CMD> setIoFlowFlag 0
+[12/04 17:57:08     23s] <CMD> floorPlan -site core_5040 -r 3.5057821059 0.192369 2000.06 2000.68 2000.06 2002.52
+[12/04 17:57:08     23s] Adjusting Core to Bottom to: 2001.3200.
+[12/04 17:57:08     23s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:08     23s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:08     23s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:08     23s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:08     23s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:08     23s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:08     23s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:08     23s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:08     23s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:08     23s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:08     23s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:08     23s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:08     23s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:08     23s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:08     23s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:08     23s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:08     23s] Start create_tracks
+[12/04 17:57:08     23s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[12/04 17:57:08     23s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/04 17:57:08     23s] <CMD> uiSetTool select
+[12/04 17:57:08     23s] <CMD> getIoFlowFlag
+[12/04 17:57:08     23s] <CMD> fit
+[12/04 17:57:19     24s] <CMD> setIoFlowFlag 0
+[12/04 17:57:19     24s] <CMD> floorPlan -site core_5040 -r 3.4559254787 0.7 2000.12 2001.32 2000.12 2002.56
+[12/04 17:57:19     24s] Adjusting Core to Bottom to: 2001.8800.
+[12/04 17:57:19     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:19     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:19     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:19     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:19     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:19     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:19     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:19     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:19     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:19     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:19     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:19     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:19     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:19     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:19     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:19     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:19     24s] Start create_tracks
+[12/04 17:57:19     24s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[12/04 17:57:19     24s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/04 17:57:19     24s] <CMD> uiSetTool select
+[12/04 17:57:19     24s] <CMD> getIoFlowFlag
+[12/04 17:57:19     24s] <CMD> fit
+[12/04 17:57:29     24s] <CMD> setIoFlowFlag 0
+[12/04 17:57:29     24s] <CMD> floorPlan -site core_5040 -r 1 0.698367 2000.12 2001.88 2000.12 2002.56
+[12/04 17:57:29     24s] Adjusting Core to Bottom to: 2002.4400.
+[12/04 17:57:29     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:29     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:29     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:29     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:29     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:29     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:29     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:29     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:29     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:29     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:29     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:29     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:29     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:29     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:29     24s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:29     24s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:29     24s] Start create_tracks
+[12/04 17:57:29     24s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[12/04 17:57:29     24s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/04 17:57:29     24s] <CMD> uiSetTool select
+[12/04 17:57:29     24s] <CMD> getIoFlowFlag
+[12/04 17:57:29     24s] <CMD> fit
+[12/04 17:57:41     25s] <CMD> setIoFlowFlag 0
+[12/04 17:57:41     25s] <CMD> floorPlan -site core_5040 -r 0.961498439126 0.697642 1000.12 1002.44 1000.12 1002.56
+[12/04 17:57:41     25s] Adjusting Core to Bottom to: 1003.4000.
+[12/04 17:57:41     25s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:41     25s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:41     25s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:41     25s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:41     25s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:41     25s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:41     25s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:41     25s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:41     25s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:41     25s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:41     25s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:41     25s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:41     25s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:41     25s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:41     25s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:41     25s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:41     25s] Start create_tracks
+[12/04 17:57:41     25s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[12/04 17:57:41     25s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/04 17:57:41     25s] <CMD> uiSetTool select
+[12/04 17:57:41     25s] <CMD> getIoFlowFlag
+[12/04 17:57:41     25s] <CMD> fit
+[12/04 17:57:55     26s] <CMD> setIoFlowFlag 0
+[12/04 17:57:55     26s] <CMD> floorPlan -site core_5040 -r 1 0.697003 1000.68 1003.4 1000.68 1002.96
+[12/04 17:57:55     26s] Adjusting Core to Bottom to: 1003.9600.
+[12/04 17:57:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:55     26s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:55     26s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:55     26s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:55     26s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:55     26s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:55     26s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:55     26s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:55     26s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/04 17:57:55     26s] Type 'man IMPFP-3961' for more detail.
+[12/04 17:57:55     26s] Start create_tracks
+[12/04 17:57:55     26s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[12/04 17:57:55     26s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/04 17:57:55     26s] <CMD> uiSetTool select
+[12/04 17:57:55     26s] <CMD> getIoFlowFlag
+[12/04 17:57:55     26s] <CMD> fit
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingOffset 1.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingLayers {}
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingOffset 1.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingLayers {}
+[12/04 17:58:07     26s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingOffset 1.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeRingLayers {}
+[12/04 17:58:07     26s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/04 17:58:07     26s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingOffset 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingLayers {}
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingOffset 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingLayers {}
+[12/04 17:58:18     27s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingOffset 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeRingLayers {}
+[12/04 17:58:18     27s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/04 17:58:18     27s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/04 17:58:50     28s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/04 17:58:50     28s] The ring targets are set to core/block ring wires.
+[12/04 17:58:50     28s] addRing command will consider rows while creating rings.
+[12/04 17:58:50     28s] addRing command will disallow rings to go over rows.
+[12/04 17:58:50     28s] addRing command will ignore shorts while creating rings.
+[12/04 17:58:50     28s] <CMD> addRing -nets {GND VCC} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.24 bottom 0.24 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 10 -use_interleaving_wire_group 1
+[12/04 17:58:50     28s] 
+[12/04 17:58:50     28s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2186.6M)
+[12/04 17:58:50     28s] Ring generation is complete.
+[12/04 17:58:50     28s] vias are now being generated.
+[12/04 17:58:51     29s] addRing created 80 wires.
+[12/04 17:58:51     29s] ViaGen created 800 vias, deleted 0 via to avoid violation.
+[12/04 17:58:51     29s] +--------+----------------+----------------+
+[12/04 17:58:51     29s] |  Layer |     Created    |     Deleted    |
+[12/04 17:58:51     29s] +--------+----------------+----------------+
+[12/04 17:58:51     29s] | metal1 |       40       |       NA       |
+[12/04 17:58:51     29s] |   via  |       800      |        0       |
+[12/04 17:58:51     29s] | metal2 |       40       |       NA       |
+[12/04 17:58:51     29s] +--------+----------------+----------------+
+[12/04 17:58:56     29s] <CMD> undo
+[12/04 17:59:06     29s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/04 17:59:06     29s] The ring targets are set to core/block ring wires.
+[12/04 17:59:06     29s] addRing command will consider rows while creating rings.
+[12/04 17:59:06     29s] addRing command will disallow rings to go over rows.
+[12/04 17:59:06     29s] addRing command will ignore shorts while creating rings.
+[12/04 17:59:06     29s] <CMD> addRing -nets {GND VCC} -type core_rings -follow core -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 10 -use_interleaving_wire_group 1
+[12/04 17:59:06     29s] 
+[12/04 17:59:06     29s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2191.9M)
+[12/04 17:59:06     29s] Ring generation is complete.
+[12/04 17:59:06     29s] vias are now being generated.
+[12/04 17:59:06     30s] addRing created 80 wires.
+[12/04 17:59:06     30s] ViaGen created 800 vias, deleted 0 via to avoid violation.
+[12/04 17:59:06     30s] +--------+----------------+----------------+
+[12/04 17:59:06     30s] |  Layer |     Created    |     Deleted    |
+[12/04 17:59:06     30s] +--------+----------------+----------------+
+[12/04 17:59:06     30s] | metal2 |       40       |       NA       |
+[12/04 17:59:06     30s] |  via2  |       800      |        0       |
+[12/04 17:59:06     30s] | metal3 |       40       |       NA       |
+[12/04 17:59:06     30s] +--------+----------------+----------------+
+[12/04 17:59:34     31s] <CMD> undo
+[12/04 17:59:43     32s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/04 17:59:43     32s] The ring targets are set to core/block ring wires.
+[12/04 17:59:43     32s] addRing command will consider rows while creating rings.
+[12/04 17:59:43     32s] addRing command will disallow rings to go over rows.
+[12/04 17:59:43     32s] addRing command will ignore shorts while creating rings.
+[12/04 17:59:43     32s] <CMD> addRing -nets {GND VCC} -type core_rings -follow core -layer {top metal3 bottom metal3 left metal2 right metal2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 30 -use_interleaving_wire_group 1
+[12/04 17:59:43     32s] 
+[12/04 17:59:43     32s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2191.9M)
+[12/04 17:59:43     32s] Ring generation is complete.
+[12/04 17:59:43     32s] vias are now being generated.
+[12/04 17:59:44     33s] addRing created 240 wires.
+[12/04 17:59:44     33s] ViaGen created 7200 vias, deleted 0 via to avoid violation.
+[12/04 17:59:44     33s] +--------+----------------+----------------+
+[12/04 17:59:44     33s] |  Layer |     Created    |     Deleted    |
+[12/04 17:59:44     33s] +--------+----------------+----------------+
+[12/04 17:59:44     33s] | metal2 |       120      |       NA       |
+[12/04 17:59:44     33s] |  via2  |      7200      |        0       |
+[12/04 17:59:44     33s] | metal3 |       120      |       NA       |
+[12/04 17:59:44     33s] +--------+----------------+----------------+
+[12/04 18:00:13     34s] <CMD> setSrouteMode -viaConnectToShape { ring blockring }
+[12/04 18:00:13     34s] <CMD> sroute -connect { blockPin padPin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal6(6) }
+[12/04 18:00:13     34s] *** Begin SPECIAL ROUTE on Wed Dec  4 18:00:13 2024 ***
+[12/04 18:00:13     34s] SPECIAL ROUTE ran on directory: /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR
+[12/04 18:00:13     34s] SPECIAL ROUTE ran on machine: ee30 (Linux 3.10.0-1160.88.1.el7.x86_64 x86_64 1.50Ghz)
+[12/04 18:00:13     34s] 
+[12/04 18:00:13     34s] Begin option processing ...
+[12/04 18:00:13     34s] srouteConnectPowerBump set to false
+[12/04 18:00:13     34s] routeSelectNet set to "GND VCC"
+[12/04 18:00:13     34s] routeSpecial set to true
+[12/04 18:00:13     34s] srouteBlockPin set to "useLef"
+[12/04 18:00:13     34s] srouteBottomLayerLimit set to 1
+[12/04 18:00:13     34s] srouteBottomTargetLayerLimit set to 1
+[12/04 18:00:13     34s] srouteConnectConverterPin set to false
+[12/04 18:00:13     34s] srouteConnectCorePin set to false
+[12/04 18:00:13     34s] srouteConnectStripe set to false
+[12/04 18:00:13     34s] srouteCrossoverViaBottomLayer set to 1
+[12/04 18:00:13     34s] srouteCrossoverViaTopLayer set to 6
+[12/04 18:00:13     34s] srouteFollowCorePinEnd set to 3
+[12/04 18:00:13     34s] srouteFollowPadPin set to false
+[12/04 18:00:13     34s] srouteJogControl set to "preferWithChanges differentLayer"
+[12/04 18:00:13     34s] srouteNoViaOnWireShape set to "padring stripe blockpin coverpin noshape blockwire corewire followpin iowire"
+[12/04 18:00:13     34s] sroutePadPinAllPorts set to true
+[12/04 18:00:13     34s] sroutePreserveExistingRoutes set to true
+[12/04 18:00:13     34s] srouteRoutePowerBarPortOnBothDir set to true
+[12/04 18:00:13     34s] srouteStopBlockPin set to "nearestTarget"
+[12/04 18:00:13     34s] srouteTopLayerLimit set to 6
+[12/04 18:00:13     34s] srouteTopTargetLayerLimit set to 6
+[12/04 18:00:13     34s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3296.00 megs.
+[12/04 18:00:13     34s] 
+[12/04 18:00:13     34s] Reading DB technology information...
+[12/04 18:00:13     34s] Finished reading DB technology information.
+[12/04 18:00:13     34s] Reading floorplan and netlist information...
+[12/04 18:00:13     34s] Finished reading floorplan and netlist information.
+[12/04 18:00:13     34s] Read in 12 layers, 6 routing layers, 1 overlap layer
+[12/04 18:00:13     34s] Read in 98 macros, 98 used
+[12/04 18:00:13     34s] Read in 215 components
+[12/04 18:00:13     34s]   91 core components: 91 unplaced, 0 placed, 0 fixed
+[12/04 18:00:13     34s]   124 pad components: 0 unplaced, 120 placed, 4 fixed
+[12/04 18:00:13     34s] Read in 88 logical pins
+[12/04 18:00:13     34s] Read in 88 nets
+[12/04 18:00:13     34s] Read in 2 special nets, 2 routed
+[12/04 18:00:13     34s] Read in 198 terminals
+[12/04 18:00:13     34s] 2 nets selected.
+[12/04 18:00:13     34s] 
+[12/04 18:00:13     34s] Begin power routing ...
+[12/04 18:00:13     34s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VCC net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[12/04 18:00:13     34s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the GND net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[12/04 18:00:25     46s]   Number of IO ports routed: 48
+[12/04 18:00:25     46s]   Number of Block ports routed: 0
+[12/04 18:00:25     46s]   Number of Power Bump ports routed: 0
+[12/04 18:00:25     46s] End power routing: cpu: 0:00:12, real: 0:00:12, peak: 3767.00 megs.
+[12/04 18:00:25     46s] 
+[12/04 18:00:25     46s] 
+[12/04 18:00:25     46s] 
+[12/04 18:00:25     46s]  Begin updating DB with routing results ...
+[12/04 18:00:25     46s]  Updating DB with 20 via definition ...
+[12/04 18:00:25     46s] 
+sroute post-processing starts at Wed Dec  4 18:00:25 2024
+The viaGen is rebuilding shadow vias for net GND.
+[12/04 18:00:25     46s] sroute post-processing ends at Wed Dec  4 18:00:25 2024
+
+sroute post-processing starts at Wed Dec  4 18:00:25 2024
+The viaGen is rebuilding shadow vias for net VCC.
+[12/04 18:00:25     46s] sroute post-processing ends at Wed Dec  4 18:00:25 2024
+sroute created 230 wires.
+[12/04 18:00:25     46s] ViaGen created 587 vias, deleted 0 via to avoid violation.
+[12/04 18:00:25     46s] +--------+----------------+----------------+
+[12/04 18:00:25     46s] |  Layer |     Created    |     Deleted    |
+[12/04 18:00:25     46s] +--------+----------------+----------------+
+[12/04 18:00:25     46s] | metal1 |       76       |       NA       |
+[12/04 18:00:25     46s] |   via  |       412      |        0       |
+[12/04 18:00:25     46s] | metal2 |       39       |       NA       |
+[12/04 18:00:25     46s] |  via2  |        5       |        0       |
+[12/04 18:00:25     46s] | metal3 |       23       |       NA       |
+[12/04 18:00:25     46s] |  via3  |       157      |        0       |
+[12/04 18:00:25     46s] | metal4 |       59       |       NA       |
+[12/04 18:00:25     46s] |  via4  |       13       |        0       |
+[12/04 18:00:25     46s] | metal5 |       30       |       NA       |
+[12/04 18:00:25     46s] | metal6 |        3       |       NA       |
+[12/04 18:00:25     46s] +--------+----------------+----------------+
+[12/04 18:00:57     48s] <CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+[12/04 18:00:57     48s] addStripe will allow jog to connect padcore ring and block ring.
+[12/04 18:00:57     48s] 
+[12/04 18:00:57     48s] Stripes will stop at the boundary of the specified area.
+[12/04 18:00:57     48s] When breaking rings, the power planner will consider the existence of blocks.
+[12/04 18:00:57     48s] Stripes will not extend to closest target.
+[12/04 18:00:57     48s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[12/04 18:00:57     48s] Stripes will not be created over regions without power planning wires.
+[12/04 18:00:57     48s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[12/04 18:00:57     48s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[12/04 18:00:57     48s] Offset for stripe breaking is set to 0.
+[12/04 18:00:57     48s] <CMD> addStripe -nets {GND VCC} -layer metal2 -direction vertical -width 4 -spacing 1.8 -set_to_set_distance 100 -start_from left -start_offset 60 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+[12/04 18:00:57     48s] 
+[12/04 18:00:57     48s] Initialize fgc environment(mem: 2652.8M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:00:57     48s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:00:57     48s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:00:57     48s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:00:57     48s] Starting stripe generation ...
+[12/04 18:00:57     48s] Non-Default Mode Option Settings :
+[12/04 18:00:57     48s]   NONE
+[12/04 18:00:57     48s] Stripe generation is complete.
+[12/04 18:00:57     48s] vias are now being generated.
+[12/04 18:00:57     48s] addStripe created 4 wires.
+[12/04 18:00:57     48s] ViaGen created 240 vias, deleted 0 via to avoid violation.
+[12/04 18:00:57     48s] +--------+----------------+----------------+
+[12/04 18:00:57     48s] |  Layer |     Created    |     Deleted    |
+[12/04 18:00:57     48s] +--------+----------------+----------------+
+[12/04 18:00:57     48s] | metal2 |        4       |       NA       |
+[12/04 18:00:57     48s] |  via2  |       240      |        0       |
+[12/04 18:00:57     48s] +--------+----------------+----------------+
+[12/04 18:01:00     48s] <CMD> zoomBox -1049.30100 92.43400 3617.12500 2438.27400
+[12/04 18:01:05     49s] <CMD> undo
+[12/04 18:01:15     49s] <CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+[12/04 18:01:15     49s] addStripe will allow jog to connect padcore ring and block ring.
+[12/04 18:01:15     49s] 
+[12/04 18:01:15     49s] Stripes will stop at the boundary of the specified area.
+[12/04 18:01:15     49s] When breaking rings, the power planner will consider the existence of blocks.
+[12/04 18:01:15     49s] Stripes will not extend to closest target.
+[12/04 18:01:15     49s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[12/04 18:01:15     49s] Stripes will not be created over regions without power planning wires.
+[12/04 18:01:15     49s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[12/04 18:01:15     49s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[12/04 18:01:15     49s] Offset for stripe breaking is set to 0.
+[12/04 18:01:15     49s] <CMD> addStripe -nets {GND VCC} -layer metal2 -direction vertical -width 4 -spacing 1.8 -set_to_set_distance 25 -start_from left -start_offset 60 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+[12/04 18:01:15     49s] 
+[12/04 18:01:15     49s] Initialize fgc environment(mem: 2652.8M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:01:15     49s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:01:15     49s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:01:15     49s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:01:15     49s] Starting stripe generation ...
+[12/04 18:01:15     49s] Non-Default Mode Option Settings :
+[12/04 18:01:15     49s]   NONE
+[12/04 18:01:15     49s] Stripe generation is complete.
+[12/04 18:01:15     49s] vias are now being generated.
+[12/04 18:01:15     49s] addStripe created 14 wires.
+[12/04 18:01:15     49s] ViaGen created 840 vias, deleted 0 via to avoid violation.
+[12/04 18:01:15     49s] +--------+----------------+----------------+
+[12/04 18:01:15     49s] |  Layer |     Created    |     Deleted    |
+[12/04 18:01:15     49s] +--------+----------------+----------------+
+[12/04 18:01:15     49s] | metal2 |       14       |       NA       |
+[12/04 18:01:15     49s] |  via2  |       840      |        0       |
+[12/04 18:01:15     49s] +--------+----------------+----------------+
+[12/04 18:01:18     49s] <CMD> undo
+[12/04 18:01:41     51s] <CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+[12/04 18:01:41     51s] addStripe will allow jog to connect padcore ring and block ring.
+[12/04 18:01:41     51s] 
+[12/04 18:01:41     51s] Stripes will stop at the boundary of the specified area.
+[12/04 18:01:41     51s] When breaking rings, the power planner will consider the existence of blocks.
+[12/04 18:01:41     51s] Stripes will not extend to closest target.
+[12/04 18:01:41     51s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[12/04 18:01:41     51s] Stripes will not be created over regions without power planning wires.
+[12/04 18:01:41     51s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[12/04 18:01:41     51s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[12/04 18:01:41     51s] Offset for stripe breaking is set to 0.
+[12/04 18:01:41     51s] <CMD> addStripe -nets {GND VCC} -layer metal2 -direction vertical -width 4 -spacing 1.8 -set_to_set_distance 20 -start_from left -start_offset 60 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+[12/04 18:01:41     51s] 
+[12/04 18:01:41     51s] Initialize fgc environment(mem: 2652.8M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:01:41     51s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:01:41     51s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:01:41     51s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:01:41     51s] Starting stripe generation ...
+[12/04 18:01:41     51s] Non-Default Mode Option Settings :
+[12/04 18:01:41     51s]   NONE
+[12/04 18:01:41     51s] Stripe generation is complete.
+[12/04 18:01:41     51s] vias are now being generated.
+[12/04 18:01:41     51s] addStripe created 18 wires.
+[12/04 18:01:41     51s] ViaGen created 1080 vias, deleted 0 via to avoid violation.
+[12/04 18:01:41     51s] +--------+----------------+----------------+
+[12/04 18:01:41     51s] |  Layer |     Created    |     Deleted    |
+[12/04 18:01:41     51s] +--------+----------------+----------------+
+[12/04 18:01:41     51s] | metal2 |       18       |       NA       |
+[12/04 18:01:41     51s] |  via2  |      1080      |        0       |
+[12/04 18:01:41     51s] +--------+----------------+----------------+
+[12/04 18:01:44     51s] <CMD> zoomBox -711.31500 259.11200 3255.14700 2253.07600
+[12/04 18:01:44     51s] <CMD> zoomBox -421.16500 398.64100 2950.32800 2093.51100
+[12/04 18:01:45     51s] <CMD> zoomBox -167.54400 511.76700 2698.22600 1952.40700
+[12/04 18:01:51     52s] <CMD> undo
+[12/04 18:02:12     53s] <CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+[12/04 18:02:12     53s] addStripe will allow jog to connect padcore ring and block ring.
+[12/04 18:02:12     53s] 
+[12/04 18:02:12     53s] Stripes will stop at the boundary of the specified area.
+[12/04 18:02:12     53s] When breaking rings, the power planner will consider the existence of blocks.
+[12/04 18:02:12     53s] Stripes will not extend to closest target.
+[12/04 18:02:12     53s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[12/04 18:02:12     53s] Stripes will not be created over regions without power planning wires.
+[12/04 18:02:12     53s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[12/04 18:02:12     53s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[12/04 18:02:12     53s] Offset for stripe breaking is set to 0.
+[12/04 18:02:12     53s] <CMD> addStripe -nets {GND VCC} -layer metal2 -direction vertical -width 4 -spacing 1.8 -set_to_set_distance 40 -start_from left -start_offset 20 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+[12/04 18:02:12     53s] 
+[12/04 18:02:12     53s] Initialize fgc environment(mem: 2652.8M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:02:12     53s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:02:12     53s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:02:12     53s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:02:12     53s] Starting stripe generation ...
+[12/04 18:02:12     53s] Non-Default Mode Option Settings :
+[12/04 18:02:12     53s]   NONE
+[12/04 18:02:12     53s] Stripe generation is complete.
+[12/04 18:02:12     53s] vias are now being generated.
+[12/04 18:02:12     53s] addStripe created 12 wires.
+[12/04 18:02:12     53s] ViaGen created 720 vias, deleted 0 via to avoid violation.
+[12/04 18:02:12     53s] +--------+----------------+----------------+
+[12/04 18:02:12     53s] |  Layer |     Created    |     Deleted    |
+[12/04 18:02:12     53s] +--------+----------------+----------------+
+[12/04 18:02:12     53s] | metal2 |       12       |       NA       |
+[12/04 18:02:12     53s] |  via2  |       720      |        0       |
+[12/04 18:02:12     53s] +--------+----------------+----------------+
+[12/04 18:02:40     54s] <CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+[12/04 18:02:40     54s] addStripe will allow jog to connect padcore ring and block ring.
+[12/04 18:02:40     54s] 
+[12/04 18:02:40     54s] Stripes will stop at the boundary of the specified area.
+[12/04 18:02:40     54s] When breaking rings, the power planner will consider the existence of blocks.
+[12/04 18:02:40     54s] Stripes will not extend to closest target.
+[12/04 18:02:40     54s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[12/04 18:02:40     54s] Stripes will not be created over regions without power planning wires.
+[12/04 18:02:40     54s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[12/04 18:02:40     54s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[12/04 18:02:40     54s] Offset for stripe breaking is set to 0.
+[12/04 18:02:40     54s] <CMD> addStripe -nets {GND VCC} -layer metal3 -direction horizontal -width 4 -spacing 1.8 -set_to_set_distance 40 -start_from bottom -start_offset 20 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+[12/04 18:02:40     54s] 
+[12/04 18:02:40     54s] Initialize fgc environment(mem: 2652.8M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:02:40     54s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:02:40     54s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:02:40     54s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2652.8M)
+[12/04 18:02:40     54s] Starting stripe generation ...
+[12/04 18:02:40     54s] Non-Default Mode Option Settings :
+[12/04 18:02:40     54s]   NONE
+[12/04 18:02:40     54s] Stripe generation is complete.
+[12/04 18:02:40     54s] vias are now being generated.
+[12/04 18:02:40     54s] addStripe created 10 wires.
+[12/04 18:02:40     54s] ViaGen created 660 vias, deleted 0 via to avoid violation.
+[12/04 18:02:40     54s] +--------+----------------+----------------+
+[12/04 18:02:40     54s] |  Layer |     Created    |     Deleted    |
+[12/04 18:02:40     54s] +--------+----------------+----------------+
+[12/04 18:02:40     54s] |  via2  |       660      |        0       |
+[12/04 18:02:40     54s] | metal3 |       10       |       NA       |
+[12/04 18:02:40     54s] +--------+----------------+----------------+
+[12/04 18:03:07     56s] <CMD> setSrouteMode -viaConnectToShape { ring stripe blockring }
+[12/04 18:03:07     56s] <CMD> sroute -connect { corePin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -targetViaLayerRange { metal1(1) metal6(6) }
+[12/04 18:03:07     56s] **WARN: (IMPSR-4058):	Sroute option: blockPinTarget should be used in conjunction with option: -connect blockPin. 
+[12/04 18:03:07     56s] *** Begin SPECIAL ROUTE on Wed Dec  4 18:03:07 2024 ***
+[12/04 18:03:07     56s] SPECIAL ROUTE ran on directory: /RAID2/COURSE/iclab/iclab018/Lab12/Exercise/05_APR
+[12/04 18:03:08     56s] SPECIAL ROUTE ran on machine: ee30 (Linux 3.10.0-1160.88.1.el7.x86_64 x86_64 1.50Ghz)
+[12/04 18:03:08     56s] 
+[12/04 18:03:08     56s] Begin option processing ...
+[12/04 18:03:08     56s] srouteConnectPowerBump set to false
+[12/04 18:03:08     56s] routeSelectNet set to "GND VCC"
+[12/04 18:03:08     56s] routeSpecial set to true
+[12/04 18:03:08     56s] srouteBottomLayerLimit set to 1
+[12/04 18:03:08     56s] srouteBottomTargetLayerLimit set to 1
+[12/04 18:03:08     56s] srouteConnectBlockPin set to false
+[12/04 18:03:08     56s] srouteConnectConverterPin set to false
+[12/04 18:03:08     56s] srouteConnectPadPin set to false
+[12/04 18:03:08     56s] srouteConnectStripe set to false
+[12/04 18:03:08     56s] srouteCrossoverViaBottomLayer set to 1
+[12/04 18:03:08     56s] srouteCrossoverViaTopLayer set to 6
+[12/04 18:03:08     56s] srouteFollowCorePinEnd set to 3
+[12/04 18:03:08     56s] srouteFollowPadPin set to false
+[12/04 18:03:08     56s] srouteJogControl set to "preferWithChanges differentLayer"
+[12/04 18:03:08     56s] srouteNoViaOnWireShape set to "padring blockpin coverpin noshape blockwire corewire followpin iowire"
+[12/04 18:03:08     56s] sroutePadPinAllPorts set to true
+[12/04 18:03:08     56s] sroutePreserveExistingRoutes set to true
+[12/04 18:03:08     56s] srouteRoutePowerBarPortOnBothDir set to true
+[12/04 18:03:08     56s] srouteStopBlockPin set to "nearestTarget"
+[12/04 18:03:08     56s] srouteTopLayerLimit set to 6
+[12/04 18:03:08     56s] srouteTopTargetLayerLimit set to 6
+[12/04 18:03:08     56s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3767.00 megs.
+[12/04 18:03:08     56s] 
+[12/04 18:03:08     56s] Reading DB technology information...
+[12/04 18:03:08     56s] Finished reading DB technology information.
+[12/04 18:03:08     56s] Reading floorplan and netlist information...
+[12/04 18:03:08     56s] Finished reading floorplan and netlist information.
+[12/04 18:03:08     56s] Read in 12 layers, 6 routing layers, 1 overlap layer
+[12/04 18:03:08     56s] Read in 402 macros, 99 used
+[12/04 18:03:08     56s] Read in 215 components
+[12/04 18:03:08     56s]   91 core components: 91 unplaced, 0 placed, 0 fixed
+[12/04 18:03:08     56s]   124 pad components: 0 unplaced, 120 placed, 4 fixed
+[12/04 18:03:08     56s] Read in 88 logical pins
+[12/04 18:03:08     56s] Read in 88 nets
+[12/04 18:03:08     56s] Read in 2 special nets, 2 routed
+[12/04 18:03:08     56s] Read in 198 terminals
+[12/04 18:03:08     56s] 2 nets selected.
+[12/04 18:03:08     56s] 
+[12/04 18:03:08     56s] Begin power routing ...
+[12/04 18:03:08     56s] CPU time for FollowPin 0 seconds
+[12/04 18:03:08     56s] CPU time for FollowPin 0 seconds
+[12/04 18:03:08     56s]   Number of Core ports routed: 90
+[12/04 18:03:08     56s]   Number of Followpin connections: 45
+[12/04 18:03:08     56s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 3767.00 megs.
+[12/04 18:03:08     56s] 
+[12/04 18:03:08     56s] 
+[12/04 18:03:08     56s] 
+[12/04 18:03:08     56s]  Begin updating DB with routing results ...
+[12/04 18:03:08     56s]  Updating DB with 0 via definition ...
+[12/04 18:03:08     56s] sroute created 135 wires.
+[12/04 18:03:08     56s] ViaGen created 2970 vias, deleted 0 via to avoid violation.
+[12/04 18:03:08     56s] +--------+----------------+----------------+
+[12/04 18:03:08     56s] |  Layer |     Created    |     Deleted    |
+[12/04 18:03:08     56s] +--------+----------------+----------------+
+[12/04 18:03:08     56s] | metal1 |       135      |       NA       |
+[12/04 18:03:08     56s] |   via  |      2970      |        0       |
+[12/04 18:03:08     56s] +--------+----------------+----------------+
+[12/04 18:03:11     57s] <CMD> getMultiCpuUsage -localCpu
+[12/04 18:03:11     57s] <CMD> get_verify_drc_mode -disable_rules -quiet
+[12/04 18:03:11     57s] <CMD> get_verify_drc_mode -quiet -area
+[12/04 18:03:11     57s] <CMD> get_verify_drc_mode -quiet -layer_range
+[12/04 18:03:11     57s] <CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+[12/04 18:03:11     57s] <CMD> get_verify_drc_mode -check_only -quiet
+[12/04 18:03:11     57s] <CMD> get_verify_drc_mode -check_same_via_cell -quiet
+[12/04 18:03:11     57s] <CMD> get_verify_drc_mode -exclude_pg_net -quiet
+[12/04 18:03:11     57s] <CMD> get_verify_drc_mode -ignore_trial_route -quiet
+[12/04 18:03:11     57s] <CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+[12/04 18:03:11     57s] <CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+[12/04 18:03:11     57s] <CMD> get_verify_drc_mode -limit -quiet
+[12/04 18:03:13     57s] <CMD> set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+[12/04 18:03:13     57s] <CMD> verify_drc
+[12/04 18:03:13     57s] #-check_ndr_spacing auto                 # enums={true false auto}, default=auto,  user setting
+[12/04 18:03:13     57s] #-report CHIP.drc.rpt                    # string, default="", user setting
+[12/04 18:03:13     57s]  *** Starting Verify DRC (MEM: 2234.0) ***
+[12/04 18:03:13     57s] 
+[12/04 18:03:13     57s] #create default rule from bind_ndr_rule rule=0x7fa41ce830e0 0x7fa3b01ae018
+[12/04 18:03:13     57s] ### import design signature (2): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[12/04 18:03:13     57s]   VERIFY DRC ...... Starting Verification
+[12/04 18:03:13     57s]   VERIFY DRC ...... Initializing
+[12/04 18:03:13     57s]   VERIFY DRC ...... Deleting Existing Violations
+[12/04 18:03:13     57s]   VERIFY DRC ...... Creating Sub-Areas
+[12/04 18:03:13     57s]   VERIFY DRC ...... Using new threading
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 253.440 253.440} 1 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {253.440 0.000 506.880 253.440} 2 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 2 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {506.880 0.000 760.320 253.440} 3 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 3 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {760.320 0.000 1013.760 253.440} 4 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 4 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1013.760 0.000 1267.200 253.440} 5 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 5 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1267.200 0.000 1520.640 253.440} 6 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 6 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1520.640 0.000 1774.080 253.440} 7 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 7 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1774.080 0.000 2027.520 253.440} 8 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 8 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {2027.520 0.000 2280.960 253.440} 9 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 9 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {2280.960 0.000 2512.860 253.440} 10 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 10 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {0.000 253.440 253.440 506.880} 11 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 11 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {253.440 253.440 506.880 506.880} 12 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 12 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {506.880 253.440 760.320 506.880} 13 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 13 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {760.320 253.440 1013.760 506.880} 14 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 14 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1013.760 253.440 1267.200 506.880} 15 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 15 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1267.200 253.440 1520.640 506.880} 16 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 16 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1520.640 253.440 1774.080 506.880} 17 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 17 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1774.080 253.440 2027.520 506.880} 18 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 18 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {2027.520 253.440 2280.960 506.880} 19 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 19 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {2280.960 253.440 2512.860 506.880} 20 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 20 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {0.000 506.880 253.440 760.320} 21 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 21 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {253.440 506.880 506.880 760.320} 22 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 22 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {506.880 506.880 760.320 760.320} 23 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 23 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {760.320 506.880 1013.760 760.320} 24 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 24 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1013.760 506.880 1267.200 760.320} 25 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 25 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1267.200 506.880 1520.640 760.320} 26 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 26 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1520.640 506.880 1774.080 760.320} 27 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 27 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1774.080 506.880 2027.520 760.320} 28 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 28 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {2027.520 506.880 2280.960 760.320} 29 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 29 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {2280.960 506.880 2512.860 760.320} 30 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 30 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {0.000 760.320 253.440 1013.760} 31 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 31 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {253.440 760.320 506.880 1013.760} 32 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 32 complete 1 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {506.880 760.320 760.320 1013.760} 33 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 33 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {760.320 760.320 1013.760 1013.760} 34 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 34 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1013.760 760.320 1267.200 1013.760} 35 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 35 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1267.200 760.320 1520.640 1013.760} 36 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 36 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1520.640 760.320 1774.080 1013.760} 37 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 37 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {1774.080 760.320 2027.520 1013.760} 38 of 100
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area : 38 complete 0 Viols.
+[12/04 18:03:13     57s]   VERIFY DRC ...... Sub-Area: {2027.520 760.320 2280.960 1013.760} 39 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 39 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {2280.960 760.320 2512.860 1013.760} 40 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 40 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {0.000 1013.760 253.440 1267.200} 41 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 41 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {253.440 1013.760 506.880 1267.200} 42 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 42 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {506.880 1013.760 760.320 1267.200} 43 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 43 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {760.320 1013.760 1013.760 1267.200} 44 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 44 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {1013.760 1013.760 1267.200 1267.200} 45 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 45 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {1267.200 1013.760 1520.640 1267.200} 46 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 46 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {1520.640 1013.760 1774.080 1267.200} 47 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 47 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {1774.080 1013.760 2027.520 1267.200} 48 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 48 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {2027.520 1013.760 2280.960 1267.200} 49 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 49 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {2280.960 1013.760 2512.860 1267.200} 50 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 50 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {0.000 1267.200 253.440 1520.640} 51 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 51 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {253.440 1267.200 506.880 1520.640} 52 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 52 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {506.880 1267.200 760.320 1520.640} 53 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 53 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {760.320 1267.200 1013.760 1520.640} 54 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 54 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {1013.760 1267.200 1267.200 1520.640} 55 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 55 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {1267.200 1267.200 1520.640 1520.640} 56 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 56 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {1520.640 1267.200 1774.080 1520.640} 57 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 57 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {1774.080 1267.200 2027.520 1520.640} 58 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 58 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {2027.520 1267.200 2280.960 1520.640} 59 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 59 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {2280.960 1267.200 2512.860 1520.640} 60 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 60 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {0.000 1520.640 253.440 1774.080} 61 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 61 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {253.440 1520.640 506.880 1774.080} 62 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 62 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {506.880 1520.640 760.320 1774.080} 63 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 63 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {760.320 1520.640 1013.760 1774.080} 64 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 64 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {1013.760 1520.640 1267.200 1774.080} 65 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 65 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {1267.200 1520.640 1520.640 1774.080} 66 of 100
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area : 66 complete 0 Viols.
+[12/04 18:03:13     58s]   VERIFY DRC ...... Sub-Area: {1520.640 1520.640 1774.080 1774.080} 67 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 67 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1774.080 1520.640 2027.520 1774.080} 68 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 68 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {2027.520 1520.640 2280.960 1774.080} 69 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 69 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {2280.960 1520.640 2512.860 1774.080} 70 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 70 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {0.000 1774.080 253.440 2027.520} 71 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 71 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {253.440 1774.080 506.880 2027.520} 72 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 72 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {506.880 1774.080 760.320 2027.520} 73 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 73 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {760.320 1774.080 1013.760 2027.520} 74 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 74 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1013.760 1774.080 1267.200 2027.520} 75 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 75 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1267.200 1774.080 1520.640 2027.520} 76 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 76 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1520.640 1774.080 1774.080 2027.520} 77 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 77 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1774.080 1774.080 2027.520 2027.520} 78 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 78 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {2027.520 1774.080 2280.960 2027.520} 79 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 79 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {2280.960 1774.080 2512.860 2027.520} 80 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 80 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {0.000 2027.520 253.440 2280.960} 81 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 81 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {253.440 2027.520 506.880 2280.960} 82 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 82 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {506.880 2027.520 760.320 2280.960} 83 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 83 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {760.320 2027.520 1013.760 2280.960} 84 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 84 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1013.760 2027.520 1267.200 2280.960} 85 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 85 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1267.200 2027.520 1520.640 2280.960} 86 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 86 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1520.640 2027.520 1774.080 2280.960} 87 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 87 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1774.080 2027.520 2027.520 2280.960} 88 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 88 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {2027.520 2027.520 2280.960 2280.960} 89 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 89 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {2280.960 2027.520 2512.860 2280.960} 90 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 90 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {0.000 2280.960 253.440 2508.920} 91 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 91 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {253.440 2280.960 506.880 2508.920} 92 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 92 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {506.880 2280.960 760.320 2508.920} 93 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 93 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {760.320 2280.960 1013.760 2508.920} 94 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 94 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1013.760 2280.960 1267.200 2508.920} 95 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 95 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1267.200 2280.960 1520.640 2508.920} 96 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 96 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1520.640 2280.960 1774.080 2508.920} 97 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 97 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {1774.080 2280.960 2027.520 2508.920} 98 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 98 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {2027.520 2280.960 2280.960 2508.920} 99 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 99 complete 0 Viols.
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area: {2280.960 2280.960 2512.860 2508.920} 100 of 100
+[12/04 18:03:14     58s]   VERIFY DRC ...... Sub-Area : 100 complete 0 Viols.
+[12/04 18:03:14     58s] 
+[12/04 18:03:14     58s]   Verification Complete : 1 Viols.
+[12/04 18:03:14     58s] 
+[12/04 18:03:14     58s]  Violation Summary By Layer and Type:
+[12/04 18:03:14     58s] 
+[12/04 18:03:14     58s] 	         MetSpc   Totals
+[12/04 18:03:14     58s] 	metal4        1        1
+[12/04 18:03:14     58s] 	Totals        1        1
+[12/04 18:03:14     58s] 
+[12/04 18:03:14     58s]  *** End Verify DRC (CPU: 0:00:01.3  ELAPSED TIME: 1.00  MEM: 27.0M) ***
+[12/04 18:03:14     58s] 
+[12/04 18:03:14     58s] <CMD> set_verify_drc_mode -area {0 0 0 0}
+[12/04 18:03:16     58s] <CMD> zoomBox -2029.92200 -670.04200 4428.80800 2576.80000
+[12/04 18:03:17     58s] <CMD> zoomBox -2546.69400 -1159.39900 5051.81200 2660.41500
+[12/04 18:03:19     59s] <CMD> zoomBox -1162.92700 -238.20700 2803.54200 1755.76100
+[12/04 18:03:19     59s] <CMD> zoomBox -332.33200 362.84800 1427.61300 1247.58300
+[12/04 18:03:20     59s] <CMD> zoomBox -16.67800 603.16700 902.02600 1065.00500
+[12/04 18:03:21     59s] <CMD> zoomBox 82.50600 682.73000 746.27200 1016.40900
+[12/04 18:03:22     59s] <CMD> zoomBox -241.26600 423.01200 1254.69800 1175.04200
+[12/04 18:03:22     59s] <CMD> zoomBox -1021.56000 16.52000 2349.96900 1711.40800
+[12/04 18:03:24     59s] <CMD> zoomBox -467.68300 113.52700 1602.85800 1154.40000
+[12/04 18:03:24     59s] <CMD> zoomBox -139.25700 184.00000 1132.31400 823.22600
+[12/04 18:03:25     59s] <CMD> zoomBox 106.34700 244.30400 770.11700 577.98500
+[12/04 18:03:26     59s] <CMD> zoomBox 180.88800 263.46600 660.46300 504.55100
+[12/04 18:03:32     60s] <CMD> setLayerPreference violation -isVisible 1
+[12/04 18:03:32     60s] <CMD> violationBrowser -all -no_display_false -displayByLayer
+[12/04 18:03:34     60s] <CMD> zoomBox 367.11 906.2 386.63 916.24
+[12/04 18:03:38     60s] <CMD_INTERNAL> violationBrowserClose
+[12/04 18:03:41     60s] <CMD> zoomBox 364.37200 905.31600 387.86900 917.12800
+[12/04 18:03:42     60s] <CMD> zoomBox 357.94100 903.05300 390.46300 919.40200
+[12/04 18:03:43     60s] <CMD> zoomBox 349.04000 899.92000 394.05400 922.54900
+[12/04 18:03:43     60s] <CMD> zoomBox 343.07900 897.61300 396.03600 924.23500
+[12/04 18:03:44     60s] <CMD> zoomBox 363.45400 904.86700 386.95200 916.68000
+[12/04 18:03:44     60s] <CMD> zoomBox 369.81400 907.14500 384.24800 914.40100
+[12/04 18:03:47     61s] <CMD> deleteSelectedFromFPlan
+[12/04 18:03:48     61s] <CMD> selectMarker 371.9900 911.0800 381.7500 911.3600 4 1 2
+[12/04 18:03:48     61s] <CMD> deleteSelectedFromFPlan
+[12/04 18:03:53     61s] <CMD> get_verify_drc_mode -disable_rules -quiet
+[12/04 18:03:53     61s] <CMD> get_verify_drc_mode -quiet -area
+[12/04 18:03:53     61s] <CMD> get_verify_drc_mode -quiet -layer_range
+[12/04 18:03:53     61s] <CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+[12/04 18:03:53     61s] <CMD> get_verify_drc_mode -check_only -quiet
+[12/04 18:03:53     61s] <CMD> get_verify_drc_mode -check_same_via_cell -quiet
+[12/04 18:03:53     61s] <CMD> get_verify_drc_mode -exclude_pg_net -quiet
+[12/04 18:03:53     61s] <CMD> get_verify_drc_mode -ignore_trial_route -quiet
+[12/04 18:03:53     61s] <CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+[12/04 18:03:53     61s] <CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+[12/04 18:03:53     61s] <CMD> get_verify_drc_mode -limit -quiet
+[12/04 18:03:54     61s] <CMD> set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+[12/04 18:03:54     61s] <CMD> verify_drc
+[12/04 18:03:54     61s] #-check_ndr_spacing auto                 # enums={true false auto}, default=auto,  user setting
+[12/04 18:03:54     61s] #-report CHIP.drc.rpt                    # string, default="", user setting
+[12/04 18:03:54     61s]  *** Starting Verify DRC (MEM: 2298.6) ***
+[12/04 18:03:54     61s] 
+[12/04 18:03:54     61s]   VERIFY DRC ...... Starting Verification
+[12/04 18:03:54     61s]   VERIFY DRC ...... Initializing
+[12/04 18:03:54     61s]   VERIFY DRC ...... Deleting Existing Violations
+[12/04 18:03:54     61s]   VERIFY DRC ...... Creating Sub-Areas
+[12/04 18:03:54     61s]   VERIFY DRC ...... Using new threading
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 253.440 253.440} 1 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {253.440 0.000 506.880 253.440} 2 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 2 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {506.880 0.000 760.320 253.440} 3 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 3 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {760.320 0.000 1013.760 253.440} 4 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 4 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {1013.760 0.000 1267.200 253.440} 5 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 5 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {1267.200 0.000 1520.640 253.440} 6 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 6 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {1520.640 0.000 1774.080 253.440} 7 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 7 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {1774.080 0.000 2027.520 253.440} 8 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 8 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {2027.520 0.000 2280.960 253.440} 9 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 9 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {2280.960 0.000 2512.860 253.440} 10 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 10 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {0.000 253.440 253.440 506.880} 11 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 11 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {253.440 253.440 506.880 506.880} 12 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 12 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {506.880 253.440 760.320 506.880} 13 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 13 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {760.320 253.440 1013.760 506.880} 14 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 14 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {1013.760 253.440 1267.200 506.880} 15 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 15 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {1267.200 253.440 1520.640 506.880} 16 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 16 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {1520.640 253.440 1774.080 506.880} 17 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 17 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {1774.080 253.440 2027.520 506.880} 18 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 18 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {2027.520 253.440 2280.960 506.880} 19 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 19 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {2280.960 253.440 2512.860 506.880} 20 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 20 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {0.000 506.880 253.440 760.320} 21 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 21 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {253.440 506.880 506.880 760.320} 22 of 100
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area : 22 complete 0 Viols.
+[12/04 18:03:54     61s]   VERIFY DRC ...... Sub-Area: {506.880 506.880 760.320 760.320} 23 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 23 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {760.320 506.880 1013.760 760.320} 24 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 24 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {1013.760 506.880 1267.200 760.320} 25 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 25 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {1267.200 506.880 1520.640 760.320} 26 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 26 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {1520.640 506.880 1774.080 760.320} 27 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 27 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {1774.080 506.880 2027.520 760.320} 28 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 28 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {2027.520 506.880 2280.960 760.320} 29 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 29 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {2280.960 506.880 2512.860 760.320} 30 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 30 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {0.000 760.320 253.440 1013.760} 31 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 31 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {253.440 760.320 506.880 1013.760} 32 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 32 complete 1 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {506.880 760.320 760.320 1013.760} 33 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 33 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {760.320 760.320 1013.760 1013.760} 34 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 34 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {1013.760 760.320 1267.200 1013.760} 35 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 35 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {1267.200 760.320 1520.640 1013.760} 36 of 100
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area : 36 complete 0 Viols.
+[12/04 18:03:55     61s]   VERIFY DRC ...... Sub-Area: {1520.640 760.320 1774.080 1013.760} 37 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 37 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1774.080 760.320 2027.520 1013.760} 38 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 38 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {2027.520 760.320 2280.960 1013.760} 39 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 39 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {2280.960 760.320 2512.860 1013.760} 40 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 40 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {0.000 1013.760 253.440 1267.200} 41 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 41 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {253.440 1013.760 506.880 1267.200} 42 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 42 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {506.880 1013.760 760.320 1267.200} 43 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 43 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {760.320 1013.760 1013.760 1267.200} 44 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 44 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1013.760 1013.760 1267.200 1267.200} 45 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 45 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1267.200 1013.760 1520.640 1267.200} 46 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 46 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1520.640 1013.760 1774.080 1267.200} 47 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 47 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1774.080 1013.760 2027.520 1267.200} 48 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 48 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {2027.520 1013.760 2280.960 1267.200} 49 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 49 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {2280.960 1013.760 2512.860 1267.200} 50 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 50 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {0.000 1267.200 253.440 1520.640} 51 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 51 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {253.440 1267.200 506.880 1520.640} 52 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 52 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {506.880 1267.200 760.320 1520.640} 53 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 53 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {760.320 1267.200 1013.760 1520.640} 54 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 54 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1013.760 1267.200 1267.200 1520.640} 55 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 55 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1267.200 1267.200 1520.640 1520.640} 56 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 56 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1520.640 1267.200 1774.080 1520.640} 57 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 57 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1774.080 1267.200 2027.520 1520.640} 58 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 58 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {2027.520 1267.200 2280.960 1520.640} 59 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 59 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {2280.960 1267.200 2512.860 1520.640} 60 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 60 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {0.000 1520.640 253.440 1774.080} 61 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 61 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {253.440 1520.640 506.880 1774.080} 62 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 62 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {506.880 1520.640 760.320 1774.080} 63 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 63 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {760.320 1520.640 1013.760 1774.080} 64 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 64 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1013.760 1520.640 1267.200 1774.080} 65 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 65 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1267.200 1520.640 1520.640 1774.080} 66 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 66 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1520.640 1520.640 1774.080 1774.080} 67 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 67 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1774.080 1520.640 2027.520 1774.080} 68 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 68 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {2027.520 1520.640 2280.960 1774.080} 69 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 69 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {2280.960 1520.640 2512.860 1774.080} 70 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 70 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {0.000 1774.080 253.440 2027.520} 71 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 71 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {253.440 1774.080 506.880 2027.520} 72 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 72 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {506.880 1774.080 760.320 2027.520} 73 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 73 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {760.320 1774.080 1013.760 2027.520} 74 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 74 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1013.760 1774.080 1267.200 2027.520} 75 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 75 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1267.200 1774.080 1520.640 2027.520} 76 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 76 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1520.640 1774.080 1774.080 2027.520} 77 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 77 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1774.080 1774.080 2027.520 2027.520} 78 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 78 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {2027.520 1774.080 2280.960 2027.520} 79 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 79 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {2280.960 1774.080 2512.860 2027.520} 80 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 80 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {0.000 2027.520 253.440 2280.960} 81 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 81 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {253.440 2027.520 506.880 2280.960} 82 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 82 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {506.880 2027.520 760.320 2280.960} 83 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 83 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {760.320 2027.520 1013.760 2280.960} 84 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 84 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1013.760 2027.520 1267.200 2280.960} 85 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 85 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1267.200 2027.520 1520.640 2280.960} 86 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 86 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1520.640 2027.520 1774.080 2280.960} 87 of 100
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area : 87 complete 0 Viols.
+[12/04 18:03:55     62s]   VERIFY DRC ...... Sub-Area: {1774.080 2027.520 2027.520 2280.960} 88 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 88 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {2027.520 2027.520 2280.960 2280.960} 89 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 89 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {2280.960 2027.520 2512.860 2280.960} 90 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 90 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {0.000 2280.960 253.440 2508.920} 91 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 91 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {253.440 2280.960 506.880 2508.920} 92 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 92 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {506.880 2280.960 760.320 2508.920} 93 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 93 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {760.320 2280.960 1013.760 2508.920} 94 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 94 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {1013.760 2280.960 1267.200 2508.920} 95 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 95 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {1267.200 2280.960 1520.640 2508.920} 96 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 96 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {1520.640 2280.960 1774.080 2508.920} 97 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 97 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {1774.080 2280.960 2027.520 2508.920} 98 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 98 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {2027.520 2280.960 2280.960 2508.920} 99 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 99 complete 0 Viols.
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area: {2280.960 2280.960 2512.860 2508.920} 100 of 100
+[12/04 18:03:56     62s]   VERIFY DRC ...... Sub-Area : 100 complete 0 Viols.
+[12/04 18:03:56     62s] 
+[12/04 18:03:56     62s]   Verification Complete : 1 Viols.
+[12/04 18:03:56     62s] 
+[12/04 18:03:56     62s]  Violation Summary By Layer and Type:
+[12/04 18:03:56     62s] 
+[12/04 18:03:56     62s] 	         MetSpc   Totals
+[12/04 18:03:56     62s] 	metal4        1        1
+[12/04 18:03:56     62s] 	Totals        1        1
+[12/04 18:03:56     62s] 
+[12/04 18:03:56     62s]  *** End Verify DRC (CPU: 0:00:01.3  ELAPSED TIME: 2.00  MEM: 0.0M) ***
+[12/04 18:03:56     62s] 
+[12/04 18:03:56     62s] <CMD> set_verify_drc_mode -area {0 0 0 0}
+[12/04 18:03:59     62s] <CMD> zoomBox 364.59800 904.60200 388.10400 916.41900
+[12/04 18:04:00     63s] <CMD> selectMarker 371.9900 911.0800 381.7500 911.3600 4 1 2
+[12/04 18:04:01     63s] <CMD> deselectAll
+[12/04 18:04:01     63s] <CMD> selectMarker 371.9900 911.0800 381.7500 911.3600 4 1 2
+[12/04 18:04:02     63s] <CMD> deselectAll
+[12/04 18:04:02     63s] <CMD> selectMarker 371.9900 911.0800 381.7500 911.3600 4 1 2
+[12/04 18:04:03     63s] <CMD> deselectAll
+[12/04 18:04:03     63s] <CMD> selectMarker 371.9900 911.0800 381.7500 911.3600 4 1 2
+[12/04 18:04:03     63s] <CMD> zoomBox 374.52800 908.68600 383.39600 913.14400
+[12/04 18:04:04     63s] <CMD> zoomBox 377.37000 909.87100 382.00100 912.19900
+[12/04 18:04:05     63s] <CMD> deselectAll
+[12/04 18:04:05     63s] <CMD> selectMarker 371.9900 911.0800 381.7500 911.3600 4 1 2
+[12/04 18:04:06     63s] <CMD> zoomBox 378.82900 910.55600 381.24800 911.77200
+[12/04 18:04:06     63s] <CMD> zoomBox 379.06200 910.67900 381.11900 911.71300
+[12/04 18:04:07     63s] <CMD> zoomBox 379.59300 910.96900 380.85800 911.60500
+[12/04 18:04:10     63s] <CMD> zoomBox 379.09300 910.67300 381.15400 911.70900
+[12/04 18:04:12     63s] <CMD> undo
+[12/04 18:04:13     63s] <CMD> redo
+[12/04 18:04:14     63s] <CMD> zoomBox 377.53900 909.42200 383.00700 912.17100
+[12/04 18:04:14     63s] <CMD> zoomBox 374.41400 906.90700 386.73800 913.10200
+[12/04 18:04:15     63s] <CMD> zoomBox 367.10700 901.13400 394.88900 915.10000
+[12/04 18:04:16     63s] <CMD> zoomBox 358.85500 894.61500 404.09500 917.35700
+[12/04 18:04:19     64s] <CMD> zoomBox 333.46800 871.88000 453.42700 932.18400
+[12/04 18:04:20     64s] <CMD> zoomBox 339.62500 877.48500 441.59000 928.74300
+[12/04 18:04:21     64s] <CMD> zoomBox 368.61900 908.49300 385.68500 917.07200
+[12/04 18:04:23     64s] <CMD> zoomBox 375.33000 910.50200 382.90500 914.31000
+[12/04 18:04:25     64s] <CMD> setLayerPreference via3 -isVisible 0
+[12/04 18:04:26     64s] <CMD> setLayerPreference metal3 -isVisible 0
+[12/04 18:04:26     64s] <CMD> setLayerPreference metal2 -isVisible 0
+[12/04 18:04:27     64s] <CMD> setLayerPreference via -isVisible 0
+[12/04 18:04:27     64s] <CMD> setLayerPreference metal1 -isVisible 0
+[12/04 18:04:29     64s] <CMD> setLayerPreference via2 -isVisible 0
+[12/04 18:04:30     64s] <CMD> deselectAll
+[12/04 18:04:30     64s] <CMD> selectVia 371.9900 911.4000 389.9900 920.3600 5 GND
+[12/04 18:04:32     64s] <CMD> deleteSelectedFromFPlan
+[12/04 18:04:33     64s] <CMD> selectWire 372.0400 911.3600 389.9400 920.3600 4 GND
+[12/04 18:04:33     64s] <CMD> deleteSelectedFromFPlan
+[12/04 18:04:35     65s] <CMD> selectWire 371.9900 911.3600 389.9900 920.3600 4 GND
+[12/04 18:04:35     65s] <CMD> deleteSelectedFromFPlan
+[12/04 18:04:38     65s] <CMD> undo
+[12/04 18:04:38     65s] <CMD> undo
+[12/04 18:04:39     65s] <CMD> undo
+[12/04 18:04:40     65s] <CMD> undo
+[12/04 18:04:45     65s] <CMD> setLayerPreference metal5 -isVisible 0
+[12/04 18:04:45     65s] <CMD> setLayerPreference via5 -isVisible 0
+[12/04 18:04:46     65s] <CMD> setLayerPreference metal6 -isVisible 0
+[12/04 18:04:48     65s] <CMD> selectVia 371.9900 911.4000 389.9900 920.3600 5 GND
+[12/04 18:04:48     65s] <CMD> deleteSelectedFromFPlan
+[12/04 18:04:50     65s] <CMD> selectWire 372.0400 911.3600 389.9400 920.3600 4 GND
+[12/04 18:04:50     65s] <CMD> deleteSelectedFromFPlan
+[12/04 18:04:51     65s] <CMD> selectWire 371.9900 911.3600 389.9900 920.3600 4 GND
+[12/04 18:04:51     65s] <CMD> deleteSelectedFromFPlan
+[12/04 18:04:53     65s] <CMD> fit
+[12/04 18:04:59     66s] <CMD> get_verify_drc_mode -disable_rules -quiet
+[12/04 18:04:59     66s] <CMD> get_verify_drc_mode -quiet -area
+[12/04 18:04:59     66s] <CMD> get_verify_drc_mode -quiet -layer_range
+[12/04 18:04:59     66s] <CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+[12/04 18:04:59     66s] <CMD> get_verify_drc_mode -check_only -quiet
+[12/04 18:04:59     66s] <CMD> get_verify_drc_mode -check_same_via_cell -quiet
+[12/04 18:04:59     66s] <CMD> get_verify_drc_mode -exclude_pg_net -quiet
+[12/04 18:04:59     66s] <CMD> get_verify_drc_mode -ignore_trial_route -quiet
+[12/04 18:04:59     66s] <CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+[12/04 18:04:59     66s] <CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+[12/04 18:04:59     66s] <CMD> get_verify_drc_mode -limit -quiet
+[12/04 18:05:00     66s] <CMD> set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report CHIP.drc.rpt -limit 1000
+[12/04 18:05:00     66s] <CMD> verify_drc
+[12/04 18:05:00     66s] #-check_ndr_spacing auto                 # enums={true false auto}, default=auto,  user setting
+[12/04 18:05:00     66s] #-report CHIP.drc.rpt                    # string, default="", user setting
+[12/04 18:05:00     66s]  *** Starting Verify DRC (MEM: 2298.6) ***
+[12/04 18:05:00     66s] 
+[12/04 18:05:00     66s]   VERIFY DRC ...... Starting Verification
+[12/04 18:05:00     66s]   VERIFY DRC ...... Initializing
+[12/04 18:05:00     66s]   VERIFY DRC ...... Deleting Existing Violations
+[12/04 18:05:00     66s]   VERIFY DRC ...... Creating Sub-Areas
+[12/04 18:05:00     66s]   VERIFY DRC ...... Using new threading
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 253.440 253.440} 1 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {253.440 0.000 506.880 253.440} 2 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 2 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {506.880 0.000 760.320 253.440} 3 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 3 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {760.320 0.000 1013.760 253.440} 4 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 4 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {1013.760 0.000 1267.200 253.440} 5 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 5 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {1267.200 0.000 1520.640 253.440} 6 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 6 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {1520.640 0.000 1774.080 253.440} 7 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 7 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {1774.080 0.000 2027.520 253.440} 8 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 8 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {2027.520 0.000 2280.960 253.440} 9 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 9 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {2280.960 0.000 2512.860 253.440} 10 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 10 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {0.000 253.440 253.440 506.880} 11 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 11 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {253.440 253.440 506.880 506.880} 12 of 100
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area : 12 complete 0 Viols.
+[12/04 18:05:00     66s]   VERIFY DRC ...... Sub-Area: {506.880 253.440 760.320 506.880} 13 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 13 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {760.320 253.440 1013.760 506.880} 14 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 14 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1013.760 253.440 1267.200 506.880} 15 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 15 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1267.200 253.440 1520.640 506.880} 16 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 16 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1520.640 253.440 1774.080 506.880} 17 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 17 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1774.080 253.440 2027.520 506.880} 18 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 18 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {2027.520 253.440 2280.960 506.880} 19 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 19 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {2280.960 253.440 2512.860 506.880} 20 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 20 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {0.000 506.880 253.440 760.320} 21 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 21 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {253.440 506.880 506.880 760.320} 22 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 22 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {506.880 506.880 760.320 760.320} 23 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 23 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {760.320 506.880 1013.760 760.320} 24 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 24 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1013.760 506.880 1267.200 760.320} 25 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 25 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1267.200 506.880 1520.640 760.320} 26 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 26 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1520.640 506.880 1774.080 760.320} 27 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 27 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1774.080 506.880 2027.520 760.320} 28 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 28 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {2027.520 506.880 2280.960 760.320} 29 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 29 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {2280.960 506.880 2512.860 760.320} 30 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 30 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {0.000 760.320 253.440 1013.760} 31 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 31 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {253.440 760.320 506.880 1013.760} 32 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 32 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {506.880 760.320 760.320 1013.760} 33 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 33 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {760.320 760.320 1013.760 1013.760} 34 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 34 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1013.760 760.320 1267.200 1013.760} 35 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 35 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1267.200 760.320 1520.640 1013.760} 36 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 36 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1520.640 760.320 1774.080 1013.760} 37 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 37 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1774.080 760.320 2027.520 1013.760} 38 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 38 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {2027.520 760.320 2280.960 1013.760} 39 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 39 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {2280.960 760.320 2512.860 1013.760} 40 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 40 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {0.000 1013.760 253.440 1267.200} 41 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 41 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {253.440 1013.760 506.880 1267.200} 42 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 42 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {506.880 1013.760 760.320 1267.200} 43 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 43 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {760.320 1013.760 1013.760 1267.200} 44 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 44 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1013.760 1013.760 1267.200 1267.200} 45 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 45 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1267.200 1013.760 1520.640 1267.200} 46 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 46 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1520.640 1013.760 1774.080 1267.200} 47 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 47 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1774.080 1013.760 2027.520 1267.200} 48 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 48 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {2027.520 1013.760 2280.960 1267.200} 49 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 49 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {2280.960 1013.760 2512.860 1267.200} 50 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 50 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {0.000 1267.200 253.440 1520.640} 51 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 51 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {253.440 1267.200 506.880 1520.640} 52 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 52 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {506.880 1267.200 760.320 1520.640} 53 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 53 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {760.320 1267.200 1013.760 1520.640} 54 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 54 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1013.760 1267.200 1267.200 1520.640} 55 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 55 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1267.200 1267.200 1520.640 1520.640} 56 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 56 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1520.640 1267.200 1774.080 1520.640} 57 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 57 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1774.080 1267.200 2027.520 1520.640} 58 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 58 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {2027.520 1267.200 2280.960 1520.640} 59 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 59 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {2280.960 1267.200 2512.860 1520.640} 60 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 60 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {0.000 1520.640 253.440 1774.080} 61 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 61 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {253.440 1520.640 506.880 1774.080} 62 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 62 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {506.880 1520.640 760.320 1774.080} 63 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 63 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {760.320 1520.640 1013.760 1774.080} 64 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 64 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1013.760 1520.640 1267.200 1774.080} 65 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 65 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1267.200 1520.640 1520.640 1774.080} 66 of 100
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area : 66 complete 0 Viols.
+[12/04 18:05:01     66s]   VERIFY DRC ...... Sub-Area: {1520.640 1520.640 1774.080 1774.080} 67 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 67 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {1774.080 1520.640 2027.520 1774.080} 68 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 68 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {2027.520 1520.640 2280.960 1774.080} 69 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 69 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {2280.960 1520.640 2512.860 1774.080} 70 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 70 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {0.000 1774.080 253.440 2027.520} 71 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 71 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {253.440 1774.080 506.880 2027.520} 72 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 72 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {506.880 1774.080 760.320 2027.520} 73 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 73 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {760.320 1774.080 1013.760 2027.520} 74 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 74 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {1013.760 1774.080 1267.200 2027.520} 75 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 75 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {1267.200 1774.080 1520.640 2027.520} 76 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 76 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {1520.640 1774.080 1774.080 2027.520} 77 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 77 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {1774.080 1774.080 2027.520 2027.520} 78 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 78 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {2027.520 1774.080 2280.960 2027.520} 79 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 79 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {2280.960 1774.080 2512.860 2027.520} 80 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 80 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {0.000 2027.520 253.440 2280.960} 81 of 100
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area : 81 complete 0 Viols.
+[12/04 18:05:01     67s]   VERIFY DRC ...... Sub-Area: {253.440 2027.520 506.880 2280.960} 82 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 82 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {506.880 2027.520 760.320 2280.960} 83 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 83 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {760.320 2027.520 1013.760 2280.960} 84 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 84 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {1013.760 2027.520 1267.200 2280.960} 85 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 85 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {1267.200 2027.520 1520.640 2280.960} 86 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 86 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {1520.640 2027.520 1774.080 2280.960} 87 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 87 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {1774.080 2027.520 2027.520 2280.960} 88 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 88 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {2027.520 2027.520 2280.960 2280.960} 89 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 89 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {2280.960 2027.520 2512.860 2280.960} 90 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 90 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {0.000 2280.960 253.440 2508.920} 91 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 91 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {253.440 2280.960 506.880 2508.920} 92 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 92 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {506.880 2280.960 760.320 2508.920} 93 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 93 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {760.320 2280.960 1013.760 2508.920} 94 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 94 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {1013.760 2280.960 1267.200 2508.920} 95 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 95 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {1267.200 2280.960 1520.640 2508.920} 96 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 96 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {1520.640 2280.960 1774.080 2508.920} 97 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 97 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {1774.080 2280.960 2027.520 2508.920} 98 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 98 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {2027.520 2280.960 2280.960 2508.920} 99 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 99 complete 0 Viols.
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area: {2280.960 2280.960 2512.860 2508.920} 100 of 100
+[12/04 18:05:02     67s]   VERIFY DRC ...... Sub-Area : 100 complete 0 Viols.
+[12/04 18:05:02     67s] 
+[12/04 18:05:02     67s]   Verification Complete : 0 Viols.
+[12/04 18:05:02     67s] 
+[12/04 18:05:02     67s]  *** End Verify DRC (CPU: 0:00:01.3  ELAPSED TIME: 2.00  MEM: 0.0M) ***
+[12/04 18:05:02     67s] 
+[12/04 18:05:02     67s] <CMD> set_verify_drc_mode -area {0 0 0 0}
+[12/04 18:05:12     68s] <CMD> verifyConnectivity -net {GND VCC} -type all -error 1000 -warning 50
+[12/04 18:05:12     68s] VERIFY_CONNECTIVITY use new engine.
+[12/04 18:05:12     68s] 
+[12/04 18:05:12     68s] ******** Start: VERIFY CONNECTIVITY ********
+[12/04 18:05:12     68s] Start Time: Wed Dec  4 18:05:12 2024
+[12/04 18:05:12     68s] 
+[12/04 18:05:12     68s] Design Name: CHIP
+[12/04 18:05:12     68s] Database Units: 1000
+[12/04 18:05:12     68s] Design Boundary: (0.0000, 0.0000) (2512.8600, 2508.9200)
+[12/04 18:05:12     68s] Error Limit = 1000; Warning Limit = 50
+[12/04 18:05:12     68s] Check specified nets
+[12/04 18:05:12     68s] *** Checking Net VCC
+[12/04 18:05:12     68s] *** Checking Net GND
+[12/04 18:05:12     68s] Net GND: has special routes with opens.
+[12/04 18:05:12     68s] 
+[12/04 18:05:12     68s] Begin Summary 
+[12/04 18:05:12     68s]     2 Problem(s) (IMPVFC-200): Special Wires: Pieces of the net are not connected together.
+[12/04 18:05:12     68s]     2 total info(s) created.
+[12/04 18:05:12     68s] End Summary
+[12/04 18:05:12     68s] 
+[12/04 18:05:12     68s] End Time: Wed Dec  4 18:05:12 2024
+[12/04 18:05:12     68s] Time Elapsed: 0:00:00.0
+[12/04 18:05:12     68s] 
+[12/04 18:05:12     68s] ******** End: VERIFY CONNECTIVITY ********
+[12/04 18:05:12     68s]   Verification Complete : 2 Viols.  0 Wrngs.
+[12/04 18:05:12     68s]   (CPU Time: 0:00:00.0  MEM: 0.000M)
+[12/04 18:05:12     68s] 
+[12/04 18:05:18     68s] <CMD> zoomBox -682.19100 153.85100 2183.58000 1594.49100
+[12/04 18:05:20     68s] <CMD> zoomBox -229.15500 414.14000 1266.79700 1166.16400
+[12/04 18:05:24     68s] <CMD> setLayerPreference violation -isVisible 1
+[12/04 18:05:24     68s] <CMD> violationBrowser -all -no_display_false -displayByLayer
+[12/04 18:05:26     68s] <CMD> zoomBox -1256.43 -1256.43 3769.29 3765.35
+[12/04 18:05:28     69s] <CMD> zoomBox -1256.43 -1256.43 3769.29 3765.35
+[12/04 18:05:28     69s] <CMD> zoomBox -1256.43 -1256.43 3769.29 3765.35
+[12/04 18:05:32     69s] <CMD_INTERNAL> violationBrowserClose
+[12/04 18:05:33     69s] <CMD> zoomBox -1551.14400 -231.94500 2881.24900 1996.24500
+[12/04 18:05:33     69s] <CMD> zoomBox -692.47200 90.37600 1621.26600 1253.50600
+[12/04 18:05:36     69s] <CMD> zoomBox -1062.79500 15.56400 2139.61000 1625.43200
+[12/04 18:05:39     69s] <CMD> zoomBox -552.30500 128.51100 1414.37200 1117.17100
+[12/04 18:05:40     69s] <CMD> zoomBox -251.12200 362.15900 956.66400 969.32000
+[12/04 18:05:43     70s] <CMD> selectWire 256.1900 137.6200 274.0900 915.3200 4 GND
+[12/04 18:05:47     70s] <CMD> setLayerPreference violation -isVisible 1
+[12/04 18:05:47     70s] <CMD> violationBrowser -all -no_display_false -displayByLayer
+[12/04 18:05:49     70s] <CMD> zoomBox -1256.43 -1256.43 3769.29 3765.35
+[12/04 18:05:52     70s] <CMD_INTERNAL> violationBrowserClose
+[12/04 18:05:54     70s] <CMD> setLayerPreference metal1 -isVisible 1
+[12/04 18:05:54     70s] <CMD> setLayerPreference via -isVisible 1
+[12/04 18:05:55     70s] <CMD> setLayerPreference metal2 -isVisible 1
+[12/04 18:05:55     70s] <CMD> setLayerPreference metal3 -isVisible 1
+[12/04 18:05:57     71s] <CMD> setLayerPreference via3 -isVisible 1
+[12/04 18:05:58     71s] <CMD> setLayerPreference metal5 -isVisible 1
+[12/04 18:05:58     71s] <CMD> setLayerPreference via5 -isVisible 1
+[12/04 18:05:59     71s] <CMD> setLayerPreference metal6 -isVisible 1
+[12/04 18:06:00     71s] <CMD> zoomBox -1639.40900 -180.43000 2792.98400 2047.76000
+[12/04 18:06:01     71s] <CMD> zoomBox -703.83200 309.40600 1262.84700 1298.06700
+[12/04 18:06:01     71s] <CMD> zoomBox -257.31200 565.46100 769.30800 1081.54900
+[12/04 18:06:02     71s] <CMD> zoomBox -46.25700 709.57900 584.21700 1026.52200
+[12/04 18:06:03     71s] <CMD> zoomBox 119.07500 809.78000 448.18800 975.22700
+[12/04 18:06:04     71s] <CMD> deselectAll
+[12/04 18:06:04     71s] <CMD> selectMarker 216.2900 0.0000 389.9900 924.3200 -1 3 7
+[12/04 18:06:05     71s] <CMD> deselectAll
+[12/04 18:06:05     71s] <CMD> selectWire 256.1900 137.6200 274.0900 915.3200 4 GND
+[12/04 18:06:06     72s] <CMD> deselectAll
+[12/04 18:06:06     72s] <CMD> selectWire 236.1900 137.6200 254.1900 915.3200 4 GND
+[12/04 18:06:07     72s] <CMD> deselectAll
+[12/04 18:06:07     72s] <CMD> selectWire 265.1400 906.3700 389.9400 924.2700 5 GND
+[12/04 18:06:10     72s] <CMD> deselectAll
+[12/04 18:06:10     72s] <CMD> selectWire 256.1900 137.6200 274.0900 915.3200 4 GND
+[12/04 18:06:12     72s] <CMD> deselectAll
+[12/04 18:06:12     72s] <CMD> selectVia 236.1900 906.3200 254.1900 924.3200 5 GND
+[12/04 18:06:13     72s] <CMD> deselectAll
+[12/04 18:06:13     72s] <CMD> selectWire 216.2900 137.6200 234.1900 915.3200 4 GND
+[12/04 18:06:13     72s] <CMD> deselectAll
+[12/04 18:06:13     72s] <CMD> selectWire 265.1400 906.3700 389.9400 924.2700 5 GND
+[12/04 18:06:14     72s] <CMD> deselectAll
+[12/04 18:06:14     72s] <CMD> selectVia 256.1900 906.3700 274.0900 924.2700 5 GND
+[12/04 18:06:14     72s] <CMD> deselectAll
+[12/04 18:06:14     72s] <CMD> selectVia 256.1900 906.3700 274.0900 924.2700 5 GND
+[12/04 18:06:15     72s] <CMD> deselectAll
+[12/04 18:06:15     72s] <CMD> selectVia 236.1900 906.3200 254.1900 924.3200 5 GND
+[12/04 18:06:16     72s] <CMD> deselectAll
+[12/04 18:06:16     72s] <CMD> selectVia 216.2900 906.3700 234.1900 924.2700 5 GND
+[12/04 18:06:21     73s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed Dec  4 18:06:21 2024
+  Total CPU time:     0:01:16
+  Total real time:    0:11:29
+  Peak memory (main): 1903.79MB
+
+[12/04 18:06:21     73s] 
+[12/04 18:06:21     73s] *** Memory Usage v#1 (Current mem = 2296.883M, initial mem = 284.375M) ***
+[12/04 18:06:21     73s] 
+[12/04 18:06:21     73s] *** Summary of all messages that are not suppressed in this session:
+[12/04 18:06:21     73s] Severity  ID               Count  Summary                                  
+[12/04 18:06:21     73s] WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+[12/04 18:06:21     73s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[12/04 18:06:21     73s] WARNING   IMPLF-200            7  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/04 18:06:21     73s] WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+[12/04 18:06:21     73s] WARNING   IMPFP-325            7  Floorplan of the design is resized. All ...
+[12/04 18:06:21     73s] WARNING   IMPFP-3961          88  The techSite '%s' has no related standar...
+[12/04 18:06:21     73s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[12/04 18:06:21     73s] WARNING   IMPSYC-2             4  Timing information is not defined for ce...
+[12/04 18:06:21     73s] WARNING   IMPVL-159          764  Pin '%s' of cell '%s' is defined in LEF ...
+[12/04 18:06:21     73s] WARNING   IMPSR-4058           1  Sroute option: %s should be used in conj...
+[12/04 18:06:21     73s] WARNING   IMPSR-1254           2  Unable to connect the specified objects,...
+[12/04 18:06:21     73s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[12/04 18:06:21     73s] WARNING   TECHLIB-302          1  No function defined for cell '%s'. The c...
+[12/04 18:06:21     73s] *** Message Summary: 1281 warning(s), 0 error(s)
+[12/04 18:06:21     73s] 
+[12/04 18:06:21     73s] --- Ending "Innovus" (totcpu=0:01:13, real=0:11:28, mem=2296.9M) ---

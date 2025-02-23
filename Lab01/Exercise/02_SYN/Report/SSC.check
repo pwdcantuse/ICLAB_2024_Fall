@@ -1,0 +1,73 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Wed Sep 18 17:44:39 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              40
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                         18
+--------------------------------------------------------------------------------
+
+Warning: In design 'SSC', cell 'C2796' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2811' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2826' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2840' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2844' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2848' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2852' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2858' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2864' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2870' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2903' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2918' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2933' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2947' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2951' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2955' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2959' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2965' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2971' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'C2977' does not drive any nets. (LINT-1)
+Warning: In design 'DW01_cmp2_oper', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'DW01_cmp2_oper', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', a pin on submodule 'm1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'control' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'm2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'control' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'm3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'control' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'm4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'control' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'm5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'control' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'm6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'control' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'm7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'control' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'm8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'control' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'comp_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'instruction' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'comp_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'instruction' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'comp_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'instruction' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'comp_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'instruction' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'comp_5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'instruction' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'comp_6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'instruction' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'comp_7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'instruction' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'comp_8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'instruction' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'comp_9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'instruction' is connected to logic 0. 
+Warning: In design 'SSC', a pin on submodule 'comp_10' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'instruction' is connected to logic 0. 
+1
